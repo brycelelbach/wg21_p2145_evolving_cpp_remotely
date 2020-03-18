@@ -1,0 +1,418 @@
+<!--
+Copyright (c) 2018-2019 NVIDIA Corporation
+Author: Bryce Adelstein Lelbach <brycelelbach@gmail.com>
+
+Distributed under the Boost Software License v1.0 (boost.org/LICENSE_1_0.txt)
+-->
+<pre class='metadata'>
+Title: Evolving the Library Remotely
+Shortname: P2145
+Revision: 0
+Status: D
+Group: WG21
+Audience: LEWG, SG18
+Editor: Bryce Adelstein Lelbach (Library Evolution Chair, Incoming), NVIDIA, brycelelbach@gmail.com
+Editor: Titus Winters (Library Evolution Chair, Outgoing), Google, titus@google.com
+Editor: Fabio Fracassi (Library Evolution Assistant Chair, Incoming), f.fracassi@gmx.net
+Editor: Billy Baker (Library Evolution Incubator Chair, Incoming), FlightSafety, Billy.Baker@flightsafety.com
+Editor: Nevin Liber (Library Evolution Incubator Assistant Chair, Incoming), Argonne National Laboratory, nliber@gmail.com
+URL: https://wg21.link/P2145R0
+!Source: <a href="https://github.com/brycelelbach/wg21_p2145_evolving_the_library_remotely/blob/master/evolving_the_library_remotely.bs">GitHub</a>
+Issue Tracking: GitHub https://github.com/brycelelbach/wg21_p2145_evolving_the_library_remotely/issues
+Metadata Order: Author, This Version, Source, Issue Tracking, Project, Audience
+Markup Shorthands: markdown yes
+Toggle Diffs: no
+No Abstract: yes
+Boilerplate: style-syntax-highlighting off
+</pre>
+
+<style>
+pre {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.ins, ins, ins *, span.ins, span.ins * {
+  background-color: rgb(200, 250, 200);
+  color: rgb(0, 136, 0);
+  text-decoration: none;
+}
+.del, del, del *, span.del, span.del * {
+  background-color: rgb(250, 200, 200);
+  color: rgb(255, 0, 0);
+  text-decoration: line-through;
+  text-decoration-color: rgb(255, 0, 0);
+}
+math, span.math {
+  font-family: serif;
+  font-style: italic;
+}
+ul {
+  list-style-type: "— ";
+}
+blockquote {
+  counter-reset: paragraph;
+}
+div.numbered, div.newnumbered {
+  margin-left: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+div.numbered:before, div.newnumbered:before {
+  position: absolute;
+  margin-left: -2em;
+  display-style: block;
+}
+div.numbered:before {
+  content: counter(paragraph);
+  counter-increment: paragraph;
+}
+div.newnumbered:before {
+  content: "�";
+}
+div.numbered ul, div.newnumbered ul {
+  counter-reset: list_item;
+}
+div.numbered li, div.newnumbered li {
+  margin-left: 3em;
+}
+div.numbered li:before, div.newnumbered li:before {
+  position: absolute;
+  margin-left: -4.8em;
+  display-style: block;
+}
+div.numbered li:before {
+  content: "(" counter(paragraph) "." counter(list_item) ")";
+  counter-increment: list_item;
+}
+div.newnumbered li:before {
+  content: "(�." counter(list_item) ")";
+  counter-increment: list_item;
+}
+</style>
+
+# Introduction # {#introduction}
+
+Due to the ongoing global health crisis caused by the novel coronavirus, the
+  ISO C++ Committee's planned June 2020 meeting in Varna, Bulgaria was called
+  off.
+During this uncertain time, our priority must be the safety and well-being of
+  the committee and the public at large.
+
+The postponement of the Varna meeting and the broader impacts of the novel
+  coronavirus on society will be disruptive.
+However, the ISO C++ Committee can and will do our best to adapt to these
+  disruptions and carry on our work in these trying times.
+Our plans for C++23 and beyond ([[P0592R4]]) have not changed, but the way that
+  we execute on those plans will have to change.
+This document lays out plans for how we will conduct Library Evolution work
+  remotely.
+
+# Library Evolution Work Performed at Face-to-Face Meetings # {#work-at-f2f-meetings}
+
+At a typical ISO C++ Committee face-to-face meeting,
+  [[#appendix-typical-lewg-f2f-schedule|the Library Evolution group meets for 33.25 hours]]
+  and
+  [[#appendix-historical-lewgi-f2f-schedule|the Library Evolution Incubator group meets for 24.8 hours]];
+  a total of ~58 hours per meeting.
+Each year, we spend ~174 hours at face-to-face meetings on Library Evolution.
+
+A lot of voluntary and informal, but important, work also occurs during meals
+  and at in the evening hours.
+
+The main benefits of a face-to-face meeting over remote meetings are:
+
+- The informal, spontaneous, and serendipitous interactions between committee
+      members in hallways, at meals, etc.
+- Sequestration, which limits distractions and increases focus.
+- Discussions happen consecutively, which keeps them "in cache".
+
+We can't replicate these effects in remote meetings.
+
+When in session at face-to-face meetings, we typically perform three activities:
+
+- <dfn><abbr>Information Distribution</abbr>, where knowledgable parties
+      educate the committee about a subject.</dfn>
+- <dfn><abbr>Review</abbr>, where the committee identifies open questions
+      and places where we lack clear consensus.</dfn>
+- <dfn><abbr>Decision Making</abbr>, where the committee answers open
+      questions and we determine consensus on particular matters.</dfn>
+
+# Mechanisms for Remote Collaboration # {#mechanisms-for-remote-meetings}
+
+We have three primary mechanisms for remote collaboration:
+
+- <dfn><abbr>Mailings</abbr>, which are regular distributions of committee
+      proposals.
+    Mailings are a good way to
+      [=Information Distribution|distribute information=].</dfn>
+- <dfn><abbr>Email List Discussions</abbr>, which are good for
+      [=information distribution=] and [=review=].
+    They are not as effective for [=decision making=] as it can be hard to
+      determine consensus.
+    Email list discussions are asynchronous, so everyone can participate when
+      it is convenient for them.</dfn>
+- <dfn><abbr>Telecons</abbr>, which are good for [=information distribution=],
+      [=review=], and [=decision making=].
+    However, they are synchronous by nature, which introduces scheduling
+      constraints that limits participation and makes them a scarce resource.</dfn>
+
+# Telecons # {#telecons}
+
+Because [=telecons=] are the only good option for [=decision making=] and they
+  are a scarce resource, we should try to use them for [=decision making=] as
+  much as possible.
+That means we should do as much
+  [=Information Distribution|distribution of information=]
+  and [=review=] outside of [=telecons=] as possible.
+It is important that participants read the proposals that will be discussed on
+  a [=telecon=] before the [=telecon=], and utilize [=email list discussions=]
+  whenever possible.
+
+## Duration and Cadence of Telecons ## {#telecon-duration-and-cadence}
+
+As mentioned earlier in [[#work-at-f2f-meetings]], we spend ~174
+  hours per year on Library Evolution at face-to-face meetings.
+This is an average of ~3.3 hours per week (~4 months per committee meeting
+  equivalent).
+
+~3.3 hours per week is a slightly larger commitment than reasonable, especially
+  given that other parts of the committee will also be meeting remotely.
+If some part of the [=information distribution=] and [=review=] that occurs at
+  face-to-face committee meetings can happen via [=email list discussions=]
+  [=message platforms=] instead of [=telecons=], it should not be necessary for
+  us to make up all of the time of face-to-face meetings via [=telecons=].
+
+There are tradeoffs in selecting a duration for individual telecons.
+Longer telecons can be harder to schedule and can strain the endurance of
+  participants.
+Shorter telecons are easier to schedule and may draw greater attendance, but
+  disrupt the continuity of discussions.
+
+Given the committee's global nature, it is difficult to find times that are
+  convenient for all committee members.
+Instead of always holding weekly meetings at a single time, we should either
+  meet multiple times per week or meet once per week but have two time-slots
+  which alternate each week.
+This will give us additional scheduling flexibility.
+
+Given all of this, **we will meet ~1.5 hours per week, from April 2020 until
+  at least September 2020**.
+
+This is about 50% of time commitment that we would have made to the Varna 2020
+  meeting.
+If this cadence and duration proves to be too much, we will adjust by scaling
+  back and cancelling meetings.
+
+## Telecon Platform ## {#telecon-platform}
+
+Our [=telecon=] platform needs to be able to support the following:
+
+- Supports video chat.
+- Supports audio over internet or via phone line.
+- Works on Windows, Mac, Linux, and mobile devices.
+- Attendee hand raising.
+    - The hand queue should show the order in which hands were raised.
+    - The [=telecon=] organizer should to be able to lower raised hands.
+- Attendee polling.
+    - Multiple types of polls should be supported: at least 5-way and 3-way polls.
+    - The [=telecon=] organizer should be able to clear votes.
+- Attendee renaming by [=telecon=] organizer.
+- Meeting recording.
+
+<a href="https://zoom.us">Zoom</a>, the official ISO [=telecon=] platform,
+  supports most of these features, and the committee has field experience using
+  this platform to hold [=telecons=].
+So, that's what we'll use.
+
+## No Separate Library Evolution Incubator Telecons ## {#no-separate-lewgi-telecons}
+
+The primary reason that the Library Evolution Incubator group meets separately
+  and concurrently with the Library Evolution group is due to the time
+  constraints of our physical meetings.
+
+For remote meetings, we do not have the same kind of time constraints that force
+  concurrent sessions of the Library Evolution group and the Library Evolution
+  Incubator group.
+As such, there does not seem to be much value in holding separate [=telecons=].
+
+All [=telecon=] discussions will be considered joint exercises of the Library
+  Evolution group and the Library Evolution Incubator group.
+
+## Decision Making ## {#telecon-decision-making}
+
+We will make decisions on [=telecons=] via straw polls, just as we do at
+  face-to-face meetings.
+
+Any decisions made on [=telecons=] will be considered "Tentatively Ready".
+
+For forwarding of proposals to other subgroups, this means that the paper will
+  be forwarded on the ISO C++ GitHub for paper tracking, but marked with the
+  "Tentatively Ready" tag.
+At the start of the next face-to-face meeting, we will briefly go through the
+  list of "Tentatively Ready" proposals that were forwarded to see if anyone
+  has new information or new perspectives that warrant revisiting those proposals.
+
+For all "Tentatively Ready" decisions made on [=telecons=], after the [=telecon=]
+  an mail will be sent to the relevant email lists with a summary of the
+  decisions, to give anyone who did not attend the [=telecon=] a chance to voice
+  their opinion.
+
+## Telecon Quorum ## {#telecon-quorum}
+
+We expect to have lower attendance on [=telecons=] than we would have at
+  face-to-face meetings.
+
+We do not have readily accessible data for attendance in the Library Evolution
+  group, but it is typically between 30 and 50 people.
+[[#appendix-historical-lewgi-f2f-attendance|Average attendance in the Library Evolution Incubator is 17.12 people]].
+
+Quorum is not merely a function of the quantity of people in the room.
+For quorum, we need to have both the right people and the right quantity of
+  them.
+
+That said, if we have fewer than 20 participants on any given Library Evolution
+  [=telecon=], it will be difficult for us to make meaningful decisions.
+In such a circumstance, we would avoid [=decision making=] and instead use our
+  time for [=review=] and [=information distribution=].
+
+## Telecon Chairing ## {#telecon-chairing}
+
+Running weekly telecons is not a small amount of effort.
+Fortunately, we have five chairs available, so we can distribute the burden
+  amongst ourselves.
+
+## Telecons Aren't Mandatory ## {#telecons-arent-mandatory}
+
+If you are a stakeholder on a particular proposal or subject, you are strongly
+  encouraged to attend telecons on that proposal or subject.
+However, telecon attendance is encouraged but not mandatory.
+
+**Missing a telecon does not prevent your voice from being heard.**
+If a decision is made on a telecon and you feel you have a new perspective or
+  new information that was not considered, you should make the committee aware
+  via [=email list discussion=].
+As with face-to-face meetings, we can always revisit decisions if we have new
+  information.
+
+# Email List Discussions # {#email-list-discussions}
+
+TODO
+
+# High Priority Work # {#high-priority-work}
+
+## Executors ## {#executors}
+
+TODO
+
+## Modularizing the Standard Library ## {#modularizing-the-standard-library}
+
+TODO
+
+# Schedule # {#schedule}
+
+TODO
+
+# Action Items # {#action-items}
+
+TODO
+
+# Appendix # {#appendix}
+
+## Typical Library Evolution Face-to-Face Schedule ## {#appendix-typical-lewg-f2f-schedule}
+
+<table>
+<th>
+<td>Day
+<td>Hours
+<tr>
+<td>Monday
+<td>5.25
+<tr>
+<td>Tuesday
+<td>5.25
+<tr>
+<td>Wednesday
+<td>5.25
+<tr>
+<td>Thursday
+<td>5.25
+<tr>
+<td>Friday
+<td>5.25
+<tr>
+<td>**Total**
+<td>**33.25**
+</table>
+
+## Historical Library Evolution Incubator Face-to-Face Schedule ## {#appendix-historical-lewgi-f2f-schedule}
+
+<table>
+<th>
+<td>Meeting
+<td>Hours
+<tr>
+<td>2018-11 San Diego
+<td>22.75
+<tr>
+<td>2019-02 Kona
+<td>26.25
+<tr>
+<td>2019-07 Cologne
+<td>24.5
+<tr>
+<td>2019-11 Belfast
+<td>30
+<tr>
+<td>2020-02 Prague
+<td>20.5
+<tr>
+<td>**Average**
+<td>**24.8**
+</table>
+
+## Historical Library Evolution Incubator Face-to-Face Attendance ## {#appendix-historical-lewgi-f2f-attendance}
+
+<table>
+<th>
+<td>Meeting
+<td># of Polls
+<td>Average Attendance
+<td>Minimum Attendance
+<td>Maximum Attendance
+<tr>
+<td>2018-11 San Diego
+<td>62
+<td>14.6
+<td>11
+<td>19
+<tr>
+<td>2019-02 Kona
+<td>75
+<td>14
+<td>11
+<td>22
+<tr>
+<td>2019-07 Cologne
+<td>49
+<td>19.2
+<td>12
+<td>26
+<tr>
+<td>2019-11 Belfast
+<td>50
+<td>17.8
+<td>12
+<td>24
+<tr>
+<td>2020-02 Prague
+<td>46
+<td>20
+<td>12
+<td>25
+<tr>
+<td>**Average**
+<td>**56.4**
+<td>**17.12**
+<td>**11.6**
+<td>**23.2**
+</table>
