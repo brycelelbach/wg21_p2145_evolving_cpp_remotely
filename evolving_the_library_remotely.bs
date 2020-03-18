@@ -6,16 +6,16 @@ Distributed under the Boost Software License v1.0 (boost.org/LICENSE_1_0.txt)
 -->
 <pre class='metadata'>
 Title: Evolving the Library Remotely
-Shortname: P2145
+Shortname: D2145
 Revision: 0
 Status: D
 Group: WG21
 Audience: LEWG, SG18
-Editor: Bryce Adelstein Lelbach (Library Evolution Chair, Incoming), NVIDIA, brycelelbach@gmail.com
-Editor: Titus Winters (Library Evolution Chair, Outgoing), Google, titus@google.com
-Editor: Fabio Fracassi (Library Evolution Assistant Chair, Incoming), f.fracassi@gmx.net
-Editor: Billy Baker (Library Evolution Incubator Chair, Incoming), FlightSafety, Billy.Baker@flightsafety.com
-Editor: Nevin Liber (Library Evolution Incubator Assistant Chair, Incoming), Argonne National Laboratory, nliber@gmail.com
+Editor: Bryce Adelstein Lelbach - Incoming Library Evolution Chair, NVIDIA, brycelelbach@gmail.com
+Editor: Titus Winters - Outgoing Library Evolution Chair, Google, titus@google.com
+Editor: Fabio Fracassi - Incoming Library Evolution Assistant Chair, f.fracassi@gmx.net
+Editor: Billy Baker - Incoming Library Evolution Incubator Chair, FlightSafety, Billy.Baker@flightsafety.com
+Editor: Nevin Liber - Incoming Library Evolution Incubator Assistant Chair, Argonne National Laboratory, nliber@gmail.com
 URL: https://wg21.link/P2145R0
 !Source: <a href="https://github.com/brycelelbach/wg21_p2145_evolving_the_library_remotely/blob/master/evolving_the_library_remotely.bs">GitHub</a>
 Issue Tracking: GitHub https://github.com/brycelelbach/wg21_p2145_evolving_the_library_remotely/issues
