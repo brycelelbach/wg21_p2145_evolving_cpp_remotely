@@ -253,7 +253,7 @@ At the start of the next face-to-face meeting, we will briefly go through the
   has new information or new perspectives that warrant revisiting those proposals.
 
 For all "Tentatively Ready" decisions made on [=telecons=], after the [=telecon=]
-  an mail will be sent to the relevant email lists with a summary of the
+  a message will be sent to the relevant email lists with a summary of the
   decisions, to give anyone who did not attend the [=telecon=] a chance to voice
   their opinion.
 
@@ -263,14 +263,14 @@ We expect to have lower attendance on [=telecons=] than we would have at
   face-to-face meetings.
 
 We do not have readily accessible data for attendance in the Library Evolution
-  group, but it is typically between 30 and 50 people.
-[[#appendix-historical-lewgi-f2f-attendance|Average attendance in the Library Evolution Incubator is 17.12 people]].
+  group, but it is typically between 15 and 30 people.
+[[#appendix-historical-lewgi-f2f-attendance|Average attendance in the Library Evolution Incubator is 17 people]].
 
 Quorum is not merely a function of the quantity of people in the room.
 For quorum, we need to have both the right people and the right quantity of
   them.
 
-That said, if we have fewer than 20 participants on any given Library Evolution
+That said, if we have fewer than 12 participants on any given Library Evolution
   [=telecon=], it will be difficult for us to make meaningful decisions.
 In such a circumstance, we would avoid [=decision making=] and instead use our
   time for [=review=] and [=information distribution=].
