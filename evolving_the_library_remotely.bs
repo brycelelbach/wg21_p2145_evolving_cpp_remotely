@@ -107,6 +107,14 @@ Our plans for C++23 and beyond ([[P0592R4]]) have not changed, but the way that
 This document lays out plans for how we will conduct Library Evolution work
   remotely.
 
+# Field Experience # {#field experience}
+
+We are not in completely uncharted waters here.
+The ISO C++ Committee does have field experience working remotely.
+A lot of important inter-meeting discussion happens on email lists.
+The Tooling and Unicode study group have successfully and regularly met and
+  made decisions via telecons.
+  
 # Library Evolution Work Performed at Face-to-Face Meetings # {#work-at-f2f-meetings}
 
 At a typical ISO C++ Committee face-to-face meeting,
