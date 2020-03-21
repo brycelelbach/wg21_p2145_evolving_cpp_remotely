@@ -130,7 +130,7 @@ We can't replicate these effects in remote meetings.
 
 When in session at face-to-face meetings, we typically perform three activities:
 
-- <dfn><abbr>Information Distribution</abbr>, where knowledgable parties
+- <dfn><abbr>Information Distribution</abbr>, where knowledgeable parties
       educate the committee about a subject.</dfn>
 - <dfn><abbr>Review</abbr>, where the committee identifies open questions
       and places where we lack clear consensus.</dfn>
