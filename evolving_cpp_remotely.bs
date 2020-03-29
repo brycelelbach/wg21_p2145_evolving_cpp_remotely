@@ -4,15 +4,18 @@ Shortname: D2145
 Revision: 0
 Status: D
 Group: WG21
-Audience: EWG, LEWG, SG17, SG18
-Editor: Bryce Adelstein Lelbach — Incoming Library Evolution Chair, NVIDIA, brycelelbach@gmail.com
-Editor: Titus Winters — Outgoing Library Evolution Chair, Google, titus@google.com
-Editor: Fabio Fracassi — Incoming Library Evolution Assistant Chair, f.fracassi@gmx.net
+Audience: WG21
+Editor: Bryce Adelstein Lelbach — Library Evolution Chair, NVIDIA, brycelelbach@gmail.com
+Editor: Titus Winters — Library Evolution Chair Emeritus, Google, titus@google.com
+Editor: Fabio Fracassi — Incoming Library Evolution Vice Chair, f.fracassi@gmx.net
 Editor: Billy Baker — Incoming Library Evolution Incubator Chair, FlightSafety, Billy.Baker@flightsafety.com
-Editor: Nevin Liber — Incoming Library Evolution Incubator Assistant Chair, Argonne National Laboratory, nliber@gmail.com
+Editor: Nevin Liber — Incoming Library Evolution Incubator Vice Chair, Argonne National Laboratory, nliber@gmail.com
 Editor: JF Bastien — Language Evolution Chair, Apple, jfbastien@apple.com
 URL: https://wg21.link/P2145R0
-!Source: <a href="https://github.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/blob/master/evolving_c++_remotely.bs">GitHub</a>
+Editor: David Stone — Language Evolution Vice Chair, Uber, david.stone@uber.com
+Editor: Botond Ballo — Language Evolution Incubator Chair, Mozilla, botond_ballo@yahoo.ca
+Editor: Erich Keane — Language Evolution Incubator Vice Chair, Intel, erich.keane@intel.com
+!Source: <a href="https://github.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/blob/master/evolving_cpp_remotely.bs">GitHub</a>
 Issue Tracking: GitHub https://github.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/issues
 Metadata Order: Author, This Version, Source, Issue Tracking, Project, Audience
 Markup Shorthands: markdown yes
@@ -100,12 +103,13 @@ However, the ISO C++ Committee can and will do our best to adapt to these
 
 Our plans for C++23 and beyond ([[P0592R4]]) have not changed, but the way that
   we execute on those plans will have to change.
-This document lays out plans for how we will conduct Language and Library Evolution work
-  remotely.
+This document lays out plans for how we will conduct Library and Language
+  Evolution work remotely.
 
-This proposal covers until the schedule New-York meeting in November 2020
-[[N4848]]. We will revisit our plans should the New York meeting also be
-delayed.
+This proposal covers plans for remote operations until the schedule New York
+  meeting in November 2020 [[N4848]].
+We will revisit our plans should the New York meeting also be
+  delayed.
 
 # Calendar # {#calendar}
 
@@ -113,7 +117,7 @@ delayed.
 .hol { text-decoration: line-through; color: grey; }
 .la1 { font-weight: bolder; color: red; }
 .la2 { font-weight: bolder; color: orange; }
-.li1 { font-weight: bolder; color: blue; }
+.li1 { font-weight: bolder; color: #75b900; }
 .li2 { font-weight: bolder; color: teal; }
 .calendars { display: flex; flex-wrap: wrap; justify-content: center; }
 .calendar { margin: 1em; font-size: 125%; }
@@ -126,10 +130,10 @@ The telecon calendar is as follows:
 
 <ul>
   <li><span class=hol>Holidays:</span> no telecon, schedule for adjacent day
-  <li><span class=li1>Library Evolution meetings:  8:00 PST on Mondays
-  <li><span class=li2>Library Evolution meetings: 10:00 PST on Tuesdays
-  <li><span class=la1>Language Evolution meetings:  8:00 PST on Wednesday
-  <li><span class=la2>Language Evolution meetings: 10:00 PST on Thursday
+  <li><span class=li1>Library Evolution meetings:  8:00 Pacific on Mondays
+  <li><span class=li2>Library Evolution meetings: 10:00 Pacific on Tuesdays
+  <li><span class=la1>Language Evolution meetings:  8:00 Pacific on Wednesday
+  <li><span class=la2>Language Evolution meetings: 10:00 Pacific on Thursday
 </ul>
 
 <div class=calendars>
@@ -283,27 +287,20 @@ The telecon calendar is as follows:
 
 # Long Version # {#long}
 
-## Evolution Work Performed at Face-to-Face Meetings ## {#work-at-f2f-meetings}
+## Amount of Work Performed at Face-to-Face Meetings ## {#amount-of-work-at-f2f-meetings}
 
 At a typical ISO C++ Committee face-to-face meeting,
-  [[#appendix-typical-lewg-f2f-schedule|the Library Evolution group meets for 33.25 hours]]
-  and
-  [[#appendix-historical-lewgi-f2f-schedule|the Library Evolution Incubator group meets for 24.8 hours]];
-  a total of ~58 hours per meeting.
-Each year, we spend ~174 hours at face-to-face meetings on Library Evolution.
-Language Evolution has similar numbers.
+  [[#appendix-typical-evolution-f2f-schedule|Library Evolution and Language Evolution meet for 33.25 hours each]].
+[[#appendix-historical-library-incubator-f2f-schedule|Library Incubator meets for 24.8 hours]].
+  Language Incubator has similar numbers.
+For both the Library and Language tracks, we spend a total of ~58 hours per
+  meeting and ~174 hours per year at face-to-face meetings on Evolution and
+  Incubation.
 
 A lot of voluntary and informal, but important, work also occurs during meals
   and at in the evening hours.
 
-The main benefits of a face-to-face meeting over remote meetings are:
-
-- The informal, spontaneous, and serendipitous interactions between committee
-      members in hallways, at meals, etc.
-- Sequestration, which limits distractions and increases focus.
-- Discussions happen consecutively, which keeps them "in cache".
-
-We can't replicate these effects in remote meetings.
+## Kinds of Work Performed at Face-to-Face Meetings ## {#kinds-of-work-at-f2f-meetings}
 
 When in session at face-to-face meetings, we typically perform three activities:
 
@@ -313,18 +310,6 @@ When in session at face-to-face meetings, we typically perform three activities:
       and places where we lack clear consensus.
 - <dfn>Decision Making</dfn>, where the committee answers open
       questions and we determine consensus on particular matters.
-
-## Field Experience With Remote ISO C++ Work ## {#field-experience}
-
-We are not in completely uncharted waters here.
-The ISO C++ Committee does have field experience working remotely.
-A lot of important inter-meeting discussion happens on email lists.
-The Tooling and Unicode study groups, among others, have successfully and
-  regularly met and made decisions via telecons.
-The ISO C++ Committee does have field experience working remotely.
-A lot of important inter-meeting discussion happens on email lists.
-The Tooling and Unicode study groups, among others, have successfully and
-  regularly met and made decisions via telecons.
 
 ## Mechanisms for Remote Collaboration ## {#mechanisms-for-remote-meetings}
 
@@ -360,7 +345,7 @@ It is important that participants read the proposals that will be discussed on
 ### Telecon Duration and Cadence ### {#telecon-duration-and-cadence}
 
 As mentioned earlier in [[#work-at-f2f-meetings]], we spend ~174
-  hours per year on Library Evolution at face-to-face meetings.
+  hours per year on Library and Language Evolution at face-to-face meetings.
 This is an average of ~3.3 hours per week (~4 months per committee meeting
   equivalent).
 
@@ -371,11 +356,11 @@ If some part of the [=information distribution=] and [=review=] that occurs at
   message platforms instead of [=telecons=], it should not be necessary for
   us to make up all of the time of face-to-face meetings via [=telecons=].
 
-There are tradeoffs in selecting a duration for individual telecons.
-Longer telecons can be harder to schedule and can strain the endurance of
+There are tradeoffs in selecting a duration for individual [=telecons=].
+Longer [=telecons=] can be harder to schedule and can strain the endurance of
   participants.
-Shorter telecons are easier to schedule and may draw greater attendance, but
-  disrupt the continuity of discussions.
+Shorter [=telecons=] are easier to schedule and may draw greater attendance,
+  but disrupt the continuity of discussions.
 
 Given the committee's global nature, it is difficult to find times that are
   convenient for all committee members.
@@ -384,8 +369,8 @@ Instead of always holding weekly meetings at a single time, we should either
   which alternate each week.
 This will give us additional scheduling flexibility.
 
-Given all of this, **we will meet ~1.5 hours per week, from April 2020 until
-  at least September 2020**.
+Given all of this, **Library and Language Evolution will meet ~1.5 hours per
+  week, from April 2020 until at least November 2020**.
 
 This is about 50% of time commitment that we would have made to the Varna 2020
   meeting.
@@ -413,15 +398,15 @@ Our [=telecon=] platform needs to be able to support the following:
   this platform to hold [=telecons=].
 So, that's what we'll use.
 
-### No Separate Evolution Incubator Telecons ### {#no-separate-i-telecons}
+### No Separate Incubator Telecons ### {#no-separate-incubator-telecons}
 
-The primary reason that the Language and Library Evolution Incubator group meets separately
-  and concurrently with the Language and Library Evolution group is due to the time
-  constraints of our physical meetings.
+The primary reason that the Library and Language Evolution Incubator group
+  meets separately and concurrently with the Library and Language Evolution
+group is due to the time constraints of our physical meetings.
 
 For remote meetings, we do not have the same kind of time constraints that force
-  concurrent sessions of the Evolution groups and the Evolution
-  Incubator groups.
+  concurrent sessions of the Evolution groups and the Evolution Incubator
+  groups.
 As such, there does not seem to be much value in holding separate [=telecons=].
 
 All [=telecon=] discussions will be considered joint exercises of the
@@ -451,24 +436,29 @@ For all "Tentatively Ready" decisions made on [=telecons=], after the [=telecon=
 We expect to have lower attendance on [=telecons=] than we would have at
   face-to-face meetings.
 
-We do not have readily accessible data for attendance in the Library Evolution
-  group, but it is typically between 15 and 30 people.
-[[#appendix-historical-lewgi-f2f-attendance|Average attendance in the Library Evolution Incubator is 17 people]].
+We do not have readily accessible data for attendance in Library Evolution
+  and Language Evolution.
+Typically, attendance in Library Evolution is between 15 and 30 people and
+  attendance in Language Evolution is between 30 and 50 people.
+[[#appendix-historical-library-incubator-f2f-attendance|Average attendance in Library Incubator is 17 people]].
+  Language Incubator has similar numbers.
 
 Quorum is not merely a function of the quantity of people in the room.
 For quorum, we need to have both the right people and the right quantity of
   them.
 
-That said, if we have fewer than 12 participants on any given Language or  Library Evolution
-  [=telecon=], it will be difficult for us to make meaningful decisions.
+That said, if we have fewer than 15 participants on any given Library or
+  Language Evolution [=telecon=], it will be difficult for us to make meaningful
+  decisions.
 In such a circumstance, we would avoid [=decision making=] and instead use our
   time for [=review=] and [=information distribution=].
 
 ### Telecon Chairing ### {#telecon-chairing}
 
 Running weekly telecons is not a small amount of effort.
-Fortunately, we have multiple chairs available, so we can distribute the burden
-  amongst ourselves.
+Fortunately, we have multiple chairs available for each track (Evolution chair,
+  Evolution vice chair, Incubator chair, and Incubator vice chair), so we can
+  distribute the burden amongst ourselves.
 
 ### Telecons Aren't Mandatory ### {#telecons-arent-mandatory}
 
@@ -589,11 +579,13 @@ This can help bring much needed closure to discussions.
 
 ## High Priority Work ## {#high-priority-work}
 
+### High Priority Library Work ### {#high-priority-library-work}
+
 [[P0592R4]] identifies four major priorities for C++23, all of which are library
   features.
 Here's our plan for each.
 
-### Networking ### {#networking}
+#### Networking #### {#networking}
 
 The Networking study group has been reactivated to drive standardization of
   networking.
@@ -620,7 +612,7 @@ Once all of these summaries have been produced and the Networking study group
   decides they are ready for Library Evolution, we will begin reviewing them
   in Library Evolution.
 
-### Executors ### {#executors}
+#### Executors #### {#executors}
 
 For executors, we have an existing, large proposal, [[P0443R13]] which is ready
   for Library Evolution review.
@@ -638,7 +630,6 @@ Given the nature of the executors proposal, the work of each group will be
 Each group will not be reviewing a specific section, but instead reviewing the
   proposal from a particular perspective with a specific design facet in mind.
 
-
 We have already started speaking with some of the executors authors about how
   we will structure this review.
 More details will be shared on the Library Evolution email list in the next few
@@ -649,7 +640,7 @@ Once all of the review groups have completed their work and prepared their
   the summer and work towards resolution of any open matters that need decisions
   and guidance.
 
-### Modularizing the Standard Library ### {#modularizing-the-standard-library}
+#### Modularizing the Standard Library #### {#modularizing-the-standard-library}
 
 Modularizing the standard library is a goal for C++23, but we have not yet
   decided on a concrete direction or scope for this work.
@@ -671,13 +662,15 @@ The first few big questions we have to address to help scope this work are:
 
 - What are our goals for standard library modularization?
 - Do we want to reorganize the standard library while modularizing it?
-- How granular should standard library modules be? What are the tradeoffs of fine-grained modules versus coarse-grained modules?
-- Do standard library modularization and freestanding reorganization need to be linked together?
+- How granular should standard library modules be? What are the tradeoffs of
+    fine-grained modules versus coarse-grained modules?
+- Do standard library modularization and freestanding reorganization need to be
+    linked together?
 
 We will hold [=telecons=] to reach consensus on these and other questions and
   define the scope of what we want to pursue.
 
-### Coroutine Library Support ### {#coroutine-library-support}
+#### Coroutine Library Support #### {#coroutine-library-support}
 
 Richer coroutine library support is a goal for C++23, but we have not yet
   decided on a concrete direction or scope for this work.
@@ -714,23 +707,27 @@ What features do we desire?
 
 We will discuss scoping of this work on an upcoming [=telecon=].
 
-[[P0592R4]] identifies three major priorities for C++ without specifying a ship vehicle, all of which are language
-  features.
+### High Priority Language Work ### {#high-priority-language-work}
+
+[[P0592R4]] identifies three major priorities for C++ without specifying a ship
+  vehicle, all of which are language features.
 Here's our plan for each.
 
-### Reflection ### {#reflection}
+#### Pattern Matching #### {#pattern-matching}
 
-We will let the Reflection SG pursue all work related to reflection. Only when
-the SG forwards to EWG shall we consider matters pertaining to reflection.
+Language Evolution will continue to review [[P1371R2]] as it gets updated.
 
-### Pattern Matching ### {#pattern-matching}
+#### Reflection #### {#reflection}
 
-We will continue to review [[P1371R2]] as it gets updated.
+We will let the Reflection study group pursue all work related to reflection.
+We will only start looking at matters pertaining to reflection in Language
+  Evolution after the Reflection study group has forwarded them to us.
 
-### Contracts ### {#contracts}
+#### Contracts #### {#contracts}
 
-We will let the Contracts SG pursue all work related to contracts. Only when the
-SG forwards to EWG shall we consider matters pertaining to contracts.
+We will let the Contracts study group pursue all work related to contracts.
+We will only start looking at matters pertaining to contracts in Language
+  Evolution after the Contracts study group has forwarded them to us.
 
 ## Deadlines ## {#deadlines}
 
@@ -748,7 +745,29 @@ In the absence of physical meetings, there are two types of deadlines we can use
   to drive work:
 
 - The monthly mailings.
-- Scheduled [=telecons=], which will be most effective if the schedule is known well in advance.
+- Scheduled [=telecons=], which will be most effective if the schedule is known
+    well in advance.
+
+## Field Experience With Remote Work ## {#field-experience}
+
+We are not in completely uncharted waters here.
+The ISO C++ Committee does have field experience working remotely.
+A lot of important inter-meeting discussion happens on email lists.
+The Tooling and Unicode study groups, among others, have successfully and
+  regularly met and made decisions via telecons.
+The ISO C++ Committee does have field experience working remotely.
+A lot of important inter-meeting discussion happens on email lists.
+The Tooling and Unicode study groups, among others, have successfully and
+  regularly met and made decisions via telecons.
+
+The main benefits of a face-to-face meeting over remote meetings are:
+
+- The informal, spontaneous, and serendipitous interactions between committee
+      members in hallways, at meals, etc.
+- Sequestration, which limits distractions and increases focus.
+- Discussions happen consecutively, which keeps them "in cache".
+
+We can't replicate these effects in remote meetings.
 
 ## Schedule ## {#schedule}
 
@@ -761,7 +780,7 @@ We will also provide a Google Calendar that people can subscribe to if they wish
 
 # Appendix # {#appendix}
 
-## Typical Library Evolution Face-to-Face Schedule ## {#appendix-typical-lewg-f2f-schedule}
+## Typical Library and Language Evolution Face-to-Face Schedule ## {#appendix-typical-evolution-f2f-schedule}
 
 <table>
 <thead>
@@ -791,7 +810,7 @@ We will also provide a Google Calendar that people can subscribe to if they wish
 </tbody>
 </table>
 
-## Historical Library Evolution Incubator Face-to-Face Schedule ## {#appendix-historical-lewgi-f2f-schedule}
+## Historical Library Incubator Face-to-Face Schedule ## {#appendix-historical-library-incubator-f2f-schedule}
 
 <table>
 <thead>
@@ -820,7 +839,7 @@ We will also provide a Google Calendar that people can subscribe to if they wish
 </tbody>
 </table>
 
-## Historical Library Evolution Incubator Face-to-Face Attendance ## {#appendix-historical-lewgi-f2f-attendance}
+## Historical Library Incubator Face-to-Face Attendance ## {#appendix-historical-library-incubator-f2f-attendance}
 
 <table>
 <thead>
