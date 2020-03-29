@@ -707,8 +707,10 @@ They are grouped by subject:
 
 - [[P1316R0]]: `std::when_all` for coroutines
 
-- [[P0286R0]]: A networking library extension to support co_await-based coroutines
-- [[P0055R1]]: On Interactions Between Coroutines and Networking Library (historical)
+- [[P0286R0]]: A networking library extension to support co_await-based
+      coroutines
+- [[P0055R1]]: On Interactions Between Coroutines and Networking Library
+      (historical)
 - [[P0162R0]]: A response to P0055
 
 Additionally, the desire for the following coroutine library features have
@@ -722,6 +724,7 @@ What are our goals for coroutine library support?
 What features do we desire?
 
 We will discuss scoping of this work on an upcoming [=telecon=].
+Ideally we need a paper proposing what the scope and goals should be.
 
 ## High Priority Language Work ## {#high-priority-language-work}
 
