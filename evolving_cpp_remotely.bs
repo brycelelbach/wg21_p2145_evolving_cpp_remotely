@@ -129,17 +129,17 @@ We will revisit our plans should the 2020-11 New York meeting also be
 The telecon calendar is as follows:
 
 <ul>
-  <li><span class=hol>Holidays:</span> no telecon, schedule for adjacent day
-  <li><span class=li1>Library Evolution meetings:  8:00 Pacific on Mondays
-  <li><span class=li2>Library Evolution meetings: 10:00 Pacific on Tuesdays
-  <li><span class=la1>Language Evolution meetings:  8:00 Pacific on Wednesday
-  <li><span class=la2>Language Evolution meetings: 10:00 Pacific on Thursday
+  <li><span class=hol>Holidays:</span> no telecon, schedule for adjacent day.
+  <li><span class=li1>Library Evolution meetings:  8:00 Pacific on Mondays.
+  <li><span class=li2>Library Evolution meetings: 10:00 Pacific on Tuesdays.
+  <li><span class=la1>Language Evolution meetings:  8:00 Pacific on Wednesday.
+  <li><span class=la2>Language Evolution meetings: 10:00 Pacific on Thursday.
 </ul>
 
 The topics for each [=telecon=] can be found here:
 
-- [Remote Library Evolution GitHub Project](https://github.com/cplusplus/papers/projects/21)
-- [Remote Language Evolution GitHub Project](https://github.com/cplusplus/papers/projects/23)
+- [Remote Library Evolution GitHub Project](https://github.com/cplusplus/papers/projects/21).
+- [Remote Language Evolution GitHub Project](https://github.com/cplusplus/papers/projects/23).
 
 <div class=calendars>
 
