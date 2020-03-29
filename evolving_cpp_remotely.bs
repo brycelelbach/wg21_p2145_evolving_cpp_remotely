@@ -277,7 +277,8 @@ We will also provide a Google Calendar that people can subscribe to if they wish
         - Library on Wednesday 8:00 Pacific / Thursday 10:00 Pacific.
     - We will use <a href="https://zoom.us">Zoom</a>, the official ISO
           [=telecon=] platform.
-- We will make [=decisions=] on these [=telecons=] using straw polls.
+- We will make [=Decision Making|decisions=] on these [=telecons=] using straw
+      polls.
     - Decisions made on [=telecons=] will be "Tentatively Ready", which means:
         - They are sent to the Library Evolution or Language Evolution email
               list for feedback.
@@ -286,8 +287,8 @@ We will also provide a Google Calendar that people can subscribe to if they wish
               meeting.
     - Missing a [=telecon=] does not prevent your voice from being heard.
 - Use [=email list discussions=] for [=review=] whenever possible to minimize
-    the amount of work that must be done on [=telecons=] or at future
-    face-to-face meetings.
+      the amount of work that must be done on [=telecons=] or at future
+      face-to-face meetings.
     - Chairs will start curated [=email list discussions=] of certain papers.
     - Try to summarize [=email list discussions=] that you start or participate
           in.
