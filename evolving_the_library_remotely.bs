@@ -101,21 +101,50 @@ During this uncertain time, our priority must be the safety and well-being of
 The postponement of the Varna meeting and the broader impacts of the novel
   coronavirus on society will be disruptive.
 However, the ISO C++ Committee can and will do our best to adapt to these
-  disruptions and carry on our work in these trying times.
+  disruptions and carry on our work remotely in these trying times.
+
 Our plans for C++23 and beyond ([[P0592R4]]) have not changed, but the way that
   we execute on those plans will have to change.
 This document lays out plans for how we will conduct Library Evolution work
   remotely.
 
-# Field Experience # {#field experience}
+# The Short Version # {#short}
 
-We are not in completely uncharted waters here.
-The ISO C++ Committee does have field experience working remotely.
-A lot of important inter-meeting discussion happens on email lists.
-The Tooling and Unicode study group have successfully and regularly met and
-  made decisions via telecons.
-  
-# Library Evolution Work Performed at Face-to-Face Meetings # {#work-at-f2f-meetings}
+- Library Evolution consists of three activities:
+  - [=Information Distribution=], where knowledgeable parties educate the committee about a subject.
+  - [=Review=], where the committee identifies open questions and places where we lack clear consensus.
+  - [=Decision Making=], where the committee answers open questions and we determine consensus on particular matters.
+- We have three main mechanisms for remote collaboration:
+  - [=Mailings=], which are regular distributions of committee
+        proposals.
+      Mailings are a good way to
+        [=Information Distribution|distribute information=].
+  - [=Email List Discussions=], which are good for
+        [=information distribution=] and [=review=].
+      They are not as effective for [=decision making=] as it can be hard to
+        determine consensus.
+      Email list discussions are asynchronous, so everyone can participate when
+        it is convenient for them.
+  - [=Telecons=], which are good for [=information distribution=],
+        [=review=], and [=decision making=].
+      However, they are synchronous by nature, which introduces scheduling
+        constraints that limits participation and makes them a scarce resource.
+- Library Evolution will have a weekly 1.5 hour [=telecon=], starting in April.
+  - We will have two time slots which alternate each week.
+  - We will use Zoom for [=telecons=].
+- We will make [=decisions=] on [=telecons=] via straw polls.
+  - Decisions made on [=telecons=] will be "Tentatively Ready", which means:
+    - They are sent to the Library Evolution email list for feedback.
+    - They are marked "Tentatively Ready" on GitHub.
+    - They are briefly reviewed for affirmation at the next face-to-face meeting.
+  - Missing a [=telecon=] does not prevent your voice from being heard.
+- Chairs will start curated [=email list discussions=] of certain papers.
+- Try to summarize [=email list discussions=] that you start or participate in.
+- There will be no separate Library Evolution Incubator meetings.
+
+# Long Version # {#long}
+
+## Library Evolution Work Performed at Face-to-Face Meetings ## {#work-at-f2f-meetings}
 
 At a typical ISO C++ Committee face-to-face meeting,
   [[#appendix-typical-lewg-f2f-schedule|the Library Evolution group meets for 33.25 hours]]
@@ -138,33 +167,45 @@ We can't replicate these effects in remote meetings.
 
 When in session at face-to-face meetings, we typically perform three activities:
 
-- <dfn><abbr>Information Distribution</abbr>, where knowledgeable parties
-      educate the committee about a subject.</dfn>
-- <dfn><abbr>Review</abbr>, where the committee identifies open questions
-      and places where we lack clear consensus.</dfn>
-- <dfn><abbr>Decision Making</abbr>, where the committee answers open
-      questions and we determine consensus on particular matters.</dfn>
+- <dfn>Information Distribution</dfn>, where knowledgeable parties
+      educate the committee about a subject.
+- <dfn>Review</dfn>, where the committee identifies open questions
+      and places where we lack clear consensus.
+- <dfn>Decision Making</dfn>, where the committee answers open
+      questions and we determine consensus on particular matters.
 
-# Mechanisms for Remote Collaboration # {#mechanisms-for-remote-meetings}
+## Field Experience With Remote ISO C++ Work ## {#field-experience}
+
+We are not in completely uncharted waters here.
+The ISO C++ Committee does have field experience working remotely.
+A lot of important inter-meeting discussion happens on email lists.
+The Tooling and Unicode study groups, among others, have successfully and
+  regularly met and made decisions via telecons.
+The ISO C++ Committee does have field experience working remotely.
+A lot of important inter-meeting discussion happens on email lists.
+The Tooling and Unicode study groups, among others, have successfully and
+  regularly met and made decisions via telecons.
+
+## Mechanisms for Remote Collaboration ## {#mechanisms-for-remote-meetings}
 
 We have three primary mechanisms for remote collaboration:
 
-- <dfn><abbr>Mailings</abbr>, which are regular distributions of committee
+- <dfn>Mailings</dfn>, which are regular distributions of committee
       proposals.
     Mailings are a good way to
-      [=Information Distribution|distribute information=].</dfn>
-- <dfn><abbr>Email List Discussions</abbr>, which are good for
+      [=Information Distribution|distribute information=].
+- <dfn>Email List Discussions</dfn>, which are good for
       [=information distribution=] and [=review=].
     They are not as effective for [=decision making=] as it can be hard to
       determine consensus.
     Email list discussions are asynchronous, so everyone can participate when
-      it is convenient for them.</dfn>
-- <dfn><abbr>Telecons</abbr>, which are good for [=information distribution=],
+      it is convenient for them.
+- <dfn>Telecons</dfn>, which are good for [=information distribution=],
       [=review=], and [=decision making=].
     However, they are synchronous by nature, which introduces scheduling
-      constraints that limits participation and makes them a scarce resource.</dfn>
+      constraints that limits participation and makes them a scarce resource.
 
-# Telecons # {#telecons}
+## Telecons ## {#telecons}
 
 Because [=telecons=] are the only good option for [=decision making=] and they
   are a scarce resource, we should try to use them for [=decision making=] as
@@ -176,7 +217,7 @@ It is important that participants read the proposals that will be discussed on
   a [=telecon=] before the [=telecon=], and utilize [=email list discussions=]
   whenever possible.
 
-## Duration and Cadence of Telecons ## {#telecon-duration-and-cadence}
+### Telecon Duration and Cadence ### {#telecon-duration-and-cadence}
 
 As mentioned earlier in [[#work-at-f2f-meetings]], we spend ~174
   hours per year on Library Evolution at face-to-face meetings.
@@ -199,7 +240,7 @@ Shorter telecons are easier to schedule and may draw greater attendance, but
 Given the committee's global nature, it is difficult to find times that are
   convenient for all committee members.
 Instead of always holding weekly meetings at a single time, we should either
-  meet multiple times per week or meet once per week but have two time-slots
+  meet multiple times per week or meet once per week but have two time slots
   which alternate each week.
 This will give us additional scheduling flexibility.
 
@@ -211,7 +252,7 @@ This is about 50% of time commitment that we would have made to the Varna 2020
 If this cadence and duration proves to be too much, we will adjust by scaling
   back and cancelling meetings.
 
-## Telecon Platform ## {#telecon-platform}
+### Telecon Platform ### {#telecon-platform}
 
 Our [=telecon=] platform needs to be able to support the following:
 
@@ -232,7 +273,7 @@ Our [=telecon=] platform needs to be able to support the following:
   this platform to hold [=telecons=].
 So, that's what we'll use.
 
-## No Separate Library Evolution Incubator Telecons ## {#no-separate-lewgi-telecons}
+### No Separate Library Evolution Incubator Telecons ### {#no-separate-lewgi-telecons}
 
 The primary reason that the Library Evolution Incubator group meets separately
   and concurrently with the Library Evolution group is due to the time
@@ -246,7 +287,7 @@ As such, there does not seem to be much value in holding separate [=telecons=].
 All [=telecon=] discussions will be considered joint exercises of the Library
   Evolution group and the Library Evolution Incubator group.
 
-## Decision Making ## {#telecon-decision-making}
+### Telecon Decision Making ### {#telecon-decision-making}
 
 We will make decisions on [=telecons=] via straw polls, just as we do at
   face-to-face meetings.
@@ -265,7 +306,7 @@ For all "Tentatively Ready" decisions made on [=telecons=], after the [=telecon=
   decisions, to give anyone who did not attend the [=telecon=] a chance to voice
   their opinion.
 
-## Telecon Quorum ## {#telecon-quorum}
+### Telecon Quorum ### {#telecon-quorum}
 
 We expect to have lower attendance on [=telecons=] than we would have at
   face-to-face meetings.
@@ -283,46 +324,285 @@ That said, if we have fewer than 12 participants on any given Library Evolution
 In such a circumstance, we would avoid [=decision making=] and instead use our
   time for [=review=] and [=information distribution=].
 
-## Telecon Chairing ## {#telecon-chairing}
+### Telecon Chairing ### {#telecon-chairing}
 
 Running weekly telecons is not a small amount of effort.
 Fortunately, we have five chairs available, so we can distribute the burden
   amongst ourselves.
 
-## Telecons Aren't Mandatory ## {#telecons-arent-mandatory}
+### Telecons Aren't Mandatory ### {#telecons-arent-mandatory}
 
 If you are a stakeholder on a particular proposal or subject, you are strongly
-  encouraged to attend telecons on that proposal or subject.
-However, telecon attendance is encouraged but not mandatory.
+  encouraged to attend [=telecons=] on that proposal or subject.
+However, [=telecon=] attendance is encouraged but not mandatory.
 
-**Missing a telecon does not prevent your voice from being heard.**
-If a decision is made on a telecon and you feel you have a new perspective or
+<b>Missing a [=telecon=] does not prevent your voice from being heard.</b>
+If a decision is made on a [=telecon=] and you feel you have a new perspective or
   new information that was not considered, you should make the committee aware
   via [=email list discussion=].
 As with face-to-face meetings, we can always revisit decisions if we have new
   information.
 
-# Email List Discussions # {#email-list-discussions}
+## Email List Discussions ## {#email-list-discussions}
 
-TODO
+We have always made use of [=email list discussions=] for inter-meeting work,
+  but they are more important than ever now, and we should strive to do more work
+  via email.
 
-# High Priority Work # {#high-priority-work}
+To help drive [=email list discussions=] and minimize the need for [=telecons=],
+  chairs will start curated discussions of papers on a regular basis.
+This is something Library Evolution has done in the past to help address
+  backlogs.
 
-## Executors ## {#executors}
+### What Email List Discussions Are Good For ### {#what-email-is-good-for}
 
-TODO
+As discussed earlier, email list discussions are an excellent medium for us to
+  [=review=] proposals and [=Information Distribution|distribute information=].
+They are asynchronous, which means people can participate in
+  [=email list discussions=] when it is convenient for them to do so.
 
-## Modularizing the Standard Library ## {#modularizing-the-standard-library}
+[=Review=] over email likely works best when the discussion is very targeted.
+If you want to start an [=email list discussion=] of a proposal, it's probably
+  best to begin with a focused set of questions that you are seeking answers for.
 
-TODO
+Here are some examples of questions that are probably well suited to an
+  [=email list discussion=]:
 
-# Schedule # {#schedule}
+> I was writing Proposal X and ran into Specific Problem Y. Can anyone suggest
+> some solutions?
 
-TODO
+> I was writing Proposal X and I was wondering how Specific Thing Y came to be
+> in the standard. Does anyone know?
 
-# Action Items # {#action-items}
+> I noticed Perceived Problem X in the standard, and I was thinking about
+> writing a proposal to fix it in Specific Way Y. What do y'all think about my
+> solution?
 
-TODO
+> I was considering proposing Feature X. Do y'all think this is worth
+> standardizing?
+
+> I was reading Proposal X and I noticed some downsides to Approach Y in
+> the proposal. I spoke with the author and he mentioned that we have to select
+> between Approach Y (which has Specific Downsides A) and Approach Z (which has
+> Specific Downsides B). The author and I wanted to know what the committee
+> thought about these tradeoffs.
+
+> Decision X was made on Telecon A; I'm not sure I understand the rationale,
+> can someone explain?
+
+> Decision X was made on Telecon A; was Specific Thing Y considered during the
+> discussion?
+
+> Attached is an update of Proposal X, with the following changes based on
+> discussion from Telecon A: List of Changes B. I'd like to call particular
+> attention to Part Y and Open Question Z - please let me know if you have any
+> thoughts or new information.
+
+### What Email List Discussions Aren't Good For ### {#what-email-isnt-good-for}
+
+However, [=email list discussions=] have downsides.
+The signal-to-noise ratio can be quite high and it can be difficult to identify
+  the consensus of an [=email list discussion=] and leave with clear outcomes.
+
+Additionally, sometimes [=email list discussions=] are not effective due to lack
+  of participation.
+This can happen when the discussion doesn't have a clear scope or goal.
+
+You shouldn't necessarily expect someone else to guide the discussion for you;
+  chairs will help to do so whenever possible, but we don't always have the
+  bandwidth for that.
+If you want to start an effective [=email list discussion=], you should take
+  responsibility for scoping and guiding it.
+
+Here are some anti-patterns for email list discussions.
+
+> Let's discuss Proposal X. What do you think about it?
+
+Alternative: If you want to discuss the proposal, you've read it and probably
+  have specific things in mind that you'd like to discuss.
+So, write a concise, thoughtful email summarizing the specific matters or
+  questions that you think ought to be discussed.
+
+> [Very, very long wall of text on a subject.]
+
+Alternative: Consider writing a paper.
+
+> Please don't do Approach A and Design Choice B in Proposal X.
+
+Alternative: Explain yourself!
+Make sure to describe your thought process and rationale, so that others
+  understand your thinking.
+Instead of saying "don't do A and B", suggest alternatives that the authors
+  might explore.
+
+### Summarize Email List Discussions ### {#summarize-email-list-discussion}
+
+Because [=email list discussions=] have a high signal-to-noise ratio and can be
+  difficult to follow, it's often hard to identify the outcomes of said
+  discussions.
+
+It is invaluable for someone to step in at or around the end of a discussion and
+  write up a short email summarizing their understanding of everyone's position
+  and any outcomes.
+You can then send this summary and ask if everyone agrees with it.
+This can help bring much needed closure to discussions.
+
+## High Priority Work ## {#high-priority-work}
+
+[[P0592R4]] identifies four major priorities for C++23, all of which are library
+  features.
+Here's our plan for each.
+
+### Networking ### {#networking}
+
+The Networking study group has been reactivated to drive standardization of
+  networking.
+This group will set the direction for work on networking; once they have
+  consensus on a direction, they will bring that direction to Library Evolution.
+
+We have an existing, large proposal for networking: the Networking Technical
+  Specification ([[N4734]]).
+
+In Fall 2019, we conducted an inter-meeting review of the Networking TS.
+We created a number of review groups, each of which was tasked with looking at
+  a particular aspect of the Networking TS, resolving whatever issues they
+  could, and identifying open questions that required broader review.
+Each group was asked to summarize its findings.
+
+Approximately half of these groups presented their findings at the Prague
+  2020-02 meeting of the Networking study group.
+The Networking study group was able to reach consensus on some matters, and
+  identified others that will eventually need review in Library Evolution.
+Each of these groups has been asked to prepare a paper containing their summary,
+  to presented to Networking study group and Library Evolution.
+
+Once all of these summaries have been produced and the Networking study group
+  decides they are ready for Library Evolution, we will begin reviewing them
+  in Library Evolution.
+
+### Executors ### {#executors}
+
+For executors, we have an existing, large proposal, [[P0443R13]] which is ready
+  for Library Evolution review.
+
+Given the scope of this proposal, we believe the best route to reviewing it is
+  to form a number of review groups and ask each group to review a particular
+  aspect of the proposal, resolve whatever issues they can, and identify open
+  questions that require broader review.
+Each group will then prepare a paper summarizing their findings.
+Each group will consist of a number of executors authors and a number of Library
+  Evolution regulars who are not involved in the executors proposal.
+
+Given the nature of the executors proposal, the work of each group will be
+  overlapping.
+Each group will not be reviewing a specific section, but instead reviewing the
+  proposal from a particular perspective with a specific design facet in mind.
+
+
+We have already started speaking with some of the executors authors about how
+  we will structure this review.
+More details will be shared on the Library Evolution email list in the next few
+  weeks.
+
+Once all of the review groups have completed their work and prepared their
+  summary papers, we will discuss the results in a series of [=telecons=] over
+  the summer and work towards resolution of any open matters that need decisions
+  and guidance.
+
+### Modularizing the Standard Library ### {#modularizing-the-standard-library}
+
+Modularizing the standard library is a goal for C++23, but we have not yet
+  decided on a concrete direction or scope for this work.
+
+We are aware of the following papers on this topic:
+
+- [[P0581R1]]: Standard Library Modules
+- [[P1212R0]]: Modules and Freestanding
+- [[P1453R0]]: Modularizing the Standard Library is a Reorganization Opportunity
+- [[P1502R1]]: Standard Library Header Units for C++20 (historical)
+
+The following papers related to freestanding are also applicable:
+
+- [[P1105R1]]: Leaving No Room for a Lower-Level Language: A C++ Subset
+- [[P0829R4]]: Freestanding Proposal
+- [[P1376R0]]: Summary of Freestanding Evening Session Discussions
+
+The first few big questions we have to address to help scope this work are:
+
+- What are our goals for standard library modularization?
+- Do we want to reorganize the standard library while modularizing it?
+- How granular should standard library modules be? What are the tradeoffs of
+  fine-grained modules versus coarse-grained modules?
+- Do standard library modularization and freestanding reorganization need to
+  be linked together?
+
+We will hold [=telecons=] to reach consensus on these and other questions and
+  define the scope of what we want to pursue.
+
+### Coroutine Library Support ### {#coroutine-library-support}
+
+Richer coroutine library support is a goal for C++23, but we have not yet
+  decided on a concrete direction or scope for this work.
+
+We are aware of the following papers on this topic, some of which are quite
+  dated.
+They are grouped by subject:
+
+- [[P0975R0]]: Impact of coroutines on current and upcoming library facilities
+- [[P1341R0]]: Unifying Asynchronous APIs in the Standard Library
+
+- [[P1288R0]]: Coroutine concepts and metafunctions
+
+- [[P1056R1]]: `std::lazy<T>`
+- [[P1681R0]]: Revisiting the allocator model for `std::lazy<T>`/et al
+
+- [[P1171R0]]: `std::sync_wait`
+
+- [[P1316R0]]: `std::when_all` for coroutines
+
+- [[P0286R0]]: A networking library extension to support co_await-based coroutines
+- [[P0055R1]]: On Interactions Between Coroutines and Networking Library (historical)
+- [[P0162R0]]: A response to P0055
+
+Additionally, the desire for the following coroutine library features have
+  been expressed multiple times.
+However, we lack a proposal for these features:
+
+- `std::generator<T>`
+
+We need to identify what exactly we want here.
+What are our goals for coroutine library support?
+What features do we desire?
+
+We will discuss scoping of this work on an upcoming [=telecon=].
+
+## Deadlines ## {#deadlines}
+
+One of the biggest impacts of loosing the face-to-face 2020 summer meeting is
+  the loss of a major deadline.
+This is compounded by the transition to monthly mailing deadlines.
+It is now a lot easier for a paper author to "miss" a deadline; you can always
+  publish it next month and have it discussed on a [=telecon=].
+
+We must be careful to avoid allowing this flexibility to lead to procrastination.
+Hard deadlines, even arbitrary ones, fight mission creep and ultimately produce
+  deliverables.
+
+In the absence of physical meetings, there are two types of deadlines we can use
+  to drive work:
+
+- The monthly mailings.
+- Scheduled [=telecons=], which will be most effective if the schedule is known
+  well in advance.
+
+## Schedule ## {#schedule}
+
+We will maintain a schedule of upcoming [=telecon=] topics that looks about eight
+  weeks into the future.
+
+This schedule will be maintained on a [GitHub project](https://github.com/cplusplus/papers/projects/21)
+  and also on a new remote meeting wiki that is in the process of being created.
+We will also provide a Google Calendar that people can subscribe to if they wish.
 
 # Appendix # {#appendix}
 
