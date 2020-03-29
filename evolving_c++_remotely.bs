@@ -209,7 +209,7 @@ We have three primary mechanisms for remote collaboration:
     However, they are synchronous by nature, which introduces scheduling
       constraints that limits participation and makes them a scarce resource.
 
-## Telecons ## {#telecons}
+## Telecons ## {#telecon}
 
 Because [=telecons=] are the only good option for [=decision making=] and they
   are a scarce resource, we should try to use them for [=decision making=] as
@@ -232,7 +232,7 @@ This is an average of ~3.3 hours per week (~4 months per committee meeting
   given that other parts of the committee will also be meeting remotely.
 If some part of the [=information distribution=] and [=review=] that occurs at
   face-to-face committee meetings can happen via [=email list discussions=]
-  [=message platforms=] instead of [=telecons=], it should not be necessary for
+  message platforms instead of [=telecons=], it should not be necessary for
   us to make up all of the time of face-to-face meetings via [=telecons=].
 
 There are tradeoffs in selecting a duration for individual telecons.
@@ -347,7 +347,7 @@ If a decision is made on a [=telecon=] and you feel you have a new perspective o
 As with face-to-face meetings, we can always revisit decisions if we have new
   information.
 
-## Email List Discussions ## {#email-list-discussions}
+## Email List Discussions ## {#email-discussions}
 
 We have always made use of [=email list discussions=] for inter-meeting work,
   but they are more important than ever now, and we should strive to do more work
@@ -535,10 +535,8 @@ The first few big questions we have to address to help scope this work are:
 
 - What are our goals for standard library modularization?
 - Do we want to reorganize the standard library while modularizing it?
-- How granular should standard library modules be? What are the tradeoffs of
-  fine-grained modules versus coarse-grained modules?
-- Do standard library modularization and freestanding reorganization need to
-  be linked together?
+- How granular should standard library modules be? What are the tradeoffs of fine-grained modules versus coarse-grained modules?
+- Do standard library modularization and freestanding reorganization need to be linked together?
 
 We will hold [=telecons=] to reach consensus on these and other questions and
   define the scope of what we want to pursue.
@@ -596,8 +594,7 @@ In the absence of physical meetings, there are two types of deadlines we can use
   to drive work:
 
 - The monthly mailings.
-- Scheduled [=telecons=], which will be most effective if the schedule is known
-  well in advance.
+- Scheduled [=telecons=], which will be most effective if the schedule is known well in advance.
 
 ## Schedule ## {#schedule}
 
