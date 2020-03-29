@@ -1,23 +1,18 @@
-<!--
-Copyright (c) 2018-2019 NVIDIA Corporation
-Author: Bryce Adelstein Lelbach <brycelelbach@gmail.com>
-
-Distributed under the Boost Software License v1.0 (boost.org/LICENSE_1_0.txt)
--->
 <pre class='metadata'>
-Title: Evolving the Library Remotely
+Title: Evolving C++ Remotely
 Shortname: D2145
 Revision: 0
 Status: D
 Group: WG21
-Audience: LEWG, SG18
-Editor: Bryce Adelstein Lelbach - Incoming Library Evolution Chair, NVIDIA, brycelelbach@gmail.com
-Editor: Titus Winters - Outgoing Library Evolution Chair, Google, titus@google.com
-Editor: Fabio Fracassi - Incoming Library Evolution Assistant Chair, f.fracassi@gmx.net
-Editor: Billy Baker - Incoming Library Evolution Incubator Chair, FlightSafety, Billy.Baker@flightsafety.com
-Editor: Nevin Liber - Incoming Library Evolution Incubator Assistant Chair, Argonne National Laboratory, nliber@gmail.com
+Audience: EWG, LEWG, SG17, SG18
+Editor: Bryce Adelstein Lelbach — Incoming Library Evolution Chair, NVIDIA, brycelelbach@gmail.com
+Editor: Titus Winters — Outgoing Library Evolution Chair, Google, titus@google.com
+Editor: Fabio Fracassi — Incoming Library Evolution Assistant Chair, f.fracassi@gmx.net
+Editor: Billy Baker — Incoming Library Evolution Incubator Chair, FlightSafety, Billy.Baker@flightsafety.com
+Editor: Nevin Liber — Incoming Library Evolution Incubator Assistant Chair, Argonne National Laboratory, nliber@gmail.com
+Editor: JF Bastien — Language Evolution Chair, Apple, jfbastien@apple.com
 URL: https://wg21.link/P2145R0
-!Source: <a href="https://github.com/brycelelbach/wg21_p2145_evolving_the_library_remotely/blob/master/evolving_the_library_remotely.bs">GitHub</a>
+!Source: <a href="https://github.com/brycelelbach/wg21_p2145_evolving_the_library_remotely/blob/master/evolving_c++_remotely.bs">GitHub</a>
 Issue Tracking: GitHub https://github.com/brycelelbach/wg21_p2145_evolving_the_library_remotely/issues
 Metadata Order: Author, This Version, Source, Issue Tracking, Project, Audience
 Markup Shorthands: markdown yes
@@ -105,46 +100,68 @@ However, the ISO C++ Committee can and will do our best to adapt to these
 
 Our plans for C++23 and beyond ([[P0592R4]]) have not changed, but the way that
   we execute on those plans will have to change.
-This document lays out plans for how we will conduct Library Evolution work
+This document lays out plans for how we will conduct Language and Library Evolution work
   remotely.
+
+This proposal covers until the schedule New-York meeting in November 2020
+[[N4848]]. We will revisit our plans should the New York meeting also be
+delayed.
+
+# Calendar # {#calendar}
+
+Issue: JF to add a calendar here.
 
 # The Short Version # {#short}
 
-- Library Evolution consists of three activities:
-  - [=Information Distribution=], where knowledgeable parties educate the committee about a subject.
-  - [=Review=], where the committee identifies open questions and places where we lack clear consensus.
-  - [=Decision Making=], where the committee answers open questions and we determine consensus on particular matters.
+- Language and Library Evolution consist of three activities:
+
+    * [=Information Distribution=], where knowledgeable parties educate the committee about a subject.
+    * [=Review=], where the committee identifies open questions and places where we lack clear consensus.
+    * [=Decision Making=], where the committee answers open questions and we determine consensus on particular matters.
+
 - We have three main mechanisms for remote collaboration:
-  - [=Mailings=], which are regular distributions of committee
-        proposals.
-      Mailings are a good way to
-        [=Information Distribution|distribute information=].
-  - [=Email List Discussions=], which are good for
-        [=information distribution=] and [=review=].
-      They are not as effective for [=decision making=] as it can be hard to
-        determine consensus.
-      Email list discussions are asynchronous, so everyone can participate when
-        it is convenient for them.
-  - [=Telecons=], which are good for [=information distribution=],
-        [=review=], and [=decision making=].
-      However, they are synchronous by nature, which introduces scheduling
-        constraints that limits participation and makes them a scarce resource.
-- Library Evolution will have a weekly 1.5 hour [=telecon=], starting in April.
-  - We will have two time slots which alternate each week.
-  - We will use Zoom for [=telecons=].
+
+    * [=Mailings=], which are regular distributions of committee
+          proposals.
+        Mailings are a good way to
+          [=Information Distribution|distribute information=].
+    * [=Email List Discussions=], which are good for
+          [=information distribution=] and [=review=].
+        They are not as effective for [=decision making=] as it can be hard to
+          determine consensus.
+        Email list discussions are asynchronous, so everyone can participate when
+          it is convenient for them.
+    * [=Telecons=], which are good for [=information distribution=],
+          [=review=], and [=decision making=].
+        However, they are synchronous by nature, which introduces scheduling
+          constraints that limits participation and makes them a scarce resource.
+
+- Language and Library Evolution will each have a weekly 1.5 hour [=telecon=], starting in April.
+
+    * Each will have two time slots which alternate each week:
+
+        + Language on Monday 8:00 PST / Tuesday 10:00 PST
+        + Library on Wednesday 8:00 PST / Thursday 10:00 PST
+
+    * We will use Zoom for [=telecons=].
+
 - We will pursue [=decision making=] on [=telecons=] via straw polls.
-  - Decisions made on [=telecons=] will be "Tentatively Ready", which means:
-    - They are sent to the Library Evolution email list for feedback.
-    - They are marked "Tentatively Ready" on GitHub.
-    - They are briefly reviewed for affirmation at the next face-to-face meeting.
-  - Missing a [=telecon=] does not prevent your voice from being heard.
+
+    * Decisions made on [=telecons=] will be "Tentatively Ready", which means:
+
+        + They are sent to the Language or Library Evolution email list for feedback.
+        + They are marked "Tentatively Ready" on GitHub.
+        + They are briefly reviewed for affirmation at the next face-to-face meeting.
+
+    * Missing a [=telecon=] does not prevent your voice from being heard.
+
 - Chairs will start curated [=email list discussions=] of certain papers.
 - Try to summarize [=email list discussions=] that you start or participate in.
-- There will be no separate Library Evolution Incubator meetings.
+- There will be no separate Language nor Library Evolution Incubator meetings.
 
 # Long Version # {#long}
 
-## Library Evolution Work Performed at Face-to-Face Meetings ## {#work-at-f2f-meetings}
+## Evolution Work Performed at Face-to-Face Meetings ## {#work-at-f2f-meetings}
 
 At a typical ISO C++ Committee face-to-face meeting,
   [[#appendix-typical-lewg-f2f-schedule|the Library Evolution group meets for 33.25 hours]]
@@ -152,6 +169,7 @@ At a typical ISO C++ Committee face-to-face meeting,
   [[#appendix-historical-lewgi-f2f-schedule|the Library Evolution Incubator group meets for 24.8 hours]];
   a total of ~58 hours per meeting.
 Each year, we spend ~174 hours at face-to-face meetings on Library Evolution.
+Language Evolution has similar numbers.
 
 A lot of voluntary and informal, but important, work also occurs during meals
   and at in the evening hours.
@@ -273,19 +291,19 @@ Our [=telecon=] platform needs to be able to support the following:
   this platform to hold [=telecons=].
 So, that's what we'll use.
 
-### No Separate Library Evolution Incubator Telecons ### {#no-separate-lewgi-telecons}
+### No Separate Evolution Incubator Telecons ### {#no-separate-i-telecons}
 
-The primary reason that the Library Evolution Incubator group meets separately
-  and concurrently with the Library Evolution group is due to the time
+The primary reason that the Language and Library Evolution Incubator group meets separately
+  and concurrently with the Language and Library Evolution group is due to the time
   constraints of our physical meetings.
 
 For remote meetings, we do not have the same kind of time constraints that force
-  concurrent sessions of the Library Evolution group and the Library Evolution
-  Incubator group.
+  concurrent sessions of the Evolution groups and the Evolution
+  Incubator groups.
 As such, there does not seem to be much value in holding separate [=telecons=].
 
-All [=telecon=] discussions will be considered joint exercises of the Library
-  Evolution group and the Library Evolution Incubator group.
+All [=telecon=] discussions will be considered joint exercises of the
+  Evolution group and the Evolution Incubator group.
 
 ### Telecon Decision Making ### {#telecon-decision-making}
 
@@ -319,7 +337,7 @@ Quorum is not merely a function of the quantity of people in the room.
 For quorum, we need to have both the right people and the right quantity of
   them.
 
-That said, if we have fewer than 12 participants on any given Library Evolution
+That said, if we have fewer than 12 participants on any given Language or  Library Evolution
   [=telecon=], it will be difficult for us to make meaningful decisions.
 In such a circumstance, we would avoid [=decision making=] and instead use our
   time for [=review=] and [=information distribution=].
@@ -327,7 +345,7 @@ In such a circumstance, we would avoid [=decision making=] and instead use our
 ### Telecon Chairing ### {#telecon-chairing}
 
 Running weekly telecons is not a small amount of effort.
-Fortunately, we have five chairs available, so we can distribute the burden
+Fortunately, we have multiple chairs available, so we can distribute the burden
   amongst ourselves.
 
 ### Telecons Aren't Mandatory ### {#telecons-arent-mandatory}
@@ -574,6 +592,24 @@ What features do we desire?
 
 We will discuss scoping of this work on an upcoming [=telecon=].
 
+[[P0592R4]] identifies three major priorities for C++ without specifying a ship vehicle, all of which are language
+  features.
+Here's our plan for each.
+
+### Reflection ### {#reflection}
+
+We will let the Reflection SG pursue all work related to reflection. Only when
+the SG forwards to EWG shall we consider matters pertaining to reflection.
+
+### Pattern Matching ### {#pattern-matching}
+
+We will continue to review [[P1371R2]] as it gets updated.
+
+### Contracts ### {#contracts}
+
+We will let the Contracts SG pursue all work related to contracts. Only when the
+SG forwards to EWG shall we consider matters pertaining to contracts.
+
 ## Deadlines ## {#deadlines}
 
 One of the biggest impacts of loosing the face-to-face 2020 summer meeting is
@@ -606,9 +642,12 @@ We will also provide a Google Calendar that people can subscribe to if they wish
 ## Typical Library Evolution Face-to-Face Schedule ## {#appendix-typical-lewg-f2f-schedule}
 
 <table>
-<th>
+<thead>
+<tr>
 <td>Day
 <td>Hours
+</thead>
+<tbody>
 <tr>
 <td>Monday
 <td>5.25
@@ -627,14 +666,17 @@ We will also provide a Google Calendar that people can subscribe to if they wish
 <tr>
 <td>**Total**
 <td>**33.25**
+</tbody>
 </table>
 
 ## Historical Library Evolution Incubator Face-to-Face Schedule ## {#appendix-historical-lewgi-f2f-schedule}
 
 <table>
-<th>
+<thead>
 <td>Meeting
 <td>Hours
+</thead>
+<tbody>
 <tr>
 <td>2018-11 San Diego
 <td>22.75
@@ -653,17 +695,20 @@ We will also provide a Google Calendar that people can subscribe to if they wish
 <tr>
 <td>**Average**
 <td>**24.8**
+</tbody>
 </table>
 
 ## Historical Library Evolution Incubator Face-to-Face Attendance ## {#appendix-historical-lewgi-f2f-attendance}
 
 <table>
-<th>
+<thead>
 <td>Meeting
 <td># of Polls
 <td>Average Attendance
 <td>Minimum Attendance
 <td>Maximum Attendance
+</thead>
+<tbody>
 <tr>
 <td>2018-11 San Diego
 <td>62
@@ -700,4 +745,5 @@ We will also provide a Google Calendar that people can subscribe to if they wish
 <td>**17.12**
 <td>**11.6**
 <td>**23.2**
+</tbody>
 </table>
