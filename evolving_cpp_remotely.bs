@@ -414,17 +414,16 @@ Zoom supports most of these features and the committee has field experience
 
 ## No Separate Incubator Telecons ## {#no-separate-incubator-telecons}
 
-The primary reason that the Library and Language Evolution Incubator group
-  meets separately and concurrently with the Library and Language Evolution
-group is due to the time constraints of our physical meetings.
+The primary reason that Library and Language Evolution Incubator meets
+  separately and concurrently with Library and Language Evolution is due to the
+  time constraints of our physical meetings.
 
 For remote meetings, we do not have the same kind of time constraints that force
-  concurrent sessions of the Evolution groups and the Evolution Incubator
-  groups.
+  concurrent sessions of Evolution and Incubator groups.
 As such, there does not seem to be much value in holding separate [=telecons=].
 
-All [=telecon=] discussions will be considered joint exercises of the
-  Evolution group and the Evolution Incubator group.
+All [=telecon=] discussions will be considered joint exercises of Evolution and
+  Evolution Incubator.
 
 ## Telecon Decision Making ## {#telecon-decision-making}
 
