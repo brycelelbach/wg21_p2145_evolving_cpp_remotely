@@ -344,7 +344,7 @@ It is important that participants read the proposals that will be discussed on
 
 ### Telecon Duration and Cadence ### {#telecon-duration-and-cadence}
 
-As mentioned earlier in [[#work-at-f2f-meetings]], we spend ~174
+As mentioned earlier in [[#amount-of-work-at-f2f-meetings]], we spend ~174
   hours per year on Library and Language Evolution at face-to-face meetings.
 This is an average of ~3.3 hours per week (~4 months per committee meeting
   equivalent).
