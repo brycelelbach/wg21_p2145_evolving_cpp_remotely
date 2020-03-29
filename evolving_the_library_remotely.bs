@@ -111,33 +111,37 @@ This document lays out plans for how we will conduct Library Evolution work
 # The Short Version # {#short}
 
 - Library Evolution consists of three activities:
-  - [=Information Distribution=], where knowledgeable parties educate the committee about a subject.
-  - [=Review=], where the committee identifies open questions and places where we lack clear consensus.
-  - [=Decision Making=], where the committee answers open questions and we determine consensus on particular matters.
+    - [=Information Distribution=], where knowledgeable parties educate the
+          committee about a subject.
+    - [=Review=], where the committee identifies open questions and places
+          where we lack clear consensus.
+    - [=Decision Making=], where the committee answers open questions and we
+          determine consensus on particular matters.
 - We have three main mechanisms for remote collaboration:
-  - [=Mailings=], which are regular distributions of committee
-        proposals.
-      Mailings are a good way to
-        [=Information Distribution|distribute information=].
-  - [=Email List Discussions=], which are good for
-        [=information distribution=] and [=review=].
-      They are not as effective for [=decision making=] as it can be hard to
-        determine consensus.
-      Email list discussions are asynchronous, so everyone can participate when
-        it is convenient for them.
-  - [=Telecons=], which are good for [=information distribution=],
-        [=review=], and [=decision making=].
-      However, they are synchronous by nature, which introduces scheduling
-        constraints that limits participation and makes them a scarce resource.
+    - [=Mailings=], which are regular distributions of committee
+          proposals.
+        Mailings are a good way to
+          [=Information Distribution|distribute information=].
+    - [=Email List Discussions=], which are good for
+          [=information distribution=] and [=review=].
+        They are not as effective for [=decision making=] as it can be hard to
+          determine consensus.
+        Email list discussions are asynchronous, so everyone can participate
+          when it is convenient for them.
+    - [=Telecons=], which are good for [=information distribution=],
+          [=review=], and [=decision making=].
+        However, they are synchronous by nature, which introduces scheduling
+          constraints that limits participation and makes them a scarce resource.
 - Library Evolution will have a weekly 1.5 hour [=telecon=], starting in April.
-  - We will have two time slots which alternate each week.
-  - We will use Zoom for [=telecons=].
+    - We will have two time slots which alternate each week.
+    - We will use Zoom for [=telecons=].
 - We will make [=decisions=] on [=telecons=] via straw polls.
-  - Decisions made on [=telecons=] will be "Tentatively Ready", which means:
-    - They are sent to the Library Evolution email list for feedback.
-    - They are marked "Tentatively Ready" on GitHub.
-    - They are briefly reviewed for affirmation at the next face-to-face meeting.
-  - Missing a [=telecon=] does not prevent your voice from being heard.
+    - Decisions made on [=telecons=] will be "Tentatively Ready", which means:
+        - They are sent to the Library Evolution email list for feedback.
+        - They are marked "Tentatively Ready" on GitHub.
+        - They are briefly reviewed for affirmation at the next face-to-face
+              meeting.
+    - Missing a [=telecon=] does not prevent your voice from being heard.
 - Chairs will start curated [=email list discussions=] of certain papers.
 - Try to summarize [=email list discussions=] that you start or participate in.
 - There will be no separate Library Evolution Incubator meetings.
