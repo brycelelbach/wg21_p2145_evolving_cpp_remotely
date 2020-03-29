@@ -117,7 +117,7 @@ We will revisit our plans should the 2020-11 New York meeting also be
 .hol { text-decoration: line-through; color: grey; }
 .la1 { font-weight: bolder; color: red; }
 .la2 { font-weight: bolder; color: orange; }
-.li1 { font-weight: bolder; color: #75b900; }
+.li1 { font-weight: bolder; color: blue; }
 .li2 { font-weight: bolder; color: teal; }
 .calendars { display: flex; flex-wrap: wrap; justify-content: center; }
 .calendar { margin: 1em; font-size: 125%; }
