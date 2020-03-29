@@ -96,8 +96,8 @@ Due to the ongoing global health crisis caused by the novel coronavirus, the
 During this uncertain time, our priority must be the safety and well-being of
   the committee and the public at large.
 
-The postponement of the Varna meeting and the broader impacts of the novel
-  coronavirus on society will be disruptive.
+The postponement of the 2020-06 Varna meeting and the broader impacts of the
+  novel coronavirus on society will be disruptive.
 However, the ISO C++ Committee can and will do our best to adapt to these
   disruptions and carry on our work remotely in these trying times.
 
@@ -108,7 +108,7 @@ This document lays out plans for how we will conduct Library and Language
 
 This proposal covers plans for remote operations until the schedule New York
   meeting in November 2020 [[N4848]].
-We will revisit our plans should the New York meeting also be
+We will revisit our plans should the 2020-11 New York meeting also be
   delayed.
 
 # Calendar # {#calendar}
@@ -135,6 +135,11 @@ The telecon calendar is as follows:
   <li><span class=la1>Language Evolution meetings:  8:00 Pacific on Wednesday
   <li><span class=la2>Language Evolution meetings: 10:00 Pacific on Thursday
 </ul>
+
+The topics for each [=telecon=] can be found here:
+
+- [Remote Library Evolution GitHub Project](https://github.com/cplusplus/papers/projects/21)
+- [Remote Language Evolution GitHub Project](https://github.com/cplusplus/papers/projects/23)
 
 <div class=calendars>
 
@@ -239,6 +244,8 @@ The telecon calendar is as follows:
 
 </div>
 
+We will also provide a Google Calendar that people can subscribe to if they wish.
+
 # The Short Version # {#short}
 
 - Library and Language Evolution consists of three activities:
@@ -268,7 +275,8 @@ The telecon calendar is as follows:
     - Each will have two time slots which alternate each week.
         - Language on Monday 8:00 Pacific / Tuesday 10:00 Pacific.
         - Library on Wednesday 8:00 Pacific / Thursday 10:00 Pacific.
-    - We will use Zoom for [=telecons=].
+    - We will use <a href="https://zoom.us">Zoom</a>, the official ISO
+          [=telecon=] platform.
 - We will make [=decisions=] on these [=telecons=] using straw polls.
     - Decisions made on [=telecons=] will be "Tentatively Ready", which means:
         - They are sent to the Library Evolution or Language Evolution email
@@ -285,7 +293,12 @@ The telecon calendar is as follows:
           in.
 - There will be no separate Library or Language Evolution Incubator meetings.
 
-# Long Version # {#long}
+# Work Performed at Face-to-Face Meetings # {#work-at-f2f-meetings}
+
+First, we need to understand what exactly we're loosing with the postponement
+  of the 2020-06 Varna meeting.
+What exactly do we do at face-to-face meetings, and how much time do we spend
+  doing it?
 
 ## Amount of Work Performed at Face-to-Face Meetings ## {#amount-of-work-at-f2f-meetings}
 
@@ -311,7 +324,7 @@ When in session at face-to-face meetings, we typically perform three activities:
 - <dfn>Decision Making</dfn>, where the committee answers open
       questions and we determine consensus on particular matters.
 
-## Mechanisms for Remote Collaboration ## {#mechanisms-for-remote-meetings}
+# Mechanisms for Remote Collaboration # {#mechanisms-for-remote-meetings}
 
 We have three primary mechanisms for remote collaboration:
 
@@ -330,7 +343,7 @@ We have three primary mechanisms for remote collaboration:
     However, they are synchronous by nature, which introduces scheduling
       constraints that limits participation and makes them a scarce resource.
 
-## Telecons ## {#telecon}
+# Telecons # {#telecon}
 
 Because [=telecons=] are the only good option for [=decision making=] and they
   are a scarce resource, we should try to use them for [=decision making=] as
@@ -342,7 +355,7 @@ It is important that participants read the proposals that will be discussed on
   a [=telecon=] before the [=telecon=], and utilize [=email list discussions=]
   whenever possible.
 
-### Telecon Duration and Cadence ### {#telecon-duration-and-cadence}
+## Telecon Duration and Cadence ## {#telecon-duration-and-cadence}
 
 As mentioned earlier in [[#amount-of-work-at-f2f-meetings]], we spend ~174
   hours per year on Library and Language Evolution at face-to-face meetings.
@@ -372,12 +385,12 @@ This will give us additional scheduling flexibility.
 Given all of this, **Library and Language Evolution will meet ~1.5 hours per
   week, from April 2020 until at least November 2020**.
 
-This is about 50% of time commitment that we would have made to the Varna 2020
-  meeting.
+This is about 50% of time commitment that we would have made to the 2020-06
+  Varna meeting.
 If this cadence and duration proves to be too much, we will adjust by scaling
   back and cancelling meetings.
 
-### Telecon Platform ### {#telecon-platform}
+## Telecon Platform ## {#telecon-platform}
 
 Our [=telecon=] platform needs to be able to support the following:
 
@@ -393,12 +406,12 @@ Our [=telecon=] platform needs to be able to support the following:
 - Attendee renaming by [=telecon=] organizer.
 - Meeting recording.
 
-<a href="https://zoom.us">Zoom</a>, the official ISO [=telecon=] platform,
-  supports most of these features, and the committee has field experience using
-  this platform to hold [=telecons=].
-So, that's what we'll use.
+We will use <a href="https://zoom.us">Zoom</a>, the official ISO [=telecon=]
+  platform.
+Zoom supports most of these features and the committee has field experience
+  ({#field-experience}) using this platform to hold [=telecons=].
 
-### No Separate Incubator Telecons ### {#no-separate-incubator-telecons}
+## No Separate Incubator Telecons ## {#no-separate-incubator-telecons}
 
 The primary reason that the Library and Language Evolution Incubator group
   meets separately and concurrently with the Library and Language Evolution
@@ -412,7 +425,7 @@ As such, there does not seem to be much value in holding separate [=telecons=].
 All [=telecon=] discussions will be considered joint exercises of the
   Evolution group and the Evolution Incubator group.
 
-### Telecon Decision Making ### {#telecon-decision-making}
+## Telecon Decision Making ## {#telecon-decision-making}
 
 We will make decisions on [=telecons=] via straw polls, just as we do at
   face-to-face meetings.
@@ -431,7 +444,7 @@ For all "Tentatively Ready" decisions made on [=telecons=], after the [=telecon=
   decisions, to give anyone who did not attend the [=telecon=] a chance to voice
   their opinion.
 
-### Telecon Quorum ### {#telecon-quorum}
+## Telecon Quorum ## {#telecon-quorum}
 
 We expect to have lower attendance on [=telecons=] than we would have at
   face-to-face meetings.
@@ -453,14 +466,14 @@ That said, if we have fewer than 15 participants on any given Library or
 In such a circumstance, we would avoid [=decision making=] and instead use our
   time for [=review=] and [=information distribution=].
 
-### Telecon Chairing ### {#telecon-chairing}
+## Telecon Chairing ## {#telecon-chairing}
 
 Running weekly telecons is not a small amount of effort.
 Fortunately, we have multiple chairs available for each track (Evolution chair,
   Evolution vice chair, Incubator chair, and Incubator vice chair), so we can
   distribute the burden amongst ourselves.
 
-### Telecons Aren't Mandatory ### {#telecons-arent-mandatory}
+## Telecons Aren't Mandatory ## {#telecons-arent-mandatory}
 
 If you are a stakeholder on a particular proposal or subject, you are strongly
   encouraged to attend [=telecons=] on that proposal or subject.
@@ -473,7 +486,7 @@ If a decision is made on a [=telecon=] and you feel you have a new perspective o
 As with face-to-face meetings, we can always revisit decisions if we have new
   information.
 
-## Email List Discussions ## {#email-discussions}
+# Email List Discussions # {#email-discussions}
 
 We have always made use of [=email list discussions=] for inter-meeting work,
   but they are more important than ever now, and we should strive to do more work
@@ -484,7 +497,7 @@ To help drive [=email list discussions=] and minimize the need for [=telecons=],
 This is something Library Evolution has done in the past to help address
   backlogs.
 
-### What Email List Discussions Are Good For ### {#what-email-is-good-for}
+## What Email List Discussions Are Good For ## {#what-email-is-good-for}
 
 As discussed earlier, email list discussions are an excellent medium for us to
   [=review=] proposals and [=Information Distribution|distribute information=].
@@ -528,7 +541,7 @@ Here are some examples of questions that are probably well suited to an
 > attention to Part Y and Open Question Z - please let me know if you have any
 > thoughts or new information.
 
-### What Email List Discussions Aren't Good For ### {#what-email-isnt-good-for}
+## What Email List Discussions Aren't Good For ## {#what-email-isnt-good-for}
 
 However, [=email list discussions=] have downsides.
 The signal-to-noise ratio can be quite high and it can be difficult to identify
@@ -565,7 +578,7 @@ Make sure to describe your thought process and rationale, so that others
 Instead of saying "don't do A and B", suggest alternatives that the authors
   might explore.
 
-### Summarize Email List Discussions ### {#summarize-email-list-discussion}
+## Summarize Email List Discussions ## {#summarize-email-list-discussion}
 
 Because [=email list discussions=] have a high signal-to-noise ratio and can be
   difficult to follow, it's often hard to identify the outcomes of said
@@ -577,15 +590,17 @@ It is invaluable for someone to step in at or around the end of a discussion and
 You can then send this summary and ask if everyone agrees with it.
 This can help bring much needed closure to discussions.
 
-## High Priority Work ## {#high-priority-work}
+# High Priority Work # {#high-priority-work}
 
-### High Priority Library Work ### {#high-priority-library-work}
+At the 2020-02 Prague meeting, the committee adopted a plan for C++
+  standardization, [[P0592R4]].
+That plan contained seven priority items; four library items for C++23,
+  and three language items for C++23 or later.
+This section describes specific plans for these priority work items.
 
-[[P0592R4]] identifies four major priorities for C++23, all of which are library
-  features.
-Here's our plan for each.
+## High Priority Library Work ## {#high-priority-library-work}
 
-#### Networking #### {#networking}
+### Networking ### {#networking}
 
 The Networking study group has been reactivated to drive standardization of
   networking.
@@ -601,8 +616,8 @@ We created a number of review groups, each of which was tasked with looking at
   could, and identifying open questions that required broader review.
 Each group was asked to summarize its findings.
 
-Approximately half of these groups presented their findings at the Prague
-  2020-02 meeting of the Networking study group.
+Approximately half of these groups presented their findings at the 2020-02
+  Prague meeting of the Networking study group.
 The Networking study group was able to reach consensus on some matters, and
   identified others that will eventually need review in Library Evolution.
 Each of these groups has been asked to prepare a paper containing their summary,
@@ -612,7 +627,7 @@ Once all of these summaries have been produced and the Networking study group
   decides they are ready for Library Evolution, we will begin reviewing them
   in Library Evolution.
 
-#### Executors #### {#executors}
+### Executors ### {#executors}
 
 For executors, we have an existing, large proposal, [[P0443R13]] which is ready
   for Library Evolution review.
@@ -640,7 +655,7 @@ Once all of the review groups have completed their work and prepared their
   the summer and work towards resolution of any open matters that need decisions
   and guidance.
 
-#### Modularizing the Standard Library #### {#modularizing-the-standard-library}
+### Modularizing the Standard Library ### {#modularizing-the-standard-library}
 
 Modularizing the standard library is a goal for C++23, but we have not yet
   decided on a concrete direction or scope for this work.
@@ -670,7 +685,7 @@ The first few big questions we have to address to help scope this work are:
 We will hold [=telecons=] to reach consensus on these and other questions and
   define the scope of what we want to pursue.
 
-#### Coroutine Library Support #### {#coroutine-library-support}
+### Coroutine Library Support ### {#coroutine-library-support}
 
 Richer coroutine library support is a goal for C++23, but we have not yet
   decided on a concrete direction or scope for this work.
@@ -707,48 +722,25 @@ What features do we desire?
 
 We will discuss scoping of this work on an upcoming [=telecon=].
 
-### High Priority Language Work ### {#high-priority-language-work}
+## High Priority Language Work ## {#high-priority-language-work}
 
-[[P0592R4]] identifies three major priorities for C++ without specifying a ship
-  vehicle, all of which are language features.
-Here's our plan for each.
-
-#### Pattern Matching #### {#pattern-matching}
+### Pattern Matching ### {#pattern-matching}
 
 Language Evolution will continue to review [[P1371R2]] as it gets updated.
 
-#### Reflection #### {#reflection}
+### Reflection ### {#reflection}
 
 We will let the Reflection study group pursue all work related to reflection.
 We will only start looking at matters pertaining to reflection in Language
   Evolution after the Reflection study group has forwarded them to us.
 
-#### Contracts #### {#contracts}
+### Contracts ### {#contracts}
 
 We will let the Contracts study group pursue all work related to contracts.
 We will only start looking at matters pertaining to contracts in Language
   Evolution after the Contracts study group has forwarded them to us.
 
-## Deadlines ## {#deadlines}
-
-One of the biggest impacts of loosing the face-to-face 2020 summer meeting is
-  the loss of a major deadline.
-This is compounded by the transition to monthly mailing deadlines.
-It is now a lot easier for a paper author to "miss" a deadline; you can always
-  publish it next month and have it discussed on a [=telecon=].
-
-We must be careful to avoid allowing this flexibility to lead to procrastination.
-Hard deadlines, even arbitrary ones, fight mission creep and ultimately produce
-  deliverables.
-
-In the absence of physical meetings, there are two types of deadlines we can use
-  to drive work:
-
-- The monthly mailings.
-- Scheduled [=telecons=], which will be most effective if the schedule is known
-    well in advance.
-
-## Field Experience With Remote Work ## {#field-experience}
+# Field Experience With Remote Work ## {#field-experience}
 
 We are not in completely uncharted waters here.
 The ISO C++ Committee does have field experience working remotely.
@@ -769,14 +761,24 @@ The main benefits of a face-to-face meeting over remote meetings are:
 
 We can't replicate these effects in remote meetings.
 
-## Schedule ## {#schedule}
+# Deadlines # {#deadlines}
 
-We will maintain a schedule of upcoming [=telecon=] topics that looks about eight
-  weeks into the future.
+One of the biggest impacts of loosing the face-to-face 2020 summer meeting is
+  the loss of a major deadline.
+This is compounded by the transition to monthly mailing deadlines.
+It is now a lot easier for a paper author to "miss" a deadline; you can always
+  publish it next month and have it discussed on a [=telecon=].
 
-This schedule will be maintained on a [GitHub project](https://github.com/cplusplus/papers/projects/21)
-  and also on a new remote meeting wiki that is in the process of being created.
-We will also provide a Google Calendar that people can subscribe to if they wish.
+We must be careful to avoid allowing this flexibility to lead to procrastination.
+Hard deadlines, even arbitrary ones, fight mission creep and ultimately produce
+  deliverables.
+
+In the absence of physical meetings, there are two types of deadlines we can use
+  to drive work:
+
+- The monthly mailings.
+- Scheduled [=telecons=], which will be most effective if the schedule is known
+    well in advance.
 
 # Appendix # {#appendix}
 
