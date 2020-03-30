@@ -412,7 +412,7 @@ Our [=telecon=] platform needs to be able to support the following:
 We will use <a href="https://zoom.us">Zoom</a>, the official ISO [=telecon=]
   platform.
 Zoom supports most of these features and the committee has field experience
-  ({#field-experience}) using this platform to hold [=telecons=].
+  [[#field-experience]] using this platform to hold [=telecons=].
 
 ## No Separate Incubator Telecons ## {#no-separate-incubator-telecons}
 
