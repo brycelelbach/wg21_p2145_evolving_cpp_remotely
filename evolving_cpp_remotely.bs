@@ -273,8 +273,8 @@ We will also provide a Google Calendar that people can subscribe to if they wish
 - Starting in April 2020 Library and Language Evolution will have a weekly 1.5
       hour [=telecon=].
     - Each will have two time slots which alternate each week.
-        - Language on Monday 8:00AM Pacific / Tuesday 10:00AM Pacific.
-        - Library on Wednesday 8:00AM Pacific / Thursday 10:00AM Pacific.
+        - Library on Monday 8:00AM Pacific / Tuesday 10:00AM Pacific.
+        - Language on Wednesday 8:00AM Pacific / Thursday 10:00AM Pacific.
     - We will use <a href="https://zoom.us">Zoom</a>, the official ISO
           [=telecon=] platform.
 - We will make [=Decision Making|decisions=] on these [=telecons=] using straw
