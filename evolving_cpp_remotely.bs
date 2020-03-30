@@ -743,7 +743,7 @@ We will let the Contracts study group pursue all work related to contracts.
 We will only start looking at matters pertaining to contracts in Language
   Evolution after the Contracts study group has forwarded them to us.
 
-# Field Experience With Remote Work ## {#field-experience}
+# Field Experience With Remote Work # {#field-experience}
 
 We are not in completely uncharted waters here.
 The ISO C++ Committee does have field experience working remotely.
