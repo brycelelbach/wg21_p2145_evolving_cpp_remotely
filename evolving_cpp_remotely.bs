@@ -598,7 +598,12 @@ At the 2020-02 Prague meeting, the committee adopted a plan for C++
   standardization, [[P0592R4]].
 That plan contained seven priority items; four library items for C++23,
   and three language items for C++23 or later.
+
 This section describes specific plans for these priority work items.
+
+Once this material has been addressed, we will prioritize bug fixes,
+  performance improvements, integration fixes for/between existing
+  features, and issue processing.
 
 ## High Priority Library Work ## {#high-priority-library-work}
 
