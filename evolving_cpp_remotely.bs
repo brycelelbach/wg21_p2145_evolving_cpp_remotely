@@ -296,7 +296,7 @@ We will also provide a Google Calendar that people can subscribe to if they wish
 
 # Work Performed at Face-to-Face Meetings # {#work-at-f2f-meetings}
 
-First, we need to understand what exactly we're loosing with the postponement
+First, we need to understand what exactly we're losing with the postponement
   of the 2020-06 Varna meeting.
 What exactly do we do at face-to-face meetings, and how much time do we spend
   doing it?
@@ -766,7 +766,7 @@ We can't replicate these effects in remote meetings.
 
 # Deadlines # {#deadlines}
 
-One of the biggest impacts of loosing the face-to-face 2020 summer meeting is
+One of the biggest impacts of losing the face-to-face 2020 summer meeting is
   the loss of a major deadline.
 This is compounded by the transition to monthly mailing deadlines.
 It is now a lot easier for a paper author to "miss" a deadline; you can always
