@@ -244,7 +244,9 @@ The topics for each [=telecon=] can be found here:
 
 </div>
 
-We will also provide a Google Calendar that people can subscribe to if they wish.
+We will also provide a Google Calendar that people can subscribe to if they wish,
+and we will be emailing calendar invites to the language and library reflectors.
+Those will contain the link to the teleconference.
 
 # The Short Version # {#short}
 
