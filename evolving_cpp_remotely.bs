@@ -573,7 +573,7 @@ Instead of saying "don't do A and B", suggest alternatives that the authors
 
 ## Summarize Email List Discussions ## {#summarize-email-list-discussion}
 
-Because [=email list discussions=] have a high signal-to-noise ratio and can be
+Because [=email list discussions=] have bad signal-to-noise ratio and can be
   difficult to follow, it's often hard to identify the outcomes of said
   discussions.
 
@@ -583,20 +583,20 @@ It is invaluable for someone to step in at or around the end of a discussion and
 You can then send this summary and ask if everyone agrees with it.
 This can help bring much needed closure to discussions.
 
-# High Priority Work # {#high-priority-work}
+# High-Priority Work # {#high-priority-work}
 
 At the 2020-02 Prague meeting, the committee adopted a plan for C++
   standardization, [[P0592R4]].
-That plan contained seven priority items; four library items for C++23,
+That plan contained seven high-priority items; four library items for C++23,
   and three language items for C++23 or later.
 
-This section describes specific plans for these priority work items.
+This section describes specific plans for these high-priority work items.
 
 Once this material has been addressed, we will prioritize bug fixes,
   performance improvements, integration fixes for/between existing
   features, and issue processing.
 
-## High Priority Library Work ## {#high-priority-library-work}
+## High-Priority Library Work ## {#high-priority-library-work}
 
 ### Networking ### {#networking}
 
@@ -723,7 +723,7 @@ What features do we desire?
 We will discuss scoping of this work on an upcoming [=telecon=].
 Ideally we need a paper proposing what the scope and goals should be.
 
-## High Priority Language Work ## {#high-priority-language-work}
+## High-Priority Language Work ## {#high-priority-language-work}
 
 ### Pattern Matching ### {#pattern-matching}
 
@@ -802,16 +802,16 @@ The tentative agendas can be found here:
 <td>5.25
 <tr>
 <td>Tuesday
-<td>5.25
+<td>7
 <tr>
 <td>Wednesday
-<td>5.25
+<td>7
 <tr>
 <td>Thursday
-<td>5.25
+<td>7
 <tr>
 <td>Friday
-<td>5.25
+<td>7
 <tr>
 <td>**Total**
 <td>**33.25**
