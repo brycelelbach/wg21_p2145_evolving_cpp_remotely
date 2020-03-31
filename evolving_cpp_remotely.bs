@@ -142,9 +142,9 @@ The topics for each [=telecon=] can be found here:
 - [Remote Language Evolution GitHub Project](https://github.com/cplusplus/papers/projects/23).
 
 Details about how to join the telecons will be distributed through the Library
-  and Language Evolution mailing lists.
-If you are not a member of these mailings lists and are interested in
-  participating, please contact the authors of this paper.
+  and Language Evolution email lists and wiki.
+If you do not have access to these and are interested in participating, please
+  contact the authors of this paper.
 
 <div class=calendars>
 
@@ -256,27 +256,13 @@ Those will contain the link to the teleconference.
 # The Short Version # {#short}
 
 - Library and Language Evolution consists of three activities:
-    - [=Information Distribution=], where knowledgeable parties educate the
-          committee about a subject.
-    - [=Review=], where the committee identifies open questions and places
-          where we lack clear consensus.
-    - [=Decision Making=], where the committee answers open questions and we
-          determine consensus on particular matters.
+    - [=Information Distribution=].
+    - [=Review=].
+    - [=Decision-Making=].
 - We have three main mechanisms for remote collaboration:
-    - [=Mailings=], which are regular distributions of committee
-          proposals.
-        Mailings are a good way to
-          [=Information Distribution|distribute information=].
-    - [=Email List Discussions=], which are good for
-          [=information distribution=] and [=review=].
-        They are not as effective for [=decision making=] as it can be hard to
-          determine consensus.
-        Email list discussions are asynchronous, so everyone can participate
-          when it is convenient for them.
-    - [=Telecons=], which are good for [=information distribution=],
-          [=review=], and [=decision making=].
-        However, they are synchronous by nature, which introduces scheduling
-          constraints that limits participation and makes them a scarce resource.
+    - [=Mailings=].
+    - [=Email List Discussions=].
+    - [=Telecons=].
 - Starting in April 2020 Library and Language Evolution will have a weekly 1.5
       hour [=telecon=].
     - Each will have two time slots which alternate each week.
@@ -284,7 +270,7 @@ Those will contain the link to the teleconference.
         - Language on Wednesday 8:00AM Pacific / Thursday 10:00AM Pacific.
     - We will use <a href="https://zoom.us">Zoom</a>, the official ISO
           [=telecon=] platform.
-- We will make [=Decision Making|decisions=] on these [=telecons=] using straw
+- We will make [=Decision-Making|decisions=] on these [=telecons=] using straw
       polls.
     - Decisions made on [=telecons=] will be "Tentatively Ready", which means:
         - They are sent to the Library Evolution or Language Evolution email
@@ -329,7 +315,7 @@ When in session at face-to-face meetings, we typically perform three activities:
       educate the committee about a subject.
 - <dfn>Review</dfn>, where the committee identifies open questions
       and places where we lack clear consensus.
-- <dfn>Decision Making</dfn>, where the committee answers open
+- <dfn>Decision-Making</dfn>, where the committee answers open
       questions and we determine consensus on particular matters.
 
 # Mechanisms for Remote Collaboration # {#mechanisms-for-remote-meetings}
@@ -342,19 +328,19 @@ We have three primary mechanisms for remote collaboration:
       [=Information Distribution|distribute information=].
 - <dfn>Email List Discussions</dfn>, which are good for
       [=information distribution=] and [=review=].
-    They are not as effective for [=decision making=] as it can be hard to
+    They are not as effective for [=decision-making=] as it can be hard to
       determine consensus.
     Email list discussions are asynchronous, so everyone can participate when
       it is convenient for them.
 - <dfn>Telecons</dfn>, which are good for [=information distribution=],
-      [=review=], and [=decision making=].
+      [=review=], and [=decision-making=].
     However, they are synchronous by nature, which introduces scheduling
       constraints that limits participation and makes them a scarce resource.
 
 # Telecons # {#telecon}
 
-Because [=telecons=] are the only good option for [=decision making=] and they
-  are a scarce resource, we should try to use them for [=decision making=] as
+Because [=telecons=] are the only good option for [=decision-making=] and they
+  are a scarce resource, we should try to use them for [=decision-making=] as
   much as possible.
 That means we should do as much
   [=Information Distribution|distribution of information=]
@@ -432,7 +418,7 @@ As such, there does not seem to be much value in holding separate [=telecons=].
 All [=telecon=] discussions will be considered joint exercises of Evolution and
   Evolution Incubator.
 
-## Telecon Decision Making ## {#telecon-decision-making}
+## Telecon Decision-Making ## {#telecon-decision-making}
 
 We will make decisions on [=telecons=] via straw polls, just as we do at
   face-to-face meetings.
@@ -470,7 +456,7 @@ For quorum, we need to have both the right people and the right quantity of
 That said, if we have fewer than 15 participants on any given Library or
   Language Evolution [=telecon=], it will be difficult for us to make meaningful
   decisions.
-In such a circumstance, we would avoid [=decision making=] and instead use our
+In such a circumstance, we would avoid [=decision-making=] and instead use our
   time for [=review=] and [=information distribution=].
 
 ## Telecon Chairing ## {#telecon-chairing}
@@ -758,10 +744,6 @@ We will only start looking at matters pertaining to contracts in Language
 # Field Experience With Remote Work # {#field-experience}
 
 We are not in completely uncharted waters here.
-The ISO C++ Committee does have field experience working remotely.
-A lot of important inter-meeting discussion happens on email lists.
-The Tooling and Unicode study groups, among others, have successfully and
-  regularly met and made decisions via telecons.
 The ISO C++ Committee does have field experience working remotely.
 A lot of important inter-meeting discussion happens on email lists.
 The Tooling and Unicode study groups, among others, have successfully and
