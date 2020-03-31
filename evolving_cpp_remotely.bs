@@ -546,7 +546,7 @@ Here are some examples of questions that are probably well suited to an
 ## What Email List Discussions Aren't Good For ## {#what-email-isnt-good-for}
 
 However, [=email list discussions=] have downsides.
-The signal-to-noise ratio can be quite high and it can be difficult to identify
+The signal-to-noise ratio can be quite bad and it can be difficult to identify
   the consensus of an [=email list discussion=] and leave with clear outcomes.
 
 Additionally, sometimes [=email list discussions=] are not effective due to lack
