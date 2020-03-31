@@ -98,6 +98,9 @@ During this uncertain time, our priority must be the safety and well-being of
 
 The postponement of the 2020-06 Varna meeting and the broader impacts of the
   novel coronavirus on society will be disruptive.
+At times like these, family and personal well-being comes first, and work comes
+  second.
+No one can be as productive in these times as they normally would be.
 However, the ISO C++ Committee can and will do our best to adapt to these
   disruptions and carry on our work remotely in these trying times.
 
