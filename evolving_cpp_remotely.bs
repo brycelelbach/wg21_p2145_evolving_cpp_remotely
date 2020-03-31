@@ -787,8 +787,17 @@ In the absence of physical meetings, there are two types of deadlines we can use
   to drive work:
 
 - The monthly mailings.
-- Scheduled [=telecons=], which will be most effective if the schedule is known
-    well in advance.
+- Scheduled [=telecons=].
+
+[=Telecons=] will be most effective if the schedule is known well in advance,
+  but leaves some room for flexibility, just as the schedule is for a
+  face-to-face meeting.
+Chairs will try to have a tentative agenda for the next 4 to 8 weeks of
+  [=telecons=].
+The tentative agendas can be found here:
+
+- [Remote Library Evolution GitHub Project](https://github.com/cplusplus/papers/projects/21).
+- [Remote Language Evolution GitHub Project](https://github.com/cplusplus/papers/projects/23).
 
 # Appendix # {#appendix}
 
