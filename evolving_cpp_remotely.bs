@@ -271,6 +271,7 @@ Those will contain the link to the teleconference.
     - Each will have two time slots which alternate each week.
         - Library on Monday 8:00AM Pacific / Tuesday 10:00AM Pacific.
         - Language on Wednesday 8:00AM Pacific / Thursday 10:00AM Pacific.
+        - Modulo holidays, where we'll defer the meeting by a day.
     - We will use <a href="https://zoom.us">Zoom</a>, the official ISO
           [=telecon=] platform.
 - We will make [=Decision-Making|decisions=] on these [=telecons=] using straw
