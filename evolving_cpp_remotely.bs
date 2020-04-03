@@ -137,12 +137,12 @@ The telecon calendar is as follows:
 
 <ul>
   <li><span class=hol>Holidays:</span> no telecon, schedule for adjacent day.
-  <li><span class=li1>Library Evolution meetings:</span>  8:00AM Pacific on Mondays.
-  <li><span class=li2>Library Evolution meetings:</span> 10:00AM Pacific on Tuesdays.
-  <li><span class=la1>Language Evolution meetings:</span>  8:00AM Pacific on Wednesday.
-  <li><span class=la2>Language Evolution meetings:</span> 10:00AM Pacific on Thursday.
-  <li><span class=cwg>Core Language:</span> 2020-04-20 at 17:00 UTC (1:00 p.m. EDT) for 2h of issue processing.
-  <li><span class=sg1>Concurrency &amp; Parallelism:</span> 8:30-10:30AM Pacific on Mondays, start date not yet set.
+  <li><span class=li1>LEWG Library Evolution meetings:</span>  8:00AM Pacific on Mondays.
+  <li><span class=li2>LEWG Library Evolution meetings:</span> 10:00AM Pacific on Tuesdays.
+  <li><span class=la1>EWG Language Evolution meetings:</span>  8:00AM Pacific on Wednesday.
+  <li><span class=la2>EWG Language Evolution meetings:</span> 10:00AM Pacific on Thursday.
+  <li><span class=cwg>CWG Core Language:</span> 2020-04-20 at 17:00 UTC (1:00 p.m. EDT) for 2h of issue processing.
+  <li><span class=sg1>SG1 Concurrency &amp; Parallelism:</span> 8:30-10:30AM Pacific on Mondays, start date not yet set.
   <li>ABI review group: no scheduled meetings
   <li>SG10 feature testing: no scheduled meetings
   <li><span class=sg16>SG16 Unicode and text processing:</span> 12:30-2:00PM Pacific on the 2nd and 4th Wednesday of each month.
