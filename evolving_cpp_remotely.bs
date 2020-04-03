@@ -15,6 +15,7 @@ URL: https://wg21.link/P2145R0
 Editor: David Stone — Language Evolution Vice Chair, Uber, david.stone@uber.com
 Editor: Botond Ballo — Language Evolution Incubator Chair, Mozilla, botond_ballo@yahoo.ca
 Editor: Erich Keane — Language Evolution Incubator Vice Chair, Intel, erich.keane@intel.com
+Editor: Tom Honermann — SG16 (Unicode and text processing) Chair, Synopsys, tom@honermann.net
 !Source: <a href="https://github.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/blob/master/evolving_cpp_remotely.bs">GitHub</a>
 Issue Tracking: GitHub https://github.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/issues
 Metadata Order: Author, This Version, Source, Issue Tracking, Project, Audience
@@ -123,6 +124,7 @@ We will revisit our plans should the 2020-11 New York meeting also be
 .li1 { font-weight: bolder; color: blue; }
 .li2 { font-weight: bolder; color: teal; }
 .sg1 { font-weight: bolder; color: hotpink; }
+.sg16 { font-weight: bolder; color: maroon; }
 .cwg { font-weight: bolder; color: burlywood; }
 .calendars { display: flex; flex-wrap: wrap; justify-content: center; }
 .calendar { margin: 1em; font-size: 125%; }
@@ -140,9 +142,10 @@ The telecon calendar is as follows:
   <li><span class=la1>Language Evolution meetings:</span>  8:00AM Pacific on Wednesday.
   <li><span class=la2>Language Evolution meetings:</span> 10:00AM Pacific on Thursday.
   <li><span class=cwg>Core Language:</span> 2020-04-20 at 17:00 UTC (1:00 p.m. EDT) for 2h of issue processing.
-  <li><span class=sg1>Concurrency &amp; Parallelism:</span> Monday 8:30-10:30 Pacific on Mondays, start date not yet set.
+  <li><span class=sg1>Concurrency &amp; Parallelism:</span> 8:30-10:30AM Pacific on Mondays, start date not yet set.
   <li>ABI review group: no scheduled meetings
   <li>SG10 feature testing: no scheduled meetings
+  <li><span class=sg16>SG16 Unicode and text processing:</span> 12:30-2:00PM Pacific on the 2nd and 4th Wednesday of each month.
 </ul>
 
 The topics for each [=telecon=] can be found here:
@@ -164,10 +167,10 @@ If you do not have access to these and are interested in participating, please
 </thead>
 <tbody>
   <tr><td          >  <td          >  <td          > 1<td          > 2<td> 3<td> 4<td> 5
-  <tr><td class=li1> 6<td          > 7<td          > 8<td class=la2> 9<td>10<td>11<td>12
+  <tr><td class=li1> 6<td          > 7<td          > 8<sup class=sg16>SG16</sup> <td class=la2> 9<td>10<td>11<td>12
   <tr><td          >13<td class=li2>14<td class=la1>15<td          >16<td>17<td>18<td>19
   <tr><td class=li1>20<sup class=cwg>CWG</sup><td          >21<td          >22<td class=la2>23<td>24<td>25<td>26
-  <tr><td          >27<td class=li2>28<td class=la1>29<td          >30<td>  <td>  <td>
+  <tr><td          >27<td class=li2>28<td class=la1>29<sup class=sg16>SG16</sup> <td          >30<td>  <td>  <td>
 </tbody>
 </table>
 
@@ -179,9 +182,9 @@ If you do not have access to these and are interested in participating, please
 <tbody>
   <tr><td          >  <td          >  <td          >  <td          >  <td> 1<td> 2<td> 3
   <tr><td class=li1> 4<td          > 5<td          > 6<td class=la2> 7<td> 8<td> 9<td>10
-  <tr><td          >11<td class=li2>12<td class=la1>13<td          >14<td>15<td>16<td>17
+  <tr><td          >11<td class=li2>12<sup class=sg16>SG16</sup> <td class=la1>13<td          >14<td>15<td>16<td>17
   <tr><td class=li1>18<td          >19<td          >20<td class=la2>21<td>22<td>23<td>24
-  <tr><td class=hol>25<td class=li2>26<td class=la1>27<td          >28<td>29<td>30<td>31
+  <tr><td class=hol>25<td class=li2>26<sup class=sg16>SG16</sup> <td class=la1>27<td          >28<td>29<td>30<td>31
 </tbody>
 </table>
 
@@ -192,9 +195,9 @@ If you do not have access to these and are interested in participating, please
 </thead>
 <tbody>
   <tr><td class=li1> 1<td          > 2<td          > 3<td class=la2> 4<td> 5<td> 6<td> 7
-  <tr><td          > 8<td class=li2> 9<td class=la1>10<td          >11<td>12<td>13<td>14
+  <tr><td          > 8<td class=li2> 9<sup class=sg16>SG16</sup> <td class=la1>10<td          >11<td>12<td>13<td>14
   <tr><td class=li1>15<td          >16<td          >17<td class=la2>18<td>19<td>20<td>21
-  <tr><td          >22<td class=li2>23<td class=la1>24<td          >25<td>26<td>27<td>28
+  <tr><td          >22<td class=li2>23<sup class=sg16>SG16</sup> <td class=la1>24<td          >25<td>26<td>27<td>28
   <tr><td class=li1>29<td          >30<td          >  <td          >  <td>  <td>  <td>
 </tbody>
 </table>
@@ -207,9 +210,9 @@ If you do not have access to these and are interested in participating, please
 <tbody>
   <tr><td          >  <td          >  <td          > 1<td class=la2> 2<td> 3<td> 4<td> 5
   <tr><td          > 6<td class=li2> 7<td class=la1> 8<td          > 9<td>10<td>11<td>12
-  <tr><td class=li1>13<td          >14<td          >15<td class=la2>16<td>17<td>18<td>19
+  <tr><td class=li1>13<td          >14<sup class=sg16>SG16</sup> <td          >15<td class=la2>16<td>17<td>18<td>19
   <tr><td          >20<td class=li2>21<td class=la1>22<td          >23<td>24<td>25<td>26
-  <tr><td class=li1>27<td          >28<td          >29<td class=la2>30<td>31<td>  <td>
+  <tr><td class=li1>27<td          >28<sup class=sg16>SG16</sup> <td          >29<td class=la2>30<td>31<td>  <td>
 </tbody>
 </table>
 
@@ -221,9 +224,9 @@ If you do not have access to these and are interested in participating, please
 <tbody>
   <tr><td          >  <td          >  <td          >  <td class=la2>  <td>  <td> 1<td> 2
   <tr><td          > 3<td class=li2> 4<td class=la1> 5<td          > 6<td> 7<td> 8<td> 9
-  <tr><td class=li1>10<td          >11<td          >12<td class=la2>13<td>14<td>15<td>16
+  <tr><td class=li1>10<td          >11<sup class=sg16>SG16</sup> <td          >12<td class=la2>13<td>14<td>15<td>16
   <tr><td          >17<td class=li2>18<td class=la1>19<td          >20<td>21<td>22<td>23
-  <tr><td class=li1>24<td          >25<td          >26<td class=la2>27<td>28<td>29<td>30
+  <tr><td class=li1>24<td          >25<sup class=sg16>SG16</sup> <td          >26<td class=la2>27<td>28<td>29<td>30
   <tr><td          >31<td          >  <td          >  <td          >  <td>  <td>  <td>
 </tbody>
 </table>
@@ -235,9 +238,9 @@ If you do not have access to these and are interested in participating, please
 </thead>
 <tbody>
   <tr><td          >  <td class=li2> 1<td class=la1> 2<td          > 3<td> 4<td> 5<td> 6
-  <tr><td class=hol> 7<td class=li2> 8<td          > 9<td class=la2>10<td>11<td>12<td>13
+  <tr><td class=hol> 7<td class=li2> 8<sup class=sg16>SG16</sup> <td          > 9<td class=la2>10<td>11<td>12<td>13
   <tr><td          >14<td class=li2>15<td class=la1>16<td          >17<td>18<td>19<td>20
-  <tr><td class=li1>21<td          >22<td          >23<td class=la2>24<td>25<td>26<td>27
+  <tr><td class=li1>21<td          >22<sup class=sg16>SG16</sup> <td          >23<td class=la2>24<td>25<td>26<td>27
   <tr><td          >28<td class=li2>29<td class=la1>30<td          >  <td>  <td>  <td>
 </tbody>
 </table>
@@ -250,9 +253,9 @@ If you do not have access to these and are interested in participating, please
 <tbody>
   <tr><td          >  <td          >  <td          >  <td          > 1<td> 2<td> 3<td> 4
   <tr><td class=li1> 5<td          > 6<td          > 7<td class=la2> 8<td> 9<td>10<td>11
-  <tr><td class=hol>12<td class=li2>13<td class=la1>14<td          >15<td>16<td>17<td>18
+  <tr><td class=hol>12<td class=li2>13<sup class=sg16>SG16</sup> <td class=la1>14<td          >15<td>16<td>17<td>18
   <tr><td class=li1>19<td          >20<td          >21<td class=la2>22<td>23<td>24<td>25
-  <tr><td          >26<td class=li2>27<td class=la1>28<td          >29<td>30<td>31<td>
+  <tr><td          >26<td class=li2>27<sup class=sg16>SG16</sup> <td class=la1>28<td          >29<td>30<td>31<td>
 </tbody>
 </table>
 
