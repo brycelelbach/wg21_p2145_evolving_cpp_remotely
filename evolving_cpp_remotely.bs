@@ -122,6 +122,8 @@ We will revisit our plans should the 2020-11 New York meeting also be
 .la2 { font-weight: bolder; color: orange; }
 .li1 { font-weight: bolder; color: blue; }
 .li2 { font-weight: bolder; color: teal; }
+.cwg { font-weight: bolder; color: hotpink; }
+.cwg { font-weight: bolder; color: burlywood; }
 .calendars { display: flex; flex-wrap: wrap; justify-content: center; }
 .calendar { margin: 1em; font-size: 125%; }
 .calendar thead { font-weight: bolder; }
@@ -137,6 +139,10 @@ The telecon calendar is as follows:
   <li><span class=li2>Library Evolution meetings:</span> 10:00AM Pacific on Tuesdays.
   <li><span class=la1>Language Evolution meetings:</span>  8:00AM Pacific on Wednesday.
   <li><span class=la2>Language Evolution meetings:</span> 10:00AM Pacific on Thursday.
+  <li><span class=cwg>Core Language:</span> 2020-04-20 at 17:00 UTC (1:00 p.m. EDT) for 2h of issue processing.
+  <li><span class=sg1>Concurrency &amp; Parallelism:</span> Monday 8:30-10:30 Pacific on Mondays, start date not yet set.
+  <li>ABI review group: no scheduled meetings
+  <li>SG10 feature testing: no scheduled meetings
 </ul>
 
 The topics for each [=telecon=] can be found here:
@@ -160,7 +166,7 @@ If you do not have access to these and are interested in participating, please
   <tr><td          >  <td          >  <td          > 1<td          > 2<td> 3<td> 4<td> 5
   <tr><td class=li1> 6<td          > 7<td          > 8<td class=la2> 9<td>10<td>11<td>12
   <tr><td          >13<td class=li2>14<td class=la1>15<td          >16<td>17<td>18<td>19
-  <tr><td class=li1>20<td          >21<td          >22<td class=la2>23<td>24<td>25<td>26
+  <tr><td class=li1>20<sup class=cwg>CWG</sup><td          >21<td          >22<td class=la2>23<td>24<td>25<td>26
   <tr><td          >27<td class=li2>28<td class=la1>29<td          >30<td>  <td>  <td>
 </tbody>
 </table>
