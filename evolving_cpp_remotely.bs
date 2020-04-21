@@ -150,8 +150,8 @@ The telecon calendar is as follows:
 
 The topics for each [=telecon=] can be found here:
 
-- [Remote Library Evolution GitHub Project](https://github.com/cplusplus/papers/projects/21).
-- [Remote Language Evolution GitHub Project](https://github.com/cplusplus/papers/projects/23).
+- [Remote Library Evolution GitHub Project](https://github.com/cplusplus/projects/2).
+- [Remote Language Evolution GitHub Project](https://github.com/cplusplus/projects/3).
 
 Details about how to join the telecons will be distributed through the Library
   and Language Evolution email lists and wiki.
