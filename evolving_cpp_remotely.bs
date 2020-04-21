@@ -1,8 +1,8 @@
 <pre class='metadata'>
 Title: Evolving C++ Remotely
-Shortname: P2145
-Revision: 0
-Status: P
+Shortname: D2145
+Revision: 1
+Status: D
 Group: WG21
 Audience: WG21
 Editor: Bryce Adelstein Lelbach — Library Evolution Chair, NVIDIA, brycelelbach@gmail.com
