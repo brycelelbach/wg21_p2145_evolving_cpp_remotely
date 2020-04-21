@@ -13,7 +13,7 @@
  *   - .toc for the Table of Contents (<ol class="toc">)
  *     + <span class="secno"> for the section numbers
  *   - #toc for the Table of Contents (<nav id="toc">)
- *   - ul.index for Indices (<a href="#ref">term</a><span>, in §N.M</span>)
+ *   - ul.index for Indices (<a href="#ref">term</a><span>, in Â§N.M</span>)
  *   - table.index for Index Tables (e.g. for properties or elements)
  *
  * Structural Markup
@@ -1319,7 +1319,7 @@ math, span.math {
   font-style: italic;
 }
 ul {
-  list-style-type: "— ";
+  list-style-type: "â€” ";
 }
 blockquote {
   counter-reset: paragraph;
@@ -1339,7 +1339,7 @@ div.numbered:before {
   counter-increment: paragraph;
 }
 div.newnumbered:before {
-  content: "�";
+  content: "ï¿½";
 }
 div.numbered ul, div.newnumbered ul {
   counter-reset: list_item;
@@ -1357,7 +1357,7 @@ div.numbered li:before {
   counter-increment: list_item;
 }
 div.newnumbered li:before {
-  content: "(�." counter(list_item) ")";
+  content: "(ï¿½." counter(list_item) ")";
   counter-increment: list_item;
 }
 </style>
@@ -1384,10 +1384,10 @@ div.newnumbered li:before {
     font-family: inherit;
 }
 .css::before, .property::before, .descriptor::before {
-    content: "‘";
+    content: "â€˜";
 }
 .css::after, .property::after, .descriptor::after {
-    content: "’";
+    content: "â€™";
 }
 .property, .descriptor {
     /* Don't wrap property and descriptor names */
@@ -1407,7 +1407,7 @@ pre .property::before, pre .property::after {
 [data-link-type="at-rule"]::before,
 [data-link-type="selector"]::before,
 [data-link-type="maybe"]::before {
-    content: "‘";
+    content: "â€˜";
 }
 [data-link-type="property"]::after,
 [data-link-type="propdesc"]::after,
@@ -1417,7 +1417,7 @@ pre .property::before, pre .property::after {
 [data-link-type="at-rule"]::after,
 [data-link-type="selector"]::after,
 [data-link-type="maybe"]::after {
-    content: "’";
+    content: "â€™";
 }
 
 [data-link-type].production::before,
@@ -1557,43 +1557,43 @@ dfn > a.self-link:hover {
     color: black;
 }
 
-a.self-link::before            { content: "¶"; }
-.heading > a.self-link::before { content: "§"; }
+a.self-link::before            { content: "Â¶"; }
+.heading > a.self-link::before { content: "Â§"; }
 dfn > a.self-link::before      { content: "#"; }</style>
- </head><body class="h-entry toc-inline"><p id="toc-nav"><a id="toc-jump" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#toc"><span aria-hidden="true">↑</span> <span>Jump to Table of Contents</span></a><a id="toc-toggle" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#toc"><span aria-hidden="true">→</span> <span>Pop Out Sidebar</span></a></p>
+ </head><body class="h-entry toc-inline"><p id="toc-nav"><a id="toc-jump" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#toc"><span aria-hidden="true">â†‘</span> <span>Jump to Table of Contents</span></a><a id="toc-toggle" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#toc"><span aria-hidden="true">â†’</span> <span>Pop Out Sidebar</span></a></p>
   <div class="head">
    <p data-fill-with="logo"></p>
    <h1 class="p-name no-ref" id="title">P2145R0<br>Evolving C++ Remotely</h1>
-   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Published Proposal, <time class="dt-updated" datetime="2020-04-12">2020-04-12</time></span></h2>
+   <h2 class="no-num no-toc no-ref heading settled" id="subtitle"><span class="content">Published Proposal, <time class="dt-updated" datetime="2020-04-20">2020-04-20</time></span></h2>
    <div data-fill-with="spec-metadata">
     <dl>
      <dt>Authors:
      </dt><dd>
-      </dd><dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:brycelelbach@gmail.com">Bryce Adelstein Lelbach — Library Evolution Chair</a> (<span class="p-org org">NVIDIA</span>)
+      </dd><dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:brycelelbach@gmail.com">Bryce Adelstein Lelbach â€” Library Evolution Chair</a> (<span class="p-org org">NVIDIA</span>)
      </dd><dd>
-      </dd><dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:titus@google.com">Titus Winters — Library Evolution Chair Emeritus</a> (<span class="p-org org">Google</span>)
+      </dd><dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:titus@google.com">Titus Winters â€” Library Evolution Chair Emeritus</a> (<span class="p-org org">Google</span>)
      </dd><dd>
-      </dd><dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:f.fracassi@gmx.net">Fabio Fracassi — Incoming Library Evolution Vice Chair</a> (<span class="p-org org">CODE University of Applied Sciences</span>)
+      </dd><dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:f.fracassi@gmx.net">Fabio Fracassi â€” Incoming Library Evolution Vice Chair</a> (<span class="p-org org">CODE University of Applied Sciences</span>)
      </dd><dd>
-      </dd><dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:Billy.Baker@flightsafety.com">Billy Baker — Incoming Library Evolution Incubator Chair</a> (<span class="p-org org">FlightSafety</span>)
+      </dd><dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:Billy.Baker@flightsafety.com">Billy Baker â€” Incoming Library Evolution Incubator Chair</a> (<span class="p-org org">FlightSafety</span>)
      </dd><dd>
-      </dd><dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:nliber@gmail.com">Nevin Liber — Incoming Library Evolution Incubator Vice Chair</a> (<span class="p-org org">Argonne National Laboratory</span>)
+      </dd><dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:nliber@gmail.com">Nevin Liber â€” Incoming Library Evolution Incubator Vice Chair</a> (<span class="p-org org">Argonne National Laboratory</span>)
      </dd><dd>
-      </dd><dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:jfbastien@apple.com">JF Bastien — Language Evolution Chair</a> (<span class="p-org org">Apple</span>)
+      </dd><dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:jfbastien@apple.com">JF Bastien â€” Language Evolution Chair</a> (<span class="p-org org">Apple</span>)
      </dd><dd>
-      </dd><dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:david.stone@uber.com">David Stone — Language Evolution Vice Chair</a> (<span class="p-org org">Uber</span>)
+      </dd><dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:david.stone@uber.com">David Stone â€” Language Evolution Vice Chair</a> (<span class="p-org org">Uber</span>)
      </dd><dd>
-      </dd><dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:botond_ballo@yahoo.ca">Botond Ballo — Language Evolution Incubator Chair</a> (<span class="p-org org">Mozilla</span>)
+      </dd><dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:botond_ballo@yahoo.ca">Botond Ballo â€” Language Evolution Incubator Chair</a> (<span class="p-org org">Mozilla</span>)
      </dd><dd>
-      </dd><dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:erich.keane@intel.com">Erich Keane — Language Evolution Incubator Vice Chair</a> (<span class="p-org org">Intel</span>)
+      </dd><dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:erich.keane@intel.com">Erich Keane â€” Language Evolution Incubator Vice Chair</a> (<span class="p-org org">Intel</span>)
      </dd><dd>
-      </dd><dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:tom@honermann.net">Tom Honermann — SG16 (Unicode and text processing) Chair</a> (<span class="p-org org">Synopsys</span>)
+      </dd><dd class="editor p-author h-card vcard"><a class="p-name fn u-email email" href="mailto:tom@honermann.net">Tom Honermann â€” SG16 (Unicode and text processing) Chair</a> (<span class="p-org org">Synopsys</span>)
      </dd><dt>Source:
      </dt><dd><a href="https://github.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/blob/master/evolving_cpp_remotely.bs">GitHub</a>
      </dd><dt>Issue Tracking:
      </dt><dd><a href="https://github.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/issues">GitHub</a>
      </dd><dt>Project:
-     </dt><dd>ISO/IEC JTC1/SC22/WG21 14882: Programming Language — C++
+     </dt><dd>ISO/IEC JTC1/SC22/WG21 14882: Programming Language â€” C++
      </dd><dt>Audience:
      </dt><dd>WG21
     </dd></dl>
@@ -1623,13 +1623,13 @@ dfn > a.self-link::before      { content: "#"; }</style>
       </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecon-decision-making"><span class="secno">6.4</span> <span class="content">Telecon Decision-Making</span></a>
       </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecon-quorum"><span class="secno">6.5</span> <span class="content">Telecon Quorum</span></a>
       </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecon-chairing"><span class="secno">6.6</span> <span class="content">Telecon Chairing</span></a>
-      </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons-arent-mandatory"><span class="secno">6.7</span> <span class="content">Telecons Aren’t Mandatory</span></a>
+      </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons-arent-mandatory"><span class="secno">6.7</span> <span class="content">Telecons Arenâ€™t Mandatory</span></a>
      </li></ol>
     </li><li>
      <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-discussions"><span class="secno">7</span> <span class="content">Email List Discussions</span></a>
      <ol class="toc">
       <li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#what-email-is-good-for"><span class="secno">7.1</span> <span class="content">What Email List Discussions Are Good For</span></a>
-      </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#what-email-isnt-good-for"><span class="secno">7.2</span> <span class="content">What Email List Discussions Aren’t Good For</span></a>
+      </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#what-email-isnt-good-for"><span class="secno">7.2</span> <span class="content">What Email List Discussions Arenâ€™t Good For</span></a>
       </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#summarize-email-list-discussion"><span class="secno">7.3</span> <span class="content">Summarize Email List Discussions</span></a>
      </li></ol>
     </li><li>
@@ -1675,7 +1675,7 @@ dfn > a.self-link::before      { content: "#"; }</style>
   <main>
    <h2 class="heading settled" data-level="1" id="introduction"><span class="secno">1. </span><span class="content">Introduction</span><a class="self-link" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#introduction"></a></h2>
    <p>Due to the ongoing global health crisis caused by the novel coronavirus, the
-  ISO C++ Committee’s planned June 2020 meeting in Varna, Bulgaria was called
+  ISO C++ Committeeâ€™s planned June 2020 meeting in Varna, Bulgaria was called
   off.
 During this uncertain time, our priority must be the safety and well-being of
   the committee and the public at large.</p>
@@ -1711,9 +1711,9 @@ We will revisit our plans should the 2020-11 New York meeting also be
    <p>The topics for each <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons">telecon</a> can be found here:</p>
    <ul>
     <li data-md="">
-     <p><a href="https://github.com/cplusplus/papers/projects/21">Remote Library Evolution GitHub Project</a>.</p>
+     <p><a href="https://github.com/cplusplus/projects/2">Remote Library Evolution GitHub Project</a>.</p>
     </li><li data-md="">
-     <p><a href="https://github.com/cplusplus/papers/projects/23">Remote Language Evolution GitHub Project</a>.</p>
+     <p><a href="https://github.com/cplusplus/projects/3">Remote Language Evolution GitHub Project</a>.</p>
    </li></ul>
    <p>Details about how to join the telecons will be distributed through the Library
   and Language Evolution email lists and wiki.
@@ -2123,11 +2123,11 @@ Those will contain the link to the teleconference.</p>
       </li><li data-md="">
        <p><a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussions">Email List Discussions</a>.</p>
       </li><li data-md="">
-       <p><a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons①">Telecons</a>.</p>
+       <p><a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘ ">Telecons</a>.</p>
      </li></ul>
     </li><li data-md="">
      <p>Starting in April 2020 Library and Language Evolution will have a weekly 1.5
-  hour <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons②">telecon</a>.</p>
+  hour <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘¡">telecon</a>.</p>
      <ul>
       <li data-md="">
        <p>Each will have two time slots which alternate each week.</p>
@@ -2137,17 +2137,17 @@ Those will contain the link to the teleconference.</p>
         </li><li data-md="">
          <p>Language on Wednesday 8:00AM Pacific / Thursday 10:00AM Pacific.</p>
         </li><li data-md="">
-         <p>Modulo holidays, where we’ll defer the meeting by a day.</p>
+         <p>Modulo holidays, where weâ€™ll defer the meeting by a day.</p>
        </li></ul>
       </li><li data-md="">
-       <p>We will use <a href="https://zoom.us/">Zoom</a>, the official ISO <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons③">telecon</a> platform.</p>
+       <p>We will use <a href="https://zoom.us/">Zoom</a>, the official ISO <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘¢">telecon</a> platform.</p>
      </li></ul>
     </li><li data-md="">
-     <p>We will make <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#decision-making" id="ref-for-decision-making①">decisions</a> on these <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons④">telecons</a> using straw
+     <p>We will make <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#decision-making" id="ref-for-decision-makingâ‘ ">decisions</a> on these <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘£">telecons</a> using straw
   polls.</p>
      <ul>
       <li data-md="">
-       <p>Decisions made on <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons⑤">telecons</a> will be "Tentatively Ready", which means:</p>
+       <p>Decisions made on <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘¤">telecons</a> will be "Tentatively Ready", which means:</p>
        <ul>
         <li data-md="">
          <p>They are sent to the Library Evolution or Language Evolution email
@@ -2159,24 +2159,24 @@ Those will contain the link to the teleconference.</p>
   meeting.</p>
        </li></ul>
       </li><li data-md="">
-       <p>Missing a <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons⑥">telecon</a> does not prevent your voice from being heard.</p>
+       <p>Missing a <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘¥">telecon</a> does not prevent your voice from being heard.</p>
      </li></ul>
     </li><li data-md="">
-     <p>Use <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussions①">email list discussions</a> for <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#review" id="ref-for-review①">review</a> whenever possible to minimize
-  the amount of work that must be done on <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons⑦">telecons</a> or at future
+     <p>Use <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussionsâ‘ ">email list discussions</a> for <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#review" id="ref-for-reviewâ‘ ">review</a> whenever possible to minimize
+  the amount of work that must be done on <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘¦">telecons</a> or at future
   face-to-face meetings.</p>
      <ul>
       <li data-md="">
-       <p>Chairs will start curated <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussions②">email list discussions</a> of certain papers.</p>
+       <p>Chairs will start curated <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussionsâ‘¡">email list discussions</a> of certain papers.</p>
       </li><li data-md="">
-       <p>Try to summarize <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussions③">email list discussions</a> that you start or participate
+       <p>Try to summarize <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussionsâ‘¢">email list discussions</a> that you start or participate
   in.</p>
      </li></ul>
     </li><li data-md="">
      <p>There will be no separate Library or Language Evolution Incubator meetings.</p>
    </li></ul>
    <h2 class="heading settled" data-level="4" id="work-at-f2f-meetings"><span class="secno">4. </span><span class="content">Work Performed at Face-to-Face Meetings</span><a class="self-link" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#work-at-f2f-meetings"></a></h2>
-   <p>First, we need to understand what exactly we’re losing with the postponement
+   <p>First, we need to understand what exactly weâ€™re losing with the postponement
   of the 2020-06 Varna meeting.
 What exactly do we do at face-to-face meetings, and how much time do we spend
   doing it?</p>
@@ -2207,41 +2207,41 @@ For both the Library and Language tracks, we spend a total of ~58 hours per
     <li data-md="">
      <p><dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport="" id="mailings">Mailings</dfn>, which are regular distributions of committee
   proposals.
-Mailings are a good way to <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#information-distribution" id="ref-for-information-distribution①">distribute information</a>.</p>
+Mailings are a good way to <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#information-distribution" id="ref-for-information-distributionâ‘ ">distribute information</a>.</p>
     </li><li data-md="">
-     <p><dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport="" id="email-list-discussions">Email List Discussions</dfn>, which are good for <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#information-distribution" id="ref-for-information-distribution②">information distribution</a> and <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#review" id="ref-for-review②">review</a>.
-They are not as effective for <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#decision-making" id="ref-for-decision-making②">decision-making</a> as it can be hard to
+     <p><dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport="" id="email-list-discussions">Email List Discussions</dfn>, which are good for <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#information-distribution" id="ref-for-information-distributionâ‘¡">information distribution</a> and <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#review" id="ref-for-reviewâ‘¡">review</a>.
+They are not as effective for <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#decision-making" id="ref-for-decision-makingâ‘¡">decision-making</a> as it can be hard to
   determine consensus.
 Email list discussions are asynchronous, so everyone can participate when
   it is convenient for them.</p>
     </li><li data-md="">
-     <p><dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport="" id="telecons">Telecons</dfn>, which are good for <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#information-distribution" id="ref-for-information-distribution③">information distribution</a>, <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#review" id="ref-for-review③">review</a>, and <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#decision-making" id="ref-for-decision-making③">decision-making</a>.
+     <p><dfn class="dfn-paneled" data-dfn-type="dfn" data-noexport="" id="telecons">Telecons</dfn>, which are good for <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#information-distribution" id="ref-for-information-distributionâ‘¢">information distribution</a>, <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#review" id="ref-for-reviewâ‘¢">review</a>, and <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#decision-making" id="ref-for-decision-makingâ‘¢">decision-making</a>.
 However, they are synchronous by nature, which introduces scheduling
   constraints that limits participation and makes them a scarce resource.</p>
    </li></ul>
    <h2 class="heading settled" data-level="6" id="telecon"><span class="secno">6. </span><span class="content">Telecons</span><a class="self-link" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecon"></a></h2>
-   <p>Because <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons⑧">telecons</a> are the only good option for <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#decision-making" id="ref-for-decision-making④">decision-making</a> and they
-  are a scarce resource, we should try to use them for <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#decision-making" id="ref-for-decision-making⑤">decision-making</a> as
+   <p>Because <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘§">telecons</a> are the only good option for <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#decision-making" id="ref-for-decision-makingâ‘£">decision-making</a> and they
+  are a scarce resource, we should try to use them for <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#decision-making" id="ref-for-decision-makingâ‘¤">decision-making</a> as
   much as possible.
-That means we should do as much <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#information-distribution" id="ref-for-information-distribution④">distribution of information</a> and <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#review" id="ref-for-review④">review</a> outside of <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons⑨">telecons</a> as possible.
+That means we should do as much <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#information-distribution" id="ref-for-information-distributionâ‘£">distribution of information</a> and <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#review" id="ref-for-reviewâ‘£">review</a> outside of <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘¨">telecons</a> as possible.
 It is important that participants read the proposals that will be discussed on
-  a <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons①⓪">telecon</a> before the <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons①①">telecon</a>, and utilize <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussions④">email list discussions</a> whenever possible.</p>
+  a <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘ â“ª">telecon</a> before the <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘ â‘ ">telecon</a>, and utilize <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussionsâ‘£">email list discussions</a> whenever possible.</p>
    <h3 class="heading settled" data-level="6.1" id="telecon-duration-and-cadence"><span class="secno">6.1. </span><span class="content">Telecon Duration and Cadence</span><a class="self-link" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecon-duration-and-cadence"></a></h3>
-   <p>As mentioned earlier in <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#amount-of-work-at-f2f-meetings">§ 4.1 Amount of Work Performed at Face-to-Face Meetings</a>, we spend ~174
+   <p>As mentioned earlier in <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#amount-of-work-at-f2f-meetings">Â§â€¯4.1 Amount of Work Performed at Face-to-Face Meetings</a>, we spend ~174
   hours per year on Library and Language Evolution at face-to-face meetings.
 This is an average of ~3.3 hours per week (~4 months per committee meeting
   equivalent).</p>
    <p>~3.3 hours per week is a slightly larger commitment than reasonable, especially
   given that other parts of the committee will also be meeting remotely.
-If some part of the <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#information-distribution" id="ref-for-information-distribution⑤">information distribution</a> and <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#review" id="ref-for-review⑤">review</a> that occurs at
-  face-to-face committee meetings can happen via <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussions⑤">email list discussions</a> message platforms instead of <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons①②">telecons</a>, it should not be necessary for
-  us to make up all of the time of face-to-face meetings via <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons①③">telecons</a>.</p>
-   <p>There are tradeoffs in selecting a duration for individual <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons①④">telecons</a>.
-Longer <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons①⑤">telecons</a> can be harder to schedule and can strain the endurance of
+If some part of the <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#information-distribution" id="ref-for-information-distributionâ‘¤">information distribution</a> and <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#review" id="ref-for-reviewâ‘¤">review</a> that occurs at
+  face-to-face committee meetings can happen via <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussionsâ‘¤">email list discussions</a> message platforms instead of <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘ â‘¡">telecons</a>, it should not be necessary for
+  us to make up all of the time of face-to-face meetings via <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘ â‘¢">telecons</a>.</p>
+   <p>There are tradeoffs in selecting a duration for individual <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘ â‘£">telecons</a>.
+Longer <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘ â‘¤">telecons</a> can be harder to schedule and can strain the endurance of
   participants.
-Shorter <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons①⑥">telecons</a> are easier to schedule and may draw greater attendance,
+Shorter <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘ â‘¥">telecons</a> are easier to schedule and may draw greater attendance,
   but disrupt the continuity of discussions.</p>
-   <p>Given the committee’s global nature, it is difficult to find times that are
+   <p>Given the committeeâ€™s global nature, it is difficult to find times that are
   convenient for all committee members.
 Instead of always holding weekly meetings at a single time, we should either
   meet multiple times per week or meet once per week but have two time slots
@@ -2254,7 +2254,7 @@ This will give us additional scheduling flexibility.</p>
 If this cadence and duration proves to be too much, we will adjust by scaling
   back and cancelling meetings.</p>
    <h3 class="heading settled" data-level="6.2" id="telecon-platform"><span class="secno">6.2. </span><span class="content">Telecon Platform</span><a class="self-link" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecon-platform"></a></h3>
-   <p>Our <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons①⑦">telecon</a> platform needs to be able to support the following:</p>
+   <p>Our <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘ â‘¦">telecon</a> platform needs to be able to support the following:</p>
    <ul>
     <li data-md="">
      <p>Supports video chat.</p>
@@ -2268,7 +2268,7 @@ If this cadence and duration proves to be too much, we will adjust by scaling
       <li data-md="">
        <p>The hand queue should show the order in which hands were raised.</p>
       </li><li data-md="">
-       <p>The <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons①⑧">telecon</a> organizer should to be able to lower raised hands.</p>
+       <p>The <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘ â‘§">telecon</a> organizer should to be able to lower raised hands.</p>
      </li></ul>
     </li><li data-md="">
      <p>Attendee polling.</p>
@@ -2276,39 +2276,39 @@ If this cadence and duration proves to be too much, we will adjust by scaling
       <li data-md="">
        <p>Multiple types of polls should be supported: at least 5-way and 3-way polls.</p>
       </li><li data-md="">
-       <p>The <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons①⑨">telecon</a> organizer should be able to clear votes.</p>
+       <p>The <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘ â‘¨">telecon</a> organizer should be able to clear votes.</p>
      </li></ul>
     </li><li data-md="">
-     <p>Attendee renaming by <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons②⓪">telecon</a> organizer.</p>
+     <p>Attendee renaming by <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘¡â“ª">telecon</a> organizer.</p>
     </li><li data-md="">
      <p>Meeting recording.</p>
    </li></ul>
-   <p>We will use <a href="https://zoom.us/">Zoom</a>, the official ISO <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons②①">telecon</a> platform.
-Zoom supports most of these features and the committee has field experience <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#field-experience">§ 9 Field Experience With Remote Work</a> using this platform to hold <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons②②">telecons</a>.</p>
+   <p>We will use <a href="https://zoom.us/">Zoom</a>, the official ISO <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘¡â‘ ">telecon</a> platform.
+Zoom supports most of these features and the committee has field experience <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#field-experience">Â§â€¯9 Field Experience With Remote Work</a> using this platform to hold <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘¡â‘¡">telecons</a>.</p>
    <h3 class="heading settled" data-level="6.3" id="no-separate-incubator-telecons"><span class="secno">6.3. </span><span class="content">No Separate Incubator Telecons</span><a class="self-link" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#no-separate-incubator-telecons"></a></h3>
    <p>The primary reason that Library and Language Evolution Incubator meets
   separately and concurrently with Library and Language Evolution is due to the
   time constraints of our physical meetings.</p>
    <p>For remote meetings, we do not have the same kind of time constraints that force
   concurrent sessions of Evolution and Incubator groups.
-As such, there does not seem to be much value in holding separate <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons②③">telecons</a>.</p>
-   <p>All <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons②④">telecon</a> discussions will be considered joint exercises of Evolution and
+As such, there does not seem to be much value in holding separate <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘¡â‘¢">telecons</a>.</p>
+   <p>All <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘¡â‘£">telecon</a> discussions will be considered joint exercises of Evolution and
   Evolution Incubator.</p>
    <h3 class="heading settled" data-level="6.4" id="telecon-decision-making"><span class="secno">6.4. </span><span class="content">Telecon Decision-Making</span><a class="self-link" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecon-decision-making"></a></h3>
-   <p>We will make decisions on <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons②⑤">telecons</a> via straw polls, just as we do at
+   <p>We will make decisions on <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘¡â‘¤">telecons</a> via straw polls, just as we do at
   face-to-face meetings.</p>
-   <p>Any decisions made on <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons②⑥">telecons</a> will be considered "Tentatively Ready".</p>
+   <p>Any decisions made on <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘¡â‘¥">telecons</a> will be considered "Tentatively Ready".</p>
    <p>For forwarding of proposals to other subgroups, this means that the paper will
   be forwarded on the ISO C++ GitHub for paper tracking, but marked with the
   "Tentatively Ready" tag.
 At the start of the next face-to-face meeting, we will briefly go through the
   list of "Tentatively Ready" proposals that were forwarded to see if anyone
   has new information or new perspectives that warrant revisiting those proposals.</p>
-   <p>For all "Tentatively Ready" decisions made on <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons②⑦">telecons</a>, after the <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons②⑧">telecon</a> a message will be sent to the relevant email lists with a summary of the
-  decisions, to give anyone who did not attend the <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons②⑨">telecon</a> a chance to voice
+   <p>For all "Tentatively Ready" decisions made on <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘¡â‘¦">telecons</a>, after the <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘¡â‘§">telecon</a> a message will be sent to the relevant email lists with a summary of the
+  decisions, to give anyone who did not attend the <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘¡â‘¨">telecon</a> a chance to voice
   their opinion.</p>
    <h3 class="heading settled" data-level="6.5" id="telecon-quorum"><span class="secno">6.5. </span><span class="content">Telecon Quorum</span><a class="self-link" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecon-quorum"></a></h3>
-   <p>We expect to have lower attendance on <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons③⓪">telecons</a> than we would have at
+   <p>We expect to have lower attendance on <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘¢â“ª">telecons</a> than we would have at
   face-to-face meetings.</p>
    <p>We do not have readily accessible data for attendance in Library Evolution
   and Language Evolution.
@@ -2319,39 +2319,39 @@ Typically, attendance in Library Evolution is between 15 and 30 people and
 For quorum, we need to have both the right people and the right quantity of
   them.</p>
    <p>That said, if we have fewer than 15 participants on any given Library or
-  Language Evolution <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons③①">telecon</a>, it will be difficult for us to make meaningful
+  Language Evolution <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘¢â‘ ">telecon</a>, it will be difficult for us to make meaningful
   decisions.
-In such a circumstance, we would avoid <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#decision-making" id="ref-for-decision-making⑥">decision-making</a> and instead use our
-  time for <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#review" id="ref-for-review⑥">review</a> and <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#information-distribution" id="ref-for-information-distribution⑥">information distribution</a>.</p>
+In such a circumstance, we would avoid <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#decision-making" id="ref-for-decision-makingâ‘¥">decision-making</a> and instead use our
+  time for <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#review" id="ref-for-reviewâ‘¥">review</a> and <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#information-distribution" id="ref-for-information-distributionâ‘¥">information distribution</a>.</p>
    <h3 class="heading settled" data-level="6.6" id="telecon-chairing"><span class="secno">6.6. </span><span class="content">Telecon Chairing</span><a class="self-link" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecon-chairing"></a></h3>
    <p>Running weekly telecons is not a small amount of effort.
 Fortunately, we have multiple chairs available for each track (Evolution chair,
   Evolution vice chair, Incubator chair, and Incubator vice chair), so we can
   distribute the burden amongst ourselves.</p>
-   <h3 class="heading settled" data-level="6.7" id="telecons-arent-mandatory"><span class="secno">6.7. </span><span class="content">Telecons Aren’t Mandatory</span><a class="self-link" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons-arent-mandatory"></a></h3>
+   <h3 class="heading settled" data-level="6.7" id="telecons-arent-mandatory"><span class="secno">6.7. </span><span class="content">Telecons Arenâ€™t Mandatory</span><a class="self-link" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons-arent-mandatory"></a></h3>
    <p>If you are a stakeholder on a particular proposal or subject, you are strongly
-  encouraged to attend <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons③②">telecons</a> on that proposal or subject.
-However, <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons③③">telecon</a> attendance is encouraged but not mandatory.</p>
-   <p><b>Missing a <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons③④">telecon</a> does not prevent your voice from being heard.</b> If a decision is made on a <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons③⑤">telecon</a> and you feel you have a new perspective or
+  encouraged to attend <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘¢â‘¡">telecons</a> on that proposal or subject.
+However, <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘¢â‘¢">telecon</a> attendance is encouraged but not mandatory.</p>
+   <p><b>Missing a <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘¢â‘£">telecon</a> does not prevent your voice from being heard.</b> If a decision is made on a <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘¢â‘¤">telecon</a> and you feel you have a new perspective or
   new information that was not considered, you should make the committee aware
-  via <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussions⑥">email list discussion</a>.
+  via <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussionsâ‘¥">email list discussion</a>.
 As with face-to-face meetings, we can always revisit decisions if we have new
   information.</p>
    <h2 class="heading settled" data-level="7" id="email-discussions"><span class="secno">7. </span><span class="content">Email List Discussions</span><a class="self-link" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-discussions"></a></h2>
-   <p>We have always made use of <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussions⑦">email list discussions</a> for inter-meeting work,
+   <p>We have always made use of <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussionsâ‘¦">email list discussions</a> for inter-meeting work,
   but they are more important than ever now, and we should strive to do more work
   via email.</p>
-   <p>To help drive <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussions⑧">email list discussions</a> and minimize the need for <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons③⑥">telecons</a>,
+   <p>To help drive <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussionsâ‘§">email list discussions</a> and minimize the need for <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘¢â‘¥">telecons</a>,
   chairs will start curated discussions of papers on a regular basis.
 This is something Library Evolution has done in the past to help address
   backlogs.</p>
    <h3 class="heading settled" data-level="7.1" id="what-email-is-good-for"><span class="secno">7.1. </span><span class="content">What Email List Discussions Are Good For</span><a class="self-link" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#what-email-is-good-for"></a></h3>
-   <p>As discussed earlier, email list discussions are an excellent medium for us to <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#review" id="ref-for-review⑦">review</a> proposals and <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#information-distribution" id="ref-for-information-distribution⑦">distribute information</a>.
-They are asynchronous, which means people can participate in <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussions⑨">email list discussions</a> when it is convenient for them to do so.</p>
-   <p><a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#review" id="ref-for-review⑧">Review</a> over email likely works best when the discussion is very targeted.
-If you want to start an <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussions①⓪">email list discussion</a> of a proposal, it’s probably
+   <p>As discussed earlier, email list discussions are an excellent medium for us to <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#review" id="ref-for-reviewâ‘¦">review</a> proposals and <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#information-distribution" id="ref-for-information-distributionâ‘¦">distribute information</a>.
+They are asynchronous, which means people can participate in <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussionsâ‘¨">email list discussions</a> when it is convenient for them to do so.</p>
+   <p><a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#review" id="ref-for-reviewâ‘§">Review</a> over email likely works best when the discussion is very targeted.
+If you want to start an <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussionsâ‘ â“ª">email list discussion</a> of a proposal, itâ€™s probably
   best to begin with a focused set of questions that you are seeking answers for.</p>
-   <p>Here are some examples of questions that are probably well suited to an <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussions①①">email list discussion</a>:</p>
+   <p>Here are some examples of questions that are probably well suited to an <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussionsâ‘ â‘ ">email list discussion</a>:</p>
    <blockquote>
     <p>I was writing Proposal X and ran into Specific Problem Y. Can anyone suggest
 some solutions?</p>
@@ -2362,11 +2362,11 @@ in the standard. Does anyone know?</p>
    </blockquote>
    <blockquote>
     <p>I noticed Perceived Problem X in the standard, and I was thinking about
-writing a proposal to fix it in Specific Way Y. What do y’all think about my
+writing a proposal to fix it in Specific Way Y. What do yâ€™all think about my
 solution?</p>
    </blockquote>
    <blockquote>
-    <p>I was considering proposing Feature X. Do y’all think this is worth
+    <p>I was considering proposing Feature X. Do yâ€™all think this is worth
 standardizing?</p>
    </blockquote>
    <blockquote>
@@ -2377,7 +2377,7 @@ Specific Downsides B). The author and I wanted to know what the committee
 thought about these tradeoffs.</p>
    </blockquote>
    <blockquote>
-    <p>Decision X was made on Telecon A; I’m not sure I understand the rationale,
+    <p>Decision X was made on Telecon A; Iâ€™m not sure I understand the rationale,
 can someone explain?</p>
    </blockquote>
    <blockquote>
@@ -2386,28 +2386,28 @@ discussion?</p>
    </blockquote>
    <blockquote>
     <p>Attached is an update of Proposal X, with the following changes based on
-discussion from Telecon A: List of Changes B. I’d like to call particular
+discussion from Telecon A: List of Changes B. Iâ€™d like to call particular
 attention to Part Y and Open Question Z - please let me know if you have any
 thoughts or new information.</p>
    </blockquote>
-   <h3 class="heading settled" data-level="7.2" id="what-email-isnt-good-for"><span class="secno">7.2. </span><span class="content">What Email List Discussions Aren’t Good For</span><a class="self-link" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#what-email-isnt-good-for"></a></h3>
-   <p>However, <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussions①②">email list discussions</a> have downsides.
+   <h3 class="heading settled" data-level="7.2" id="what-email-isnt-good-for"><span class="secno">7.2. </span><span class="content">What Email List Discussions Arenâ€™t Good For</span><a class="self-link" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#what-email-isnt-good-for"></a></h3>
+   <p>However, <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussionsâ‘ â‘¡">email list discussions</a> have downsides.
 The signal-to-noise ratio can be quite bad and it can be difficult to identify
-  the consensus of an <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussions①③">email list discussion</a> and leave with clear outcomes.</p>
-   <p>Additionally, sometimes <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussions①④">email list discussions</a> are not effective due to lack
+  the consensus of an <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussionsâ‘ â‘¢">email list discussion</a> and leave with clear outcomes.</p>
+   <p>Additionally, sometimes <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussionsâ‘ â‘£">email list discussions</a> are not effective due to lack
   of participation.
-This can happen when the discussion doesn’t have a clear scope or goal.</p>
-   <p>You shouldn’t necessarily expect someone else to guide the discussion for you;
-  chairs will help to do so whenever possible, but we don’t always have the
+This can happen when the discussion doesnâ€™t have a clear scope or goal.</p>
+   <p>You shouldnâ€™t necessarily expect someone else to guide the discussion for you;
+  chairs will help to do so whenever possible, but we donâ€™t always have the
   bandwidth for that.
-If you want to start an effective <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussions①⑤">email list discussion</a>, you should take
+If you want to start an effective <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussionsâ‘ â‘¤">email list discussion</a>, you should take
   responsibility for scoping and guiding it.</p>
    <p>Here are some anti-patterns for email list discussions.</p>
    <blockquote>
-    <p>Let’s discuss Proposal X. What do you think about it?</p>
+    <p>Letâ€™s discuss Proposal X. What do you think about it?</p>
    </blockquote>
-   <p>Alternative: If you want to discuss the proposal, you’ve read it and probably
-  have specific things in mind that you’d like to discuss.
+   <p>Alternative: If you want to discuss the proposal, youâ€™ve read it and probably
+  have specific things in mind that youâ€™d like to discuss.
 So, write a concise, thoughtful email summarizing the specific matters or
   questions that you think ought to be discussed.</p>
    <blockquote>
@@ -2415,19 +2415,19 @@ So, write a concise, thoughtful email summarizing the specific matters or
    </blockquote>
    <p>Alternative: Consider writing a paper.</p>
    <blockquote>
-    <p>Please don’t do Approach A and Design Choice B in Proposal X.</p>
+    <p>Please donâ€™t do Approach A and Design Choice B in Proposal X.</p>
    </blockquote>
    <p>Alternative: Explain yourself!
 Make sure to describe your thought process and rationale, so that others
   understand your thinking.
-Instead of saying "don’t do A and B", suggest alternatives that the authors
+Instead of saying "donâ€™t do A and B", suggest alternatives that the authors
   might explore.</p>
    <h3 class="heading settled" data-level="7.3" id="summarize-email-list-discussion"><span class="secno">7.3. </span><span class="content">Summarize Email List Discussions</span><a class="self-link" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#summarize-email-list-discussion"></a></h3>
-   <p>Because <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussions①⑥">email list discussions</a> have bad signal-to-noise ratio and can be
-  difficult to follow, it’s often hard to identify the outcomes of said
+   <p>Because <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions" id="ref-for-email-list-discussionsâ‘ â‘¥">email list discussions</a> have bad signal-to-noise ratio and can be
+  difficult to follow, itâ€™s often hard to identify the outcomes of said
   discussions.</p>
    <p>It is invaluable for someone to step in at or around the end of a discussion and
-  write up a short email summarizing their understanding of everyone’s position
+  write up a short email summarizing their understanding of everyoneâ€™s position
   and any outcomes.
 You can then send this summary and ask if everyone agrees with it.
 This can help bring much needed closure to discussions.</p>
@@ -2481,7 +2481,7 @@ Each group will not be reviewing a specific section, but instead reviewing the
 More details will be shared on the Library Evolution email list in the next few
   weeks.</p>
    <p>Once all of the review groups have completed their work and prepared their
-  summary papers, we will discuss the results in a series of <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons③⑦">telecons</a> over
+  summary papers, we will discuss the results in a series of <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘¢â‘¦">telecons</a> over
   the summer and work towards resolution of any open matters that need decisions
   and guidance.</p>
    <h4 class="heading settled" data-level="8.1.3" id="modularizing-the-standard-library"><span class="secno">8.1.3. </span><span class="content">Modularizing the Standard Library</span><a class="self-link" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#modularizing-the-standard-library"></a></h4>
@@ -2520,7 +2520,7 @@ fine-grained modules versus coarse-grained modules?</p>
      <p>Do standard library modularization and freestanding reorganization need to be
 linked together?</p>
    </li></ul>
-   <p>We will hold <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons③⑧">telecons</a> to reach consensus on these and other questions and
+   <p>We will hold <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘¢â‘§">telecons</a> to reach consensus on these and other questions and
   define the scope of what we want to pursue.</p>
    <h4 class="heading settled" data-level="8.1.4" id="coroutine-library-support"><span class="secno">8.1.4. </span><span class="content">Coroutine Library Support</span><a class="self-link" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#coroutine-library-support"></a></h4>
    <p>Richer coroutine library support is a goal for C++23, but we have not yet
@@ -2562,7 +2562,7 @@ However, we lack a proposal for these features:</p>
    <p>We need to identify what exactly we want here.
 What are our goals for coroutine library support?
 What features do we desire?</p>
-   <p>We will discuss scoping of this work on an upcoming <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons③⑨">telecon</a>.
+   <p>We will discuss scoping of this work on an upcoming <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘¢â‘¨">telecon</a>.
 Ideally we need a paper proposing what the scope and goals should be.</p>
    <h3 class="heading settled" data-level="8.2" id="high-priority-language-work"><span class="secno">8.2. </span><span class="content">High-Priority Language Work</span><a class="self-link" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#high-priority-language-work"></a></h3>
    <h4 class="heading settled" data-level="8.2.1" id="pattern-matching"><span class="secno">8.2.1. </span><span class="content">Pattern Matching</span><a class="self-link" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#pattern-matching"></a></h4>
@@ -2591,13 +2591,13 @@ The Tooling and Unicode study groups, among others, have successfully and
     </li><li data-md="">
      <p>Discussions happen consecutively, which keeps them "in cache".</p>
    </li></ul>
-   <p>We can’t replicate these effects in remote meetings.</p>
+   <p>We canâ€™t replicate these effects in remote meetings.</p>
    <h2 class="heading settled" data-level="10" id="deadlines"><span class="secno">10. </span><span class="content">Deadlines</span><a class="self-link" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#deadlines"></a></h2>
    <p>One of the biggest impacts of losing the face-to-face 2020 summer meeting is
   the loss of a major deadline.
 This is compounded by the transition to monthly mailing deadlines.
 It is now a lot easier for a paper author to "miss" a deadline; you can always
-  publish it next month and have it discussed on a <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons④⓪">telecon</a>.</p>
+  publish it next month and have it discussed on a <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘£â“ª">telecon</a>.</p>
    <p>We must be careful to avoid allowing this flexibility to lead to procrastination.
 Hard deadlines, even arbitrary ones, fight mission creep and ultimately produce
   deliverables.</p>
@@ -2607,12 +2607,12 @@ Hard deadlines, even arbitrary ones, fight mission creep and ultimately produce
     <li data-md="">
      <p>The monthly mailings.</p>
     </li><li data-md="">
-     <p>Scheduled <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons④①">telecons</a>.</p>
+     <p>Scheduled <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘£â‘ ">telecons</a>.</p>
    </li></ul>
-   <p><a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons④②">Telecons</a> will be most effective if the schedule is known well in advance,
+   <p><a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘£â‘¡">Telecons</a> will be most effective if the schedule is known well in advance,
   but leaves some room for flexibility, just as the schedule is for a
   face-to-face meeting.
-Chairs will try to have a tentative agenda for the next 4 to 8 weeks of <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-telecons④③">telecons</a>.
+Chairs will try to have a tentative agenda for the next 4 to 8 weeks of <a data-link-type="dfn" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons" id="ref-for-teleconsâ‘£â‘¢">telecons</a>.
 The tentative agendas can be found here:</p>
    <ul>
     <li data-md="">
@@ -2724,11 +2724,11 @@ The tentative agendas can be found here:</p>
 <script>
 (function() {
   "use strict";
-  var collapseSidebarText = '<span aria-hidden="true">←</span> '
+  var collapseSidebarText = '<span aria-hidden="true">â†</span> '
                           + '<span>Collapse Sidebar</span>';
-  var expandSidebarText   = '<span aria-hidden="true">→</span> '
+  var expandSidebarText   = '<span aria-hidden="true">â†’</span> '
                           + '<span>Pop Out Sidebar</span>';
-  var tocJumpText         = '<span aria-hidden="true">↑</span> '
+  var tocJumpText         = '<span aria-hidden="true">â†‘</span> '
                           + '<span>Jump to Table of Contents</span>';
 
   var sidebarMedia = window.matchMedia('screen and (min-width: 78em)');
@@ -2742,7 +2742,7 @@ The tentative agendas can be found here:</p>
       on = !document.body.classList.contains('toc-sidebar');
     }
 
-    /* Don’t scroll to compensate for the ToC if we’re above it already. */
+    /* Donâ€™t scroll to compensate for the ToC if weâ€™re above it already. */
     var headY = 0;
     var head = document.querySelector('.head');
     if (head) {
@@ -2773,16 +2773,16 @@ The tentative agendas can be found here:</p>
       }
       if (toggle.matches(':hover')) {
         /* Unfocus button when not using keyboard navigation,
-           because I don’t know where else to send the focus. */
+           because I donâ€™t know where else to send the focus. */
         toggle.blur();
       }
     }
   }
 
   function createSidebarToggle() {
-    /* Create the sidebar toggle in JS; it shouldn’t exist when JS is off. */
+    /* Create the sidebar toggle in JS; it shouldnâ€™t exist when JS is off. */
     var toggle = document.createElement('a');
-      /* This should probably be a button, but appearance isn’t standards-track.*/
+      /* This should probably be a button, but appearance isnâ€™t standards-track.*/
     toggle.id = 'toc-toggle';
     toggle.class = 'toc-toggle';
     toggle.href = '#toc';
@@ -2798,7 +2798,7 @@ The tentative agendas can be found here:</p>
     toggle.addEventListener('click', toggler, false);
 
 
-    /* Get <nav id=toc-nav>, or make it if we don’t have one. */
+    /* Get <nav id=toc-nav>, or make it if we donâ€™t have one. */
     var tocNav = document.getElementById('toc-nav');
     if (!tocNav) {
       tocNav = document.createElement('p');
@@ -2806,7 +2806,7 @@ The tentative agendas can be found here:</p>
       /* Prepend for better keyboard navigation */
       document.body.insertBefore(tocNav, document.body.firstChild);
     }
-    /* While we’re at it, make sure we have a Jump to Toc link. */
+    /* While weâ€™re at it, make sure we have a Jump to Toc link. */
     var tocJump = document.getElementById('toc-jump');
     if (!tocJump) {
       tocJump = document.createElement('a');
@@ -2834,7 +2834,7 @@ The tentative agendas can be found here:</p>
     }, false);
   }
   else {
-    console.warn("Can’t find Table of Contents. Please use <nav id='toc'> around the ToC.");
+    console.warn("Canâ€™t find Table of Contents. Please use <nav id='toc'> around the ToC.");
   }
 
   /* Wrap tables in case they overflow */
@@ -2853,12 +2853,12 @@ The tentative agendas can be found here:</p>
   <h2 class="no-num no-ref heading settled" id="index"><span class="content">Index</span><a class="self-link" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#index"></a></h2>
   <h3 class="no-num no-ref heading settled" id="index-defined-here"><span class="content">Terms defined by this specification</span><a class="self-link" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#index-defined-here"></a></h3>
   <ul class="index">
-   <li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#decision-making">Decision-Making</a><span>, in §4.2</span>
-   </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions">Email List Discussions</a><span>, in §5</span>
-   </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#information-distribution">Information Distribution</a><span>, in §4.2</span>
-   </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#mailings">Mailings</a><span>, in §5</span>
-   </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#review">Review</a><span>, in §4.2</span>
-   </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons">Telecons</a><span>, in §5</span>
+   <li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#decision-making">Decision-Making</a><span>, in Â§4.2</span>
+   </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#email-list-discussions">Email List Discussions</a><span>, in Â§5</span>
+   </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#information-distribution">Information Distribution</a><span>, in Â§4.2</span>
+   </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#mailings">Mailings</a><span>, in Â§5</span>
+   </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#review">Review</a><span>, in Â§4.2</span>
+   </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#telecons">Telecons</a><span>, in Â§5</span>
   </li></ul>
   <h2 class="no-num no-ref heading settled" id="references"><span class="content">References</span><a class="self-link" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#references"></a></h2>
   <h3 class="no-num no-ref heading settled" id="informative"><span class="content">Informative References</span><a class="self-link" href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#informative"></a></h3>
@@ -2874,9 +2874,9 @@ The tentative agendas can be found here:</p>
    </dd><dt id="biblio-p0286r0">[P0286R0]
    </dt><dd>Christopher Kohlhoff. <a href="https://wg21.link/p0286r0">A networking library extension to support co_await-based coroutines</a>. 14 February 2016. URL: <a href="https://wg21.link/p0286r0">https://wg21.link/p0286r0</a>
    </dd><dt id="biblio-p0443r13">[P0443R13]
-   </dt><dd>Jared Hoberock, Michael Garland, Chris Kohlhoff, Chris Mysen, Carter Edwards, Gordon Brown, David Hollman, Lee Howes, Kirk Shoop, Lewis Baker, Eric Niebler. <a href="https://wg21.link/p0443r13">A Unified Executors Proposal for C++</a>. 2 March 2020. URL: <a href="https://wg21.link/p0443r13">https://wg21.link/p0443r13</a>
+   </dt><dd>Jared Hoberock, Michael Garland, Chris Kohlhoff, Chris Mysen, Carter Edwards, Gordon Brown, D. S. Hollman, Lee Howes, Kirk Shoop, Lewis Baker, Eric Niebler. <a href="https://wg21.link/p0443r13">A Unified Executors Proposal for C++</a>. 2 March 2020. URL: <a href="https://wg21.link/p0443r13">https://wg21.link/p0443r13</a>
    </dd><dt id="biblio-p0581r1">[P0581R1]
-   </dt><dd>Marshall Clow, Beman Dawes, Gabriel Dos Reis, Stephan T. Lavavej, Billy O’Neal, Bjarne Stroustrup, Jonathan Wakely. <a href="https://wg21.link/p0581r1">Standard Library Modules</a>. 11 February 2018. URL: <a href="https://wg21.link/p0581r1">https://wg21.link/p0581r1</a>
+   </dt><dd>Marshall Clow, Beman Dawes, Gabriel Dos Reis, Stephan T. Lavavej, Billy Oâ€™Neal, Bjarne Stroustrup, Jonathan Wakely. <a href="https://wg21.link/p0581r1">Standard Library Modules</a>. 11 February 2018. URL: <a href="https://wg21.link/p0581r1">https://wg21.link/p0581r1</a>
    </dd><dt id="biblio-p0592r4">[P0592R4]
    </dt><dd>Ville Voutilainen. <a href="https://wg21.link/p0592r4">To boldly suggest an overall plan for C++23</a>. 25 November 2019. URL: <a href="https://wg21.link/p0592r4">https://wg21.link/p0592r4</a>
    </dd><dt id="biblio-p0829r4">[P0829R4]
@@ -2951,10 +2951,10 @@ The tentative agendas can be found here:</p>
     <li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-email-list-discussions">3. The Short Version</a> <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-email-list-discussions%E2%91%A0">(2)</a> <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-email-list-discussions%E2%91%A1">(3)</a> <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-email-list-discussions%E2%91%A2">(4)</a>
     </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-email-list-discussions%E2%91%A3">6. Telecons</a>
     </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-email-list-discussions%E2%91%A4">6.1. Telecon Duration and Cadence</a>
-    </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-email-list-discussions%E2%91%A5">6.7. Telecons Aren’t Mandatory</a>
+    </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-email-list-discussions%E2%91%A5">6.7. Telecons Arenâ€™t Mandatory</a>
     </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-email-list-discussions%E2%91%A6">7. Email List Discussions</a> <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-email-list-discussions%E2%91%A7">(2)</a>
     </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-email-list-discussions%E2%91%A8">7.1. What Email List Discussions Are Good For</a> <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-email-list-discussions%E2%91%A0%E2%93%AA">(2)</a> <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-email-list-discussions%E2%91%A0%E2%91%A0">(3)</a>
-    </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-email-list-discussions%E2%91%A0%E2%91%A1">7.2. What Email List Discussions Aren’t Good For</a> <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-email-list-discussions%E2%91%A0%E2%91%A2">(2)</a> <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-email-list-discussions%E2%91%A0%E2%91%A3">(3)</a> <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-email-list-discussions%E2%91%A0%E2%91%A4">(4)</a>
+    </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-email-list-discussions%E2%91%A0%E2%91%A1">7.2. What Email List Discussions Arenâ€™t Good For</a> <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-email-list-discussions%E2%91%A0%E2%91%A2">(2)</a> <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-email-list-discussions%E2%91%A0%E2%91%A3">(3)</a> <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-email-list-discussions%E2%91%A0%E2%91%A4">(4)</a>
     </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-email-list-discussions%E2%91%A0%E2%91%A5">7.3. Summarize Email List Discussions</a>
    </li></ul>
   </aside>
@@ -2969,7 +2969,7 @@ The tentative agendas can be found here:</p>
     </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-telecons%E2%91%A1%E2%91%A2">6.3. No Separate Incubator Telecons</a> <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-telecons%E2%91%A1%E2%91%A3">(2)</a>
     </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-telecons%E2%91%A1%E2%91%A4">6.4. Telecon Decision-Making</a> <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-telecons%E2%91%A1%E2%91%A5">(2)</a> <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-telecons%E2%91%A1%E2%91%A6">(3)</a> <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-telecons%E2%91%A1%E2%91%A7">(4)</a> <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-telecons%E2%91%A1%E2%91%A8">(5)</a>
     </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-telecons%E2%91%A2%E2%93%AA">6.5. Telecon Quorum</a> <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-telecons%E2%91%A2%E2%91%A0">(2)</a>
-    </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-telecons%E2%91%A2%E2%91%A1">6.7. Telecons Aren’t Mandatory</a> <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-telecons%E2%91%A2%E2%91%A2">(2)</a> <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-telecons%E2%91%A2%E2%91%A3">(3)</a> <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-telecons%E2%91%A2%E2%91%A4">(4)</a>
+    </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-telecons%E2%91%A2%E2%91%A1">6.7. Telecons Arenâ€™t Mandatory</a> <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-telecons%E2%91%A2%E2%91%A2">(2)</a> <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-telecons%E2%91%A2%E2%91%A3">(3)</a> <a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-telecons%E2%91%A2%E2%91%A4">(4)</a>
     </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-telecons%E2%91%A2%E2%91%A5">7. Email List Discussions</a>
     </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-telecons%E2%91%A2%E2%91%A6">8.1.2. Executors</a>
     </li><li><a href="https://api.csswg.org/bikeshed/?force=1&amp;url=https://raw.githubusercontent.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/master/evolving_cpp_remotely.bs#ref-for-telecons%E2%91%A2%E2%91%A7">8.1.3. Modularizing the Standard Library</a>
