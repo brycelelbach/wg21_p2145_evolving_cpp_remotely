@@ -11,11 +11,11 @@ Editor: Fabio Fracassi — Incoming Library Evolution Vice Chair, CODE Universit
 Editor: Billy Baker — Incoming Library Evolution Incubator Chair, FlightSafety, Billy.Baker@flightsafety.com
 Editor: Nevin Liber — Incoming Library Evolution Incubator Vice Chair, Argonne National Laboratory, nliber@gmail.com
 Editor: JF Bastien — Language Evolution Chair, Apple, jfbastien@apple.com
-URL: https://wg21.link/P2145R0
 Editor: David Stone — Language Evolution Vice Chair, Uber, david.stone@uber.com
 Editor: Botond Ballo — Language Evolution Incubator Chair, Mozilla, botond_ballo@yahoo.ca
 Editor: Erich Keane — Language Evolution Incubator Vice Chair, Intel, erich.keane@intel.com
-Editor: Tom Honermann — SG16 (Unicode and text processing) Chair, Synopsys, tom@honermann.net
+Editor: Tom Honermann — SG16 Unicode and Text Processing (SG16) Chair, Synopsys, tom@honermann.net
+URL: https://wg21.link/P2145R0
 !Source: <a href="https://github.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/blob/master/evolving_cpp_remotely.bs">GitHub</a>
 Issue Tracking: GitHub https://github.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/issues
 Metadata Order: Author, This Version, Source, Issue Tracking, Project, Audience
