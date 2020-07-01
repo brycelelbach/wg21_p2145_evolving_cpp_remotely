@@ -144,17 +144,18 @@ If you are unable to access this information and want to participate, please con
     - [=Decision Straw Polls=].
 - All subgroups are holding regular telecons in lieu of face-to-face
     meetings for the forseeable future.
-  We shall use <a href="https://zoom.us">Zoom</a>, the official ISO
-    [=telecon=] platform.
+    We shall use <a href="https://zoom.us">Zoom</a>, the official ISO
+      [=telecon=] platform.
 - [=Telecons=] provide drive [=consensus building=].
-  They provide feedback and guidance using [=direction straw polls=] and
-    identify [=decision straw polls=] that need to be taken.
-  - Missing a [=telecon=] does not prevent your voice from being heard.
+    They provide feedback and guidance using [=direction straw polls=] and
+      identify [=decision straw polls=] that need to be taken.
+    - Missing a [=telecon=] does not prevent your voice from being heard.
 - Use [=email list discussions=] for [=review=] whenever possible to minimize
     the amount of work that must be done on [=telecons=] or at future
     face-to-face meetings.
-  - Chairs will start curated [=email list discussions=] of certain papers.
-  - Try to summarize [=email list discussions=] that you start or participate in.
+    - Chairs will start curated [=email list discussions=] of certain papers.
+    - Try to summarize [=email list discussions=] that you start or participate
+        in.
 - There will be no separate Library or Language Evolution Incubator meetings.
 
 # Work Performed at Face-to-Face Meetings # {#work-at-f2f-meetings}
@@ -214,22 +215,22 @@ We use two types of informal straw polls within subgroups to determine consensus
 Henceforth, straw polls should be divided into two categories:
 
 * <dfn>Direction Straw Polls</dfn>: These polls are taken to suggest the
-    direction that a proposal should pursue in the next revision that comes
-    before the subgroup taking the poll.
-  These polls will usually be taken on younger proposals, where there are still
-    many open questions and areas for additional investigation.
-  Direction straw polls are taken on proposals that will return to the
-    same subgroup before proceeding further.
-  The results of these polls can always be revisited if new information or new
-    perspectives are discovered.
+      direction that a proposal should pursue in the next revision that comes
+      before the subgroup taking the poll.
+    These polls will usually be taken on younger proposals, where there are
+      still many open questions and areas for additional investigation.
+    Direction straw polls are taken on proposals that will return to the
+      same subgroup before proceeding further.
+    The results of these polls can always be revisited if new information or new
+      perspectives are discovered.
 * <dfn>Decision Straw Polls</dfn>: These polls are taken to make decisions
-    regarding a proposal once the subgroup is confident that all applicable and
-    relevant aspects of the decision have been discussed.
-  These polls will typically be taken on proposals that have been in the
-    subgroup for a few revisions.
-  Decision straw polls may forward proposals to other subgroups or to plenary.
-  The results of these polls can always be revisited if new information or new
-    perspectives are discovered.
+      regarding a proposal once the subgroup is confident that all applicable
+      and relevant aspects of the decision have been discussed.
+    These polls will typically be taken on proposals that have been in the
+      subgroup for a few revisions.
+    Decision straw polls may forward proposals to other subgroups or to plenary.
+    The results of these polls can always be revisited if new information or new
+      perspectives are discovered.
 
 # Telecons # {#telecon}
 
