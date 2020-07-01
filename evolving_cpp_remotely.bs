@@ -7,9 +7,10 @@ Group: WG21
 Audience: WG21
 Editor: Bryce Adelstein Lelbach — Library Evolution Chair, NVIDIA, brycelelbach@gmail.com
 Editor: Titus Winters — Library Evolution Chair Emeritus, Google, titus@google.com
-Editor: Fabio Fracassi — Incoming Library Evolution Vice Chair, CODE University of Applied Sciences, f.fracassi@gmx.net
-Editor: Billy Baker — Incoming Library Evolution Incubator Chair, FlightSafety, Billy.Baker@flightsafety.com
-Editor: Nevin Liber — Incoming Library Evolution Incubator Vice Chair, Argonne National Laboratory, nliber@gmail.com
+Editor: Fabio Fracassi — Library Evolution Vice Chair, CODE University of Applied Sciences, f.fracassi@gmx.net
+Editor: Ben Craig — Library Evolution Vice Chair, ben.craig@gmail.com
+Editor: Billy Baker — Library Evolution Incubator Chair, FlightSafety, Billy.Baker@flightsafety.com
+Editor: Nevin Liber — Library Evolution Incubator Vice Chair, Argonne National Laboratory, nliber@gmail.com
 Editor: JF Bastien — Language Evolution Chair, Apple, jfbastien@apple.com
 Editor: David Stone — Language Evolution Vice Chair, Uber, david.stone@uber.com
 Editor: Botond Ballo — Language Evolution Incubator Chair, Mozilla, botond_ballo@yahoo.ca
@@ -91,29 +92,20 @@ div.newnumbered li:before {
 
 # Introduction # {#introduction}
 
-Due to the ongoing global health crisis caused by the novel coronavirus, the
-  ISO C++ Committee's planned June 2020 meeting in Varna, Bulgaria was called
-  off.
-During this uncertain time, our priority must be the safety and well-being of
-  the committee and the public at large.
-
-The postponement of the 2020-06 Varna meeting and the broader impacts of the
-  novel coronavirus on society will be disruptive.
-At times like these, family and personal well-being comes first, and work comes
-  second.
-No one can be as productive in these times as they normally would be.
-However, the ISO C++ Committee can and will do our best to adapt to these
-  disruptions and carry on our work remotely in these trying times.
-
-Our plans for C++23 and beyond ([[P0592R4]]) have not changed, but the way that
-  we execute on those plans will have to change.
-This document lays out plans for how we will conduct Library and Language
-  Evolution work remotely.
-
 Stakeholder engagement is essential to the success of any standardization effort.
 
 Historically, to participate in C++ standardization, individuals had to attend
-  three week-long face-to-face
+  three week-long face-to-face meetings a year to remain engaged.
+While we have accomplished a great deal with this model, it does disenfranchise
+  certain types of stakeholders and no longer reflects best practice in the
+  industry.
+
+The time has come for the Standard C++ Committee to enable remote participation.
+By enabling remote participation, we will be able to make better decisions by
+  engaging a larger number and greater diversity of stakeholders.
+
+This document lays out plans for how we will conduct C++ standardization
+  remotely.
 
 # Calendar # {#calendar}
 
@@ -139,43 +131,34 @@ If you are unable to access this information and want to participate, please con
 
 # The Short Version # {#short}
 
-- Library and Language Evolution consists of three activities:
+- C++ standardization consists of three activities:
     - [=Information Distribution=].
     - [=Review=].
-    - [=Decision-Making=].
+    - [=Consensus Building=].
 - We have three main mechanisms for remote collaboration:
     - [=Mailings=].
     - [=Email List Discussions=].
     - [=Telecons=].
-- Starting in April 2020 Library and Language Evolution will have a weekly 1.5
-      hour [=telecon=].
-    - Each will have two time slots which alternate each week.
-        - Library on Monday 8:00AM Pacific / Tuesday 10:00AM Pacific.
-        - Language on Wednesday 8:00AM Pacific / Thursday 10:00AM Pacific.
-        - Modulo holidays, where we'll defer the meeting by a day.
-    - We will use <a href="https://zoom.us">Zoom</a>, the official ISO
-          [=telecon=] platform.
-- We will make [=Decision-Making|decisions=] on these [=telecons=] using straw
-      polls.
-    - Decisions made on [=telecons=] will be "Tentatively Ready", which means:
-        - They are sent to the Library Evolution or Language Evolution email
-              list for feedback.
-        - They are marked "Tentatively Ready" on GitHub.
-        - They are briefly reviewed for affirmation at the next face-to-face
-              meeting.
-    - Missing a [=telecon=] does not prevent your voice from being heard.
+- We use two types of straw polls to determine consensus:
+    - [=Direction Straw Polls=].
+    - [=Decision Straw Polls=].
+- All subgroups are holding regular telecons in lieu of face-to-face
+    meetings for the forseeable future.
+  We shall use <a href="https://zoom.us">Zoom</a>, the official ISO
+    [=telecon=] platform.
+- [=Telecons=] provide drive [=consensus building=].
+  They provide feedback and guidance using [=direction straw polls=] and
+    identify [=decision straw polls=] that need to be taken.
+  - Missing a [=telecon=] does not prevent your voice from being heard.
 - Use [=email list discussions=] for [=review=] whenever possible to minimize
-      the amount of work that must be done on [=telecons=] or at future
-      face-to-face meetings.
-    - Chairs will start curated [=email list discussions=] of certain papers.
-    - Try to summarize [=email list discussions=] that you start or participate
-          in.
+    the amount of work that must be done on [=telecons=] or at future
+    face-to-face meetings.
+  - Chairs will start curated [=email list discussions=] of certain papers.
+  - Try to summarize [=email list discussions=] that you start or participate in.
 - There will be no separate Library or Language Evolution Incubator meetings.
 
 # Work Performed at Face-to-Face Meetings # {#work-at-f2f-meetings}
 
-First, we need to understand what exactly we're losing with the postponement
-  of the 2020-06 Varna meeting.
 What exactly do we do at face-to-face meetings, and how much time do we spend
   doing it?
 
@@ -200,7 +183,7 @@ When in session at face-to-face meetings, we typically perform three activities:
       educate the committee about a subject.
 - <dfn>Review</dfn>, where the committee identifies open questions
       and places where we lack clear consensus.
-- <dfn>Decision-Making</dfn>, where the committee answers open
+- <dfn>Consensus Building</dfn>, where the committee answers open
       questions and we determine consensus on particular matters.
 
 # Mechanisms for Remote Collaboration # {#mechanisms-for-remote-meetings}
@@ -213,20 +196,47 @@ We have three primary mechanisms for remote collaboration:
       [=Information Distribution|distribute information=].
 - <dfn>Email List Discussions</dfn>, which are good for
       [=information distribution=] and [=review=].
-    They are not as effective for [=decision-making=] as it can be hard to
-      determine consensus.
+    They are not as effective for [=consensus building=] as it can be hard to
+      determine consensus and work through differences of opinion.
     Email list discussions are asynchronous, so everyone can participate when
       it is convenient for them.
 - <dfn>Telecons</dfn>, which are good for [=information distribution=],
-      [=review=], and [=decision-making=].
+      [=review=], and [=consensus building=].
+    They excel at resolving misunderstandings and working through differences
+      of opinion.
     However, they are synchronous by nature, which introduces scheduling
       constraints that limits participation and makes them a scarce resource.
 
+# Mechanisms for Determining Consensus # {#mechanisms-for-determining-consensus}
+
+We use two types of informal straw polls within subgroups to determine consensus:
+
+Henceforth, straw polls should be divided into two categories:
+
+* <dfn>Direction Straw Polls</dfn>: These polls are taken to suggest the
+    direction that a proposal should pursue in the next revision that comes
+    before the subgroup taking the poll.
+  These polls will usually be taken on younger proposals, where there are still
+    many open questions and areas for additional investigation.
+  Direction straw polls are taken on proposals that will return to the
+    same subgroup before proceeding further.
+  The results of these polls can always be revisited if new information or new
+    perspectives are discovered.
+* <dfn>Decision Straw Polls</dfn>: These polls are taken to make decisions
+    regarding a proposal once the subgroup is confident that all applicable and
+    relevant aspects of the decision have been discussed.
+  These polls will typically be taken on proposals that have been in the
+    subgroup for a few revisions.
+  Decision straw polls may forward proposals to other subgroups or to plenary.
+  The results of these polls can always be revisited if new information or new
+    perspectives are discovered.
+
 # Telecons # {#telecon}
 
-Because [=telecons=] are the only good option for [=decision-making=] and they
-  are a scarce resource, we should try to use them for [=decision-making=] as
-  much as possible.
+Because [=telecons=] are the only option that truly excels at certain aspects
+  of [=consensus building=] (resolving misunderstandings and differences of
+  opinion) and they are a scarce resource, we should try to use them for
+  [=consensus building=] as much as possible.
 That means we should do as much
   [=Information Distribution|distribution of information=]
   and [=review=] outside of [=telecons=] as possible.
@@ -262,12 +272,8 @@ Instead of always holding weekly meetings at a single time, we should either
 This will give us additional scheduling flexibility.
 
 Given all of this, **Library and Language Evolution will meet ~1.5 hours per
-  week, from April 2020 until at least November 2020**.
-
-This is about 50% of time commitment that we would have made to the 2020-06
-  Varna meeting.
-If this cadence and duration proves to be too much, we will adjust by scaling
-  back and cancelling meetings.
+  week**.
+Most other subgroups will meet for 1 to 1.5 hours every other week.
 
 ## Telecon Platform ## {#telecon-platform}
 
@@ -303,24 +309,13 @@ As such, there does not seem to be much value in holding separate [=telecons=].
 All [=telecon=] discussions will be considered joint exercises of Evolution and
   Evolution Incubator.
 
-## Telecon Decision-Making ## {#telecon-decision-making}
+## Telecon Consensus Building ## {#telecon-consensus-building}
 
-We will make decisions on [=telecons=] via straw polls, just as we do at
-  face-to-face meetings.
+We will build consensus on [=telecons=] via [=direction straw polls=], just as
+  we do at face-to-face meetings.
 
-Any decisions made on [=telecons=] will be considered "Tentatively Ready".
-
-For forwarding of proposals to other subgroups, this means that the paper will
-  be forwarded on the ISO C++ GitHub for paper tracking, but marked with the
-  "Tentatively Ready" tag.
-At the start of the next face-to-face meeting, we will briefly go through the
-  list of "Tentatively Ready" proposals that were forwarded to see if anyone
-  has new information or new perspectives that warrant revisiting those proposals.
-
-For all "Tentatively Ready" decisions made on [=telecons=], after the [=telecon=]
-  a message will be sent to the relevant email lists with a summary of the
-  decisions, to give anyone who did not attend the [=telecon=] a chance to voice
-  their opinion.
+We will also use [=telecons=] to identify the [=decision straw polls=] that we
+  need to take.
 
 ## Telecon Quorum ## {#telecon-quorum}
 
@@ -340,9 +335,7 @@ For quorum, we need to have both the right people and the right quantity of
 
 That said, if we have fewer than 15 participants on any given Library or
   Language Evolution [=telecon=], it will be difficult for us to make meaningful
-  decisions.
-In such a circumstance, we would avoid [=decision-making=] and instead use our
-  time for [=review=] and [=information distribution=].
+  progress..
 
 ## Telecon Chairing ## {#telecon-chairing}
 
@@ -361,8 +354,7 @@ However, [=telecon=] attendance is encouraged but not mandatory.
 If a decision is made on a [=telecon=] and you feel you have a new perspective or
   new information that was not considered, you should make the committee aware
   via [=email list discussion=].
-As with face-to-face meetings, we can always revisit decisions if we have new
-  information.
+We can always revisit decisions if we have new information or new perspectives.
 
 # Email List Discussions # {#email-discussions}
 
@@ -535,8 +527,7 @@ More details will be shared on the Library Evolution email list in the next few
 
 Once all of the review groups have completed their work and prepared their
   summary papers, we will discuss the results in a series of [=telecons=] over
-  the summer and work towards resolution of any open matters that need decisions
-  and guidance.
+  the summer and work towards resolution of any open matters that need direction.
 
 ### Modularizing the Standard Library ### {#modularizing-the-standard-library}
 
@@ -637,7 +628,7 @@ The Tooling and Unicode study groups, among others, have successfully and
 The main benefits of a face-to-face meeting over remote meetings are:
 
 - The informal, spontaneous, and serendipitous interactions between committee
-      members in hallways, at meals, etc.
+    members in hallways, at meals, etc.
 - Sequestration, which limits distractions and increases focus.
 - Discussions happen consecutively, which keeps them "in cache".
 
