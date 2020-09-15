@@ -1,8 +1,8 @@
 <pre class='metadata'>
 Title: Evolving C++ Remotely
-Shortname: D2145
+Shortname: P2145
 Revision: 1
-Status: D
+Status: P
 Group: WG21
 Audience: WG21
 Editor: Bryce Adelstein Lelbach — Library Evolution Chair, NVIDIA, brycelelbach@gmail.com
@@ -11,10 +11,10 @@ Editor: Fabio Fracassi — Library Evolution Vice Chair, CODE University of Appl
 Editor: Ben Craig — Library Evolution Vice Chair, ben.craig@gmail.com
 Editor: Billy Baker — Library Evolution Incubator Chair, FlightSafety, Billy.Baker@flightsafety.com
 Editor: Nevin Liber — Library Evolution Incubator Vice Chair, Argonne National Laboratory, nliber@gmail.com
-Editor: JF Bastien — Language Evolution Chair, Apple, jfbastien@apple.com
-Editor: David Stone — Language Evolution Vice Chair, Uber, david.stone@uber.com
-Editor: Botond Ballo — Language Evolution Incubator Chair, Mozilla, botond_ballo@yahoo.ca
-Editor: Erich Keane — Language Evolution Incubator Vice Chair, Intel, erich.keane@intel.com
+Editor: JF Bastien — Evolution Chair, Apple, jfbastien@apple.com
+Editor: David Stone — Evolution Vice Chair, Uber, david.stone@uber.com
+Editor: Botond Ballo — Evolution Incubator Chair, Mozilla, botond_ballo@yahoo.ca
+Editor: Erich Keane — Evolution Incubator Vice Chair, Intel, erich.keane@intel.com
 Editor: Tom Honermann — SG16 Unicode and Text Processing (SG16) Chair, Synopsys, tom@honermann.net
 URL: https://wg21.link/P2145R0
 !Source: <a href="https://github.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/blob/main/evolving_cpp_remotely.bs">GitHub</a>
@@ -100,75 +100,59 @@ While we have accomplished a great deal with this model, it does disenfranchise
   certain types of stakeholders and no longer reflects best practice in the
   industry.
 
-The time has come for the Standard C++ Committee to enable remote participation.
-By enabling remote participation, we will be able to make better decisions by
-  engaging a larger number and greater diversity of stakeholders.
+The time has come for the Standard C++ Committee to enable remote participation,
+  in part due to the ongoing global pandemic.
+The Committee will not meet again face-to-face until it is possible to do so
+  without putting peoples' lives at risk and we do not know when that will be.
+By enabling remote participation, we will be able to continue our work and
+  improve our process long-term by engaging a larger number and greater
+  diversity of stakeholders.
 
 This document lays out plans for how we will conduct C++ standardization
   remotely.
 
-# Calendar # {#calendar}
+## Summary ## {#summary}
 
-<style>
-.hol { text-decoration: line-through; color: grey; }
-.la1 { font-weight: bolder; color: red; }
-.la2 { font-weight: bolder; color: orange; }
-.li1 { font-weight: bolder; color: blue; }
-.li2 { font-weight: bolder; color: teal; }
-.sg1 { font-weight: bolder; color: hotpink; }
-.sg16 { font-weight: bolder; color: maroon; }
-.cwg { font-weight: bolder; color: burlywood; }
-.calendars { display: flex; flex-wrap: wrap; justify-content: center; }
-.calendar { margin: 1em; font-size: 125%; }
-.calendar thead { font-weight: bolder; }
-.calendar tbody { color: grey; }
-.calendar tbody td { text-align: right; }
-</style>
+We propose that all subgroups will hold regular telecons in lieu of
+  face-to-face meetings for the forseeable future.
+All telecons are posted to our <a href="https://wiki.edg.com/bin/view/Wg21PersistentInformation/CommitteeSharedCalendarInformation">shared calendar</a>.
+If you are unable to access this calendar and want to participate, please
+  contact Bryce or JF.
 
-The Committee now has a <a href="https://wiki.edg.com/bin/view/Wg21PersistentInformation/CommitteeSharedCalendarInformation">shared telecon calendar</a>.
-
-If you are unable to access this information and want to participate, please contact Bryce or JF.
-
-# The Short Version # {#short}
-
-- C++ standardization consists of three activities:
-    - [=Information Distribution=].
-    - [=Review=].
-    - [=Consensus Building=].
-- We have three main mechanisms for remote collaboration:
-    - [=Mailings=].
-    - [=Email List Discussions=].
-    - [=Telecons=].
-- We use two types of straw polls to determine consensus:
-    - [=Direction Straw Polls=].
-    - [=Decision Straw Polls=].
-- All subgroups are holding regular telecons in lieu of face-to-face
-    meetings for the forseeable future.
-    We shall use <a href="https://zoom.us">Zoom</a>, the official ISO
-      [=telecon=] platform.
-- [=Telecons=] provide drive [=consensus building=].
-    They provide feedback and guidance using [=direction straw polls=] and
-      identify [=decision straw polls=] that need to be taken.
-    - Missing a [=telecon=] does not prevent your voice from being heard.
-- Use [=email list discussions=] for [=review=] whenever possible to minimize
-    the amount of work that must be done on [=telecons=] or at future
-    face-to-face meetings.
-    - Chairs will start curated [=email list discussions=] of certain papers.
-    - Try to summarize [=email list discussions=] that you start or participate
+* C++ standardization consists of three activities:
+    * [=Information Distribution=].
+    * [=Review=].
+    * [=Consensus Building=].
+* We have three main mechanisms for remote collaboration:
+    * [=Mailings=].
+    * [=Email List Discussions=].
+    * [=Telecons=].
+* [=Telecons=] drive [=consensus building=].
+    They provide feedback and guidance, and identify open questsions that need
+      to be resolved.
+    * Missing a [=telecon=] does not prevent your voice from being heard.
+* [=Email list discussions=] are used to [=review=] proposals whenever possible
+    to minimize the amount of work that must be done on [=telecons=] or at
+    future face-to-face meetings.
+    * Chairs will start curated [=email list discussions=] of certain papers.
+    * Try to summarize [=email list discussions=] that you start or participate
         in.
-- There will be no separate Library or Language Evolution Incubator meetings.
+* There will be no separate Evolution or Library Incubator meetings.
 
-# Work Performed at Face-to-Face Meetings # {#work-at-f2f-meetings}
+## Related Work ## {#related-work}
 
-What exactly do we do at face-to-face meetings, and how much time do we spend
-  doing it?
+The following proposals address topics related to this proposal:
 
-## Amount of Work Performed at Face-to-Face Meetings ## {#amount-of-work-at-f2f-meetings}
+* [[P0592R4]] establishes our priorities for C++ evolution.
+* [[P2138R2]] explains how proposals should move through the committee.
+* [[P2195R0]] describes how we should determine consensus electronically.
 
-At a typical ISO C++ Committee face-to-face meeting,
-  [[#appendix-typical-evolution-f2f-schedule|Library Evolution and Language Evolution meet for 33.25 hours each]].
+## Work Performed at Meetings ## {#work-performed-at-meetings}
+
+At a typical Standard C++ Committee face-to-face meeting,
+  [[#appendix-typical-evolution-f2f-schedule|Evolution and Library Evolution meet for 33.25 hours each]].
 [[#appendix-historical-library-incubator-f2f-schedule|Library Incubator meets for 24.8 hours]].
-  Language Incubator has similar numbers.
+  Evolution Incubator has similar numbers.
 For both the Library and Language tracks, we spend a total of ~58 hours per
   meeting and ~174 hours per year at face-to-face meetings on Evolution and
   Incubation.
@@ -176,61 +160,52 @@ For both the Library and Language tracks, we spend a total of ~58 hours per
 A lot of voluntary and informal, but important, work also occurs during meals
   and at in the evening hours.
 
-## Kinds of Work Performed at Face-to-Face Meetings ## {#kinds-of-work-at-f2f-meetings}
-
 When in session at face-to-face meetings, we typically perform three activities:
 
-- <dfn>Information Distribution</dfn>, where knowledgeable parties
+* <dfn>Information Distribution</dfn>, where knowledgeable parties
       educate the committee about a subject.
-- <dfn>Review</dfn>, where the committee identifies open questions
+* <dfn>Review</dfn>, where the committee identifies open questions
       and places where we lack clear consensus.
-- <dfn>Consensus Building</dfn>, where the committee answers open
+* <dfn>Consensus Building</dfn>, where the committee answers open
       questions and we determine consensus on particular matters.
 
-# Mechanisms for Remote Collaboration # {#mechanisms-for-remote-meetings}
+## Field Experience With Remote Work ## {#field-experience}
+
+We are not in completely uncharted waters here.
+The Standard C++ Committee does have field experience working remotely.
+A lot of important inter-meeting discussion happens on email lists.
+The Tooling and Unicode study groups, among others, have successfully and
+  regularly met and made decisions via telecons.
+
+The main benefits of a face-to-face meeting over remote meetings are:
+
+* The informal, spontaneous, and serendipitous interactions between committee
+    members in hallways, at meals, etc.
+* Sequestration, which limits distractions and increases focus.
+* Discussions happen consecutively, which keeps them "in cache".
+
+We can't easily replicate these effects in remote meetings.
+
+# Remote Collaboration Mechanisms # {#remote-collaboration-mechanisms}
 
 We have three primary mechanisms for remote collaboration:
 
-- <dfn>Mailings</dfn>, which are regular distributions of committee
+* <dfn>Mailings</dfn>, which are regular distributions of committee
       proposals.
     Mailings are a good way to
       [=Information Distribution|distribute information=].
-- <dfn>Email List Discussions</dfn>, which are good for
+* <dfn>Email List Discussions</dfn>, which are good for
       [=information distribution=] and [=review=].
     They are not as effective for [=consensus building=] as it can be hard to
       determine consensus and work through differences of opinion.
     Email list discussions are asynchronous, so everyone can participate when
       it is convenient for them.
-- <dfn>Telecons</dfn>, which are good for [=information distribution=],
+* <dfn>Telecons</dfn>, which are good for [=information distribution=],
       [=review=], and [=consensus building=].
     They excel at resolving misunderstandings and working through differences
       of opinion.
     However, they are synchronous by nature, which introduces scheduling
       constraints that limits participation and makes them a scarce resource.
-
-# Mechanisms for Determining Consensus # {#mechanisms-for-determining-consensus}
-
-We use two types of informal straw polls within subgroups to determine consensus:
-
-Henceforth, straw polls should be divided into two categories:
-
-* <dfn>Direction Straw Polls</dfn>: These polls are taken to suggest the
-      direction that a proposal should pursue in the next revision that comes
-      before the subgroup taking the poll.
-    These polls will usually be taken on younger proposals, where there are
-      still many open questions and areas for additional investigation.
-    Direction straw polls are taken on proposals that will return to the
-      same subgroup before proceeding further.
-    The results of these polls can always be revisited if new information or new
-      perspectives are discovered.
-* <dfn>Decision Straw Polls</dfn>: These polls are taken to make decisions
-      regarding a proposal once the subgroup is confident that all applicable
-      and relevant aspects of the decision have been discussed.
-    These polls will typically be taken on proposals that have been in the
-      subgroup for a few revisions.
-    Decision straw polls may forward proposals to other subgroups or to plenary.
-    The results of these polls can always be revisited if new information or new
-      perspectives are discovered.
 
 # Telecons # {#telecon}
 
@@ -247,8 +222,8 @@ It is important that participants read the proposals that will be discussed on
 
 ## Telecon Duration and Cadence ## {#telecon-duration-and-cadence}
 
-As mentioned earlier in [[#amount-of-work-at-f2f-meetings]], we spend ~174
-  hours per year on Library and Language Evolution at face-to-face meetings.
+As mentioned earlier in [[#work-performed-at-meetings]], we spend ~174
+  hours per year on Evolution and Library Evolution at face-to-face meetings.
 This is an average of ~3.3 hours per week (~4 months per committee meeting
   equivalent).
 
@@ -272,7 +247,7 @@ Instead of always holding weekly meetings at a single time, we should either
   which alternate each week.
 This will give us additional scheduling flexibility.
 
-Given all of this, **Library and Language Evolution will meet ~1.5 hours per
+Given all of this, **Evolution and Library Evolution will meet ~1.5 hours per
   week**.
 Most other subgroups will meet for 1 to 1.5 hours every other week.
 
@@ -280,17 +255,17 @@ Most other subgroups will meet for 1 to 1.5 hours every other week.
 
 Our [=telecon=] platform needs to be able to support the following:
 
-- Supports video chat.
-- Supports audio over internet or via phone line.
-- Works on Windows, Mac, Linux, and mobile devices.
-- Attendee hand raising.
-    - The hand queue should show the order in which hands were raised.
-    - The [=telecon=] organizer should to be able to lower raised hands.
-- Attendee polling.
-    - Multiple types of polls should be supported: at least 5-way and 3-way polls.
-    - The [=telecon=] organizer should be able to clear votes.
-- Attendee renaming by [=telecon=] organizer.
-- Meeting recording.
+* Supports video chat.
+* Supports audio over internet or via phone line.
+* Works on Windows, Mac, Linux, and mobile devices.
+* Attendee hand raising.
+    * The hand queue should show the order in which hands were raised.
+    * The [=telecon=] organizer should to be able to lower raised hands.
+* Attendee polling.
+    * Multiple types of polls should be supported: at least 5-way and 3-way polls.
+    * The [=telecon=] organizer should be able to clear votes.
+* Attendee renaming by [=telecon=] organizer.
+* Meeting recording.
 
 We will use <a href="https://zoom.us">Zoom</a>, the official ISO [=telecon=]
   platform.
@@ -299,8 +274,8 @@ Zoom supports most of these features and the committee has field experience
 
 ## No Separate Incubator Telecons ## {#no-separate-incubator-telecons}
 
-The primary reason that Library and Language Evolution Incubator meets
-  separately and concurrently with Library and Language Evolution is due to the
+The primary reason that Evolution and Library Evolution Incubator meets
+  separately and concurrently with Evolution and Library Evolution is due to the
   time constraints of our physical meetings.
 
 For remote meetings, we do not have the same kind of time constraints that force
@@ -310,23 +285,15 @@ As such, there does not seem to be much value in holding separate [=telecons=].
 All [=telecon=] discussions will be considered joint exercises of Evolution and
   Evolution Incubator.
 
-## Telecon Consensus Building ## {#telecon-consensus-building}
-
-We will build consensus on [=telecons=] via [=direction straw polls=], just as
-  we do at face-to-face meetings.
-
-We will also use [=telecons=] to identify the [=decision straw polls=] that we
-  need to take.
-
 ## Telecon Quorum ## {#telecon-quorum}
 
 We expect to have lower attendance on [=telecons=] than we would have at
   face-to-face meetings.
 
-We do not have readily accessible data for attendance in Library Evolution
-  and Language Evolution.
-Typically, attendance in Library Evolution is between 15 and 30 people and
-  attendance in Language Evolution is between 30 and 50 people.
+We do not have readily accessible data for attendance in Evolution
+  and Library Evolution.
+Typically, attendance in Evolution is between 30 and 50 people and attendance in
+  Library Evolution is between 15 and 30 people.
 [[#appendix-historical-library-incubator-f2f-attendance|Average attendance in Library Incubator is 17 people]].
   Language Incubator has similar numbers.
 
@@ -334,8 +301,8 @@ Quorum is not merely a function of the quantity of people in the room.
 For quorum, we need to have both the right people and the right quantity of
   them.
 
-That said, if we have fewer than 15 participants on any given Library or
-  Language Evolution [=telecon=], it will be difficult for us to make meaningful
+That said, if we have fewer than 15 participants on any given Evolution or
+  Library Evolution [=telecon=], it will be difficult for us to make meaningful
   progress..
 
 ## Telecon Chairing ## {#telecon-chairing}
@@ -517,7 +484,6 @@ Each group will consist of a number of executors authors and a number of Library
   Evolution regulars who are not involved in the executors proposal.
 
 Given the nature of the executors proposal, the work of each group will be
-  overlapping.
 Each group will not be reviewing a specific section, but instead reviewing the
   proposal from a particular perspective with a specific design facet in mind.
 
@@ -537,24 +503,24 @@ Modularizing the standard library is a goal for C++23, but we have not yet
 
 We are aware of the following papers on this topic:
 
-- [[P0581R1]]: Standard Library Modules
-- [[P1212R0]]: Modules and Freestanding
-- [[P1453R0]]: Modularizing the Standard Library is a Reorganization Opportunity
-- [[P1502R1]]: Standard Library Header Units for C++20 (historical)
+* [[P0581R1]]: Standard Library Modules
+* [[P1212R0]]: Modules and Freestanding
+* [[P1453R0]]: Modularizing the Standard Library is a Reorganization Opportunity
+* [[P1502R1]]: Standard Library Header Units for C++20 (historical)
 
 The following papers related to freestanding are also applicable:
 
-- [[P1105R1]]: Leaving No Room for a Lower-Level Language: A C++ Subset
-- [[P0829R4]]: Freestanding Proposal
-- [[P1376R0]]: Summary of Freestanding Evening Session Discussions
+* [[P1105R1]]: Leaving No Room for a Lower-Level Language: A C++ Subset
+* [[P0829R4]]: Freestanding Proposal
+* [[P1376R0]]: Summary of Freestanding Evening Session Discussions
 
 The first few big questions we have to address to help scope this work are:
 
-- What are our goals for standard library modularization?
-- Do we want to reorganize the standard library while modularizing it?
-- How granular should standard library modules be? What are the tradeoffs of
+* What are our goals for standard library modularization?
+* Do we want to reorganize the standard library while modularizing it?
+* How granular should standard library modules be? What are the tradeoffs of
     fine-grained modules versus coarse-grained modules?
-- Do standard library modularization and freestanding reorganization need to be
+* Do standard library modularization and freestanding reorganization need to be
     linked together?
 
 We will hold [=telecons=] to reach consensus on these and other questions and
@@ -569,29 +535,29 @@ We are aware of the following papers on this topic, some of which are quite
   dated.
 They are grouped by subject:
 
-- [[P0975R0]]: Impact of coroutines on current and upcoming library facilities
-- [[P1341R0]]: Unifying Asynchronous APIs in the Standard Library
+* [[P0975R0]]: Impact of coroutines on current and upcoming library facilities
+* [[P1341R0]]: Unifying Asynchronous APIs in the Standard Library
 
-- [[P1288R0]]: Coroutine concepts and metafunctions
+* [[P1288R0]]: Coroutine concepts and metafunctions
 
-- [[P1056R1]]: `std::lazy<T>`
-- [[P1681R0]]: Revisiting the allocator model for `std::lazy<T>`/et al
+* [[P1056R1]]: `std::lazy<T>`
+* [[P1681R0]]: Revisiting the allocator model for `std::lazy<T>`/et al
 
-- [[P1171R0]]: `std::sync_wait`
+* [[P1171R0]]: `std::sync_wait`
 
-- [[P1316R0]]: `std::when_all` for coroutines
+* [[P1316R0]]: `std::when_all` for coroutines
 
-- [[P0286R0]]: A networking library extension to support co_await-based
+* [[P0286R0]]: A networking library extension to support co_await-based
       coroutines
-- [[P0055R1]]: On Interactions Between Coroutines and Networking Library
+* [[P0055R1]]: On Interactions Between Coroutines and Networking Library
       (historical)
-- [[P0162R0]]: A response to P0055
+* [[P0162R0]]: A response to P0055
 
 Additionally, the desire for the following coroutine library features have
   been expressed multiple times.
 However, we lack a proposal for these features:
 
-- `std::generator<T>`
+* `std::generator<T>`
 
 We need to identify what exactly we want here.
 What are our goals for coroutine library support?
@@ -604,36 +570,19 @@ Ideally we need a paper proposing what the scope and goals should be.
 
 ### Pattern Matching ### {#pattern-matching}
 
-Language Evolution will continue to review [[P1371R2]] as it gets updated.
+Evolution will continue to review [[P1371R2]] as it gets updated.
 
 ### Reflection ### {#reflection}
 
 We will let the Reflection study group pursue all work related to reflection.
-We will only start looking at matters pertaining to reflection in Language
+We will only start looking at matters pertaining to reflection in
   Evolution after the Reflection study group has forwarded them to us.
 
 ### Contracts ### {#contracts}
 
 We will let the Contracts study group pursue all work related to contracts.
-We will only start looking at matters pertaining to contracts in Language
+We will only start looking at matters pertaining to contracts in
   Evolution after the Contracts study group has forwarded them to us.
-
-# Field Experience With Remote Work # {#field-experience}
-
-We are not in completely uncharted waters here.
-The ISO C++ Committee does have field experience working remotely.
-A lot of important inter-meeting discussion happens on email lists.
-The Tooling and Unicode study groups, among others, have successfully and
-  regularly met and made decisions via telecons.
-
-The main benefits of a face-to-face meeting over remote meetings are:
-
-- The informal, spontaneous, and serendipitous interactions between committee
-    members in hallways, at meals, etc.
-- Sequestration, which limits distractions and increases focus.
-- Discussions happen consecutively, which keeps them "in cache".
-
-We can't replicate these effects in remote meetings.
 
 # Deadlines # {#deadlines}
 
@@ -660,12 +609,12 @@ Chairs will try to have a tentative agenda for the next 4 to 8 weeks of
   [=telecons=].
 The tentative agendas can be found here:
 
+- [Remote Evolution GitHub Project](https://github.com/cplusplus/papers/projects/23).
 - [Remote Library Evolution GitHub Project](https://github.com/cplusplus/papers/projects/21).
-- [Remote Language Evolution GitHub Project](https://github.com/cplusplus/papers/projects/23).
 
 # Appendix # {#appendix}
 
-## Typical Library and Language Evolution Face-to-Face Schedule ## {#appendix-typical-evolution-f2f-schedule}
+## Typical Evolution and Library Evolution Face-to-Face Schedule ## {#appendix-typical-evolution-f2f-schedule}
 
 <table>
 <thead>
@@ -773,3 +722,30 @@ The tentative agendas can be found here:
 <td>**23.2**
 </tbody>
 </table>
+
+<pre class=biblio>
+{
+  "P2195R0": {
+    "authors": [
+      "Bryce Adelstein Lelbach",
+      "JF Bastien",
+      "Hal Finkel",
+      "Fabio Fracassi",
+      "Ben Craig",
+      "Billy Baker",
+      "Nevin Liber",
+      "Titus Winters",
+      "Jeffrey Yasskin",
+      "Ville Voutilainen",
+      "Tom Honermann",
+      "Inbal Levi",
+      "Antony Polukhin",
+      "Corentin Jabot",
+      "David Stone"
+    ],
+    "href": "https://wg21.link/p2195r0",
+    "title": "Electronic Straw Polls",
+    "date": "25 August 2020"
+  }
+}
+</pre>
