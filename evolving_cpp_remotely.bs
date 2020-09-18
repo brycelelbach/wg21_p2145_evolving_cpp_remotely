@@ -1,8 +1,8 @@
 <pre class='metadata'>
 Title: Evolving C++ Remotely
 Shortname: P2145
-Revision: 1
-Status: P
+Revision: 2
+Status: D
 Group: WG21
 Audience: WG21
 Editor: Bryce Adelstein Lelbach — Library Evolution Chair, NVIDIA, brycelelbach@gmail.com
@@ -16,7 +16,7 @@ Editor: David Stone — Evolution Vice Chair, Uber, david.stone@uber.com
 Editor: Botond Ballo — Evolution Incubator Chair, Mozilla, botond_ballo@yahoo.ca
 Editor: Erich Keane — Evolution Incubator Vice Chair, Intel, erich.keane@intel.com
 Editor: Tom Honermann — SG16 Unicode and Text Processing (SG16) Chair, Synopsys, tom@honermann.net
-URL: https://wg21.link/P2145R0
+URL: https://wg21.link/P2145R2
 !Source: <a href="https://github.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/blob/main/evolving_cpp_remotely.bs">GitHub</a>
 Issue Tracking: GitHub https://github.com/brycelelbach/wg21_p2145_evolving_cpp_remotely/issues
 Metadata Order: Author, This Version, Source, Issue Tracking, Project, Audience
