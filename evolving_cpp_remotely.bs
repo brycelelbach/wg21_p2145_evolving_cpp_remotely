@@ -1,6 +1,6 @@
 <pre class='metadata'>
 Title: Evolving C++ Remotely
-Shortname: P2145
+Shortname: D2145
 Revision: 2
 Status: D
 Group: WG21
